@@ -25,9 +25,9 @@ def add_product():
             email = request.form.get("email")
             tags = request.form.get("tags").split(' ')
 
-            feature_dict = {'id': 2, 'text': 'feature-1', 'votes': 1, 'timestamp': '1234567', 'tags': ['tag1']}
+            feature_dict = [{'id': 2, 'text': 'Welcome to Feature Hunt', 'votes': 1, 'timestamp': '1234567', 'tags': ['Backend']}]
 
-            product_input = {'name': product_name, 'description': product_description,
+            product_input = {'name': product_name, 'description': product_description, 'votes': 1,
                              'image_url': image_url, 'users': [email], 'tags': tags, 'features': feature_dict}
 
 

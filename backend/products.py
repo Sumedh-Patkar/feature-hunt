@@ -63,6 +63,12 @@ def products():
         else:
             return jsonify({'ok': False, 'message': 'Bad request parameters!'}), 400
 
+@app.route('/<productname>', methods=['GET', 'POST'])
+def get_feature(productname):
+    ''' see above '''
+    if request.method == 'GET':
+        data = product_records.find({"name":productname})
+    return dumps(data)
 
 '''
 Function: get_feature
@@ -74,11 +80,11 @@ Outputs:
 '''
 
 
-@app.route('/<productname>/getFeature', methods=['GET', 'POST'])
-def get_feature(product_name):
-    if request.method == 'GET':
-        data = product_records.find({"name": product_name})
-        return dumps(data)
+# @app.route('/<product_name>/getFeature', methods=['GET', 'POST'])
+# def get_feature(product_name):
+#     if request.method == 'GET':
+#         data = product_records.find({"name": product_name})
+#         return dumps(data)
 
 
 '''
@@ -91,7 +97,7 @@ Outputs:
 '''
 
 
-@app.route('/<productname>/features', methods=['GET', 'POST'])
+@app.route('/<product_name>/features', methods=['GET', 'POST'])
 def features(product_name):
     result = ''
     if request.method == 'POST':
@@ -107,3 +113,15 @@ def features(product_name):
     elif request.method == 'GET':
         result = product_records.find({"name": product_name}, {"features": 1})
     return dumps(result)
+
+
+@app.route('/feedback', methods=['GET', 'POST'])
+def feedback():
+    response = ''
+    return jsonify(response), 200
+
+# @app.route('/feature-hunt', methods=['GET', 'POST'])
+# def roadmap():
+#     response = ''
+#     return jsonify(response), 200
+
