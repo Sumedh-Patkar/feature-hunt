@@ -17,6 +17,8 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import smtplib
 from datetime import date
+from email import encoders
+from email.mime.base import MIMEBase
 
 '''
 Function: products
@@ -134,8 +136,7 @@ def features(productname):
 
 
 @app.route('/<productname>/email', methods=['GET'])
-def email():
-    productname = request.args.get('productname')
+def email(productname):
     today = date.today()
     recipients = ['svaradhe@ncsu.edu', 'hgupta6@ncsu.edu', 'ashwininayak1212@gmail.com', 'surajdm123@gmail.com', 'saprajap@ncsu.edu']
     today = today.strftime("%d-%b-%Y")
@@ -156,6 +157,16 @@ def email():
     result = pd.json_normalize(list(result))
     result = result.explode('features').reset_index(drop=True)
     features = pd.DataFrame(result['features'].tolist())
+
+    excel_file = pd.concat([result.drop(['features'], axis=1), result['features'].apply(pd.Series)], axis=1)
+    excelfilename="Product_feature_details "+today+".xlsx"
+    excel_file.to_excel(excelfilename)
+    part2 = MIMEBase('application', "octet-stream")
+    part2.set_payload(open("Product_feature_details "+today+".xlsx", "rb").read())
+    encoders.encode_base64(part2)
+    part2.add_header('Content-Disposition', "attachment", filename="Product_feature_details "+today+".xlsx")
+    msg.attach(part2)
+
     features.rename(columns={'text': 'FeatureName', 'votes': 'Votes'}, inplace=True)
     result = features[['FeatureName', 'Votes']].sort_values(by='Votes', ascending=False)[:5]
     import io
