@@ -133,3 +133,42 @@ def features(productname):
     return dumps(result)
 
 
+@app.route('/<productname>/email', methods=['GET'])
+def email():
+    productname = request.args.get('productname')
+    today = date.today()
+    recipients = ['svaradhe@ncsu.edu', 'hgupta6@ncsu.edu', 'ashwininayak1212@gmail.com', 'surajdm123@gmail.com', 'saprajap@ncsu.edu']
+    today = today.strftime("%d-%b-%Y")
+    print("Checking for Internet Connection\n")
+    username = os.getenv('USERNAME')
+    password = os.getenv('PASSWORD')
+    server = smtplib.SMTP_SSL("smtp.gmail.com")
+    server.login(username,password)
+    emailfrom = username
+    emailto =", ".join(recipients)
+
+    msg = MIMEMultipart('alternative')
+    msg["From"] = emailfrom
+    msg["To"] = emailto
+    msg["Subject"] = "Product analysis "+today
+
+    result = product_records.find({"name": productname}, {"features": 1})
+    result = pd.json_normalize(list(result))
+    result = result.explode('features').reset_index(drop=True)
+    features = pd.DataFrame(result['features'].tolist())
+    features.rename(columns={'text': 'FeatureName', 'votes': 'Votes'}, inplace=True)
+    result = features[['FeatureName', 'Votes']].sort_values(by='Votes', ascending=False)[:5]
+    import io
+    str_io = io.StringIO()
+    result.to_html(buf=str_io, classes='table table-striped', index=False)
+    html_str1 = str_io.getvalue()
+    email_content = "Testing email function"
+    HTML_BODY = MIMEText(email_content, 'text')
+    msg.attach(HTML_BODY)
+    server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
+    server.login(username, password)
+    print("Sending...")
+    server.sendmail(emailfrom, recipients, msg.as_string())
+    server.quit()
+    print("Sent")
+    return 'Email Sent!'
