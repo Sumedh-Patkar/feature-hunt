@@ -5,8 +5,6 @@ You should have received a copy of the XYZ license with
 this file. If not, please write to: featurehuntteam@gmail.com
 """
 
-# pylint: disable=wrong-import-position,poiackend-lontless-string-statement,undefined-variable,line-too-long
-
 import os, io
 from flask import request, jsonify, Response
 from flask import json
@@ -15,6 +13,10 @@ import pandas as pd
 from bson.json_util import dumps
 from bson.objectid import ObjectId
 from db_init import product_records
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+import smtplib
+from datetime import date
 
 '''
 Function: products
@@ -101,23 +103,6 @@ def get_feature(productname):
 
             return jsonify(success=True)
     return dumps(data)
-
-'''
-Function: get_feature
-Description: Get the list of all features for given product name
-Inputs:
-  - productName: Name of the product
-Outputs:
-  - results: List of features that are available in that product
-'''
-
-
-# @app.route('/<productname>/getFeature', methods=['GET', 'POST'])
-# def get_feature(product_name):
-#     if request.method == 'GET':
-#         data = product_records.find({"name": product_name})
-#         return dumps(data)
-
 
 '''
 Function: features
