@@ -80,6 +80,7 @@ function ProjectForm() {
   const [user, setUser] = React.useState([""]);
   const [tags, setTags] = React.useState("");
   const [contributors, setContributors] = React.useState("");
+  const [date, setDate] = React.useState("");
   const history = useHistory();
 
 /*
@@ -109,6 +110,10 @@ function ProjectForm() {
 
   const handleContributorsChange = (e) => {
     setContributors(e.target.value);
+  }
+
+  const handleDateChange = (e) => {
+    setDate(e.target.value);
   }
 
 
@@ -201,6 +206,18 @@ function ProjectForm() {
                   inputProps={{ "data-testid": "form-Contributors" }}
                   value={contributors}
                   onChange={handleContributorsChange}
+                  fullWidth
+                />
+                <label>Date</label>
+                <TextField
+                  id="date"
+                  label=""
+                  type="date"
+                  multiline
+                  maxRows={1}
+                  inputProps={{ "data-testid": "form-Date" }}
+                  value={date}
+                  onChange={handleDateChange}
                   fullWidth
                 />
               
