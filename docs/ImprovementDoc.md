@@ -9,9 +9,10 @@ The team worked meticulously to improve the user interface. While revamping the 
 *Improvements:*
 1) Created a SignUp page to enable new users to create an account to use feature-hunt.
 2) Designed a login page that acts as the portal to sign in once a user has an account (ONLY when a user has an account).
-3) Improved existing UI for displaying projects and features. 
-4) Made the user experience more insightful by creating a description feature for each project and feature. A new user can intuitively understand what each project or feature does. 
-5) Fixed the Search Bar functionality. Users can now use the search bar to look up Projects easily.
+3) Added Collaborators to the project form. This helps us send email notifications to the collaborators regarding updates related to their project features.
+4) Improved existing UI for displaying projects and features. 
+5) Made the user experience more insightful by creating a description feature for each project and feature. A new user can intuitively understand what each project or feature does. 
+6) Fixed the Search Bar functionality. Users can now use the search bar to look up Projects easily.
 
 ## Back End
 With respect to backend, we decided to use the existing tech stack and improve upon it. We went ahead with using Docker and MongoDB as the previous team had done.
