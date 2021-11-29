@@ -26,8 +26,11 @@ With respect to backend, we decided to use the existing tech stack and improve u
 
 Phase 2                    |  Phase 3
 :-------------------------:|:-------------------------:
-No Signup page             |  New Signup page <img src="https://user-images.githubusercontent.com/18304940/140264522-ef073322-e3fe-48f6-b785-9688c1225f61.jpeg" width="500"/>
-No Login page              |  New Login page <br><img src="https://user-images.githubusercontent.com/18304940/140264509-c19cb558-a9b2-462f-94d7-0aea4a9fb601.jpeg" width="500" />
+No Signup page             |  New Signup page <br><img src="https://github.com/Ashnayak/feature-hunt/blob/d2e421c58edddf0c3ab9ce9076f8f91f6fb80171/docs/screenshots/WhatsApp%20Image%202021-11-29%20at%2012.12.21%20PM%20(2).jpeg" width="500"/>
+No Login page              |  New Login page <br><img src="https://github.com/Ashnayak/feature-hunt/blob/d2e421c58edddf0c3ab9ce9076f8f91f6fb80171/docs/screenshots/WhatsApp%20Image%202021-11-29%20at%2012.12.21%20PM%20(1).jpeg" width="500" />
+No Search Functionality    |  Implemented Search Functionality <br><img src="https://github.com/Ashnayak/feature-hunt/blob/d2e421c58edddf0c3ab9ce9076f8f91f6fb80171/docs/screenshots/WhatsApp%20Image%202021-11-29%20at%2012.12.20%20PM%20(1).jpeg" width="500" />
+Basic Form                 |  Improved Form with Tags and Contributors <br><img src="https://github.com/Ashnayak/feature-hunt/blob/d2e421c58edddf0c3ab9ce9076f8f91f6fb80171/docs/screenshots/WhatsApp%20Image%202021-11-29%20at%2012.12.20%20PM.jpeg" width="500" />
+No Project Description     |  Added Project Description <br><img src="https://github.com/Ashnayak/feature-hunt/blob/d2e421c58edddf0c3ab9ce9076f8f91f6fb80171/docs/screenshots/WhatsApp%20Image%202021-11-29%20at%2012.12.21%20PM.jpeg" width="500" />
 
 ## Tools used
 The original team used React, JavaScript, Python3, Flask, MongoDB, HTML and CSS. In addition to these, we have used Bootstrap.
