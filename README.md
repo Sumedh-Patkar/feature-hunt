@@ -197,6 +197,9 @@ This app has been deployed using Netlify and Heroku. Check it out [here!](https:
 
 You can now run and test the project locally and in deployments. More info about our deplyments and switching between production and devlopment can be found in our [Wiki](https://github.com/CSC510-Group-25/feature-hunt/wiki/Deployment:-Heroku-and-Netlify)
 
+## Contributions to the Project
+Please refer to the [Contributing.md](https://github.com/Ashnayak/feature-hunt/blob/main/CONTRIBUTING.md) if you want to contrbute to the Feature Hunt source code. Follow all the guidelines mentioned and raise a pull request for the developers to review before the code goes to the main source code.
+
 ## Future Scope
 We believe in the ability to add new features in any project (including our own). 
 
