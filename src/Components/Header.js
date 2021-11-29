@@ -21,9 +21,9 @@ function Header({setQuery}) {
   const location = useLocation();
   const inputPlaceholder = location.pathname === '/' ? 'Discover Projects...' : 'Search Features...';
   const search = (event) => {
-    if (event.key === 'Enter') {
-      setQuery(event.target.value);
-    }
+    // if (event.key === 'Enter') {
+    //   setQuery(event.target.value);
+    // }
   };
 
   const username = ReactSession.get("username");
