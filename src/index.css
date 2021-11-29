@@ -54,6 +54,7 @@ code {
   border       : 0px solid;
   height       : 2rem;
   padding      : 0.3rem 0.5rem 0.3rem 0.5rem;
+  margin-bottom: 10px;
 }
 
 .feature .feature-container {
