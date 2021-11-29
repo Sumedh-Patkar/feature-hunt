@@ -57,6 +57,10 @@ const Feature = ({ features, index, setFeatures, editable }) => {
             <span style={{ marginTop: 'auto', marginBottom: 'auto' }}>
               {capitalizeFirstLetter(features[index].text)}
             </span>
+            <br/>
+            <span style={{ marginTop: 'auto', marginBottom: 'auto', fontWeight: '200'}}>
+              {capitalizeFirstLetter(features[index].desc || 'No Description Provided')}
+            </span>
           </div>
           <div className="tag-container" data-testid={"feature_tag_container:"+features[index].id}>
             {features[index]['tags'].map(tag =>
