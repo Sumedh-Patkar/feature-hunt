@@ -79,6 +79,7 @@ function ProjectForm() {
   const [message, setMessage] = React.useState("");
   const [user, setUser] = React.useState([""]);
   const [tags, setTags] = React.useState("");
+  const [contributors, setContributors] = React.useState("");
   const history = useHistory();
 
 /*
@@ -104,6 +105,10 @@ function ProjectForm() {
 
   const handleTagsChange = (e) => {
     setTags(e.target.value);
+  }
+
+  const handleContributorsChange = (e) => {
+    setContributors(e.target.value);
   }
 
 
@@ -187,7 +192,18 @@ function ProjectForm() {
                   onChange={handleTagsChange}
                   fullWidth
                 />
-
+                <label>Contributors</label>
+                <TextField
+                  id="contributors"
+                  label=""
+                  multiline
+                  rows={5}
+                  inputProps={{ "data-testid": "form-Contributors" }}
+                  value={contributors}
+                  onChange={handleContributorsChange}
+                  fullWidth
+                />
+              
             <button data-testid="submit_button" onClick={handleSubmit}>Submit</button>
           </form>
     </div>
