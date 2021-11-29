@@ -31,5 +31,5 @@ No Login page              |  New Login page <br><img src="https://user-images.g
 ## Tools used
 The original team used React, JavaScript, Python3, Flask, MongoDB, HTML and CSS. In addition to these, we have used Bootstrap.
 
-## Conclusion of Phase 2
+## Conclusion of Phase 3
 Working on Phase 3 was an eye-opening simulation of how Software Engineering project development occurs in the real world. Countless brainstorming sessions to whip up a myriad of creative ideas which we brought to fruition, in short, the Phase 3 sojourn was a memorable learning experience. We would like to thank Dr. Timothy Menzies for helping us understand the process of building a good Software Engineering project. We would also like to thank the teaching assistants Xiao Ling, Andre Lustosa, Kewen Peng, Weichen Shi for their support throughout the project. We are grateful for the opportunity to work with our friends and colleagues at NCSU - shout out to the developers of Phase 1 and Phase 2 for their contribution to this amazing project!
