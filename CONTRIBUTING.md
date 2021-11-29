@@ -27,6 +27,8 @@ Explain the problem and include additional details to help maintainers reproduce
 * Provide specific examples to demonstrate the steps. Include links to files or GitHub projects, or copy/pasteable snippets, which you use in those examples. 
 * If you encounter a bug in a specific branch, please note the branch name.
 
+Use the [Bug_Report Template](https://github.com/Ashnayak/feature-hunt/blob/main/issue_templates/Bug_Report.md) while creating the new bug request.
+
 **Do NOT report a bug on a specific file, line of code, or test case if the file, code, or test case in question is not present anywhere in the repository.**
 
 ## Suggesting Enhancements
