@@ -212,7 +212,7 @@ function ProjectForm() {
                 <TextField
                   id="date"
                   label=""
-                  type="date"
+                  
                   multiline
                   maxRows={1}
                   inputProps={{ "data-testid": "form-Date" }}
