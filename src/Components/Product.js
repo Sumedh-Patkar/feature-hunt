@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { ReactSession } from 'react-client-session';
 import Feature from './Feature';
 import Service from '../Service';
+import { Button } from '@mui/material';
 
 //
 //       Component: Product
@@ -16,9 +17,13 @@ import Service from '../Service';
 const Product = ({query}) => {
   const { id } = useParams();
   const [newFeature, setNewFeature] = useState('');
+  const [newDesc, setNewDesc] = useState('');
   const [sortBy, setSortBy] = useState('votes');
   const handleNewFeatureChange = (event) => {
     setNewFeature(event.target.value);
+  };
+  const handleNewFeatureDesc = (event) => {
+    setNewDesc(event.target.value);
   };
   const addFeature = (event) => {
     event.preventDefault();
@@ -32,6 +37,7 @@ const Product = ({query}) => {
         upVoted: true,
         timestamp: Date.now(),
         tags: ['enhancement'],
+        desc: newDesc
       };
       setFeatures(features.concat(addedFeature));
       setNewFeature('');
@@ -73,6 +79,15 @@ const Product = ({query}) => {
           onChange={handleNewFeatureChange} 
           placeholder="Enter a feature that you'd love to see">
           </input>
+          <input 
+          className="inputBar" 
+          data-testid="prod_input"
+          value={newDesc} 
+          onChange={handleNewFeatureDesc} 
+          placeholder="Enter a description if you would like">
+          </input>
+          <Button 
+              onClick={addFeature}>Add</Button>
         </form>
       </div>
       {features.map((f, index) => { f['index'] = index; return f; }).filter(f => query ? f.tags.includes(query.toLowerCase()) || f.text.toLowerCase().includes(query.toLowerCase()) : true).sort((f1, f2) => f2[sortBy] - f1[sortBy]).map(
