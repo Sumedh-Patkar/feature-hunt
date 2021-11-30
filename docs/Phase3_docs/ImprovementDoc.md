@@ -30,7 +30,7 @@ No Signup page             |  New Signup page <br><img src="https://github.com/A
 No Login page              |  New Login page <br><img src="https://github.com/Ashnayak/feature-hunt/blob/d2e421c58edddf0c3ab9ce9076f8f91f6fb80171/docs/screenshots/WhatsApp%20Image%202021-11-29%20at%2012.12.21%20PM%20(1).jpeg" width="500" />
 No Search Functionality    |  Implemented Search Functionality <br><img src="https://github.com/Ashnayak/feature-hunt/blob/d2e421c58edddf0c3ab9ce9076f8f91f6fb80171/docs/screenshots/WhatsApp%20Image%202021-11-29%20at%2012.12.20%20PM%20(1).jpeg" width="500" />
 Basic Form                 |  Improved Form with Tags and Contributors <br><img src="https://github.com/Ashnayak/feature-hunt/blob/d2e421c58edddf0c3ab9ce9076f8f91f6fb80171/docs/screenshots/WhatsApp%20Image%202021-11-29%20at%2012.12.20%20PM.jpeg" width="500" />
-No Feature Description     |  Added Feature Description <br><img src="https://github.com/Ashnayak/feature-hunt/blob/d2e421c58edddf0c3ab9ce9076f8f91f6fb80171/docs/screenshots/WhatsApp%20Image%202021-11-29%20at%2012.12.21%20PM.jpeg" width="500" />
+No Feature Description     |  Added Feature Description <br><img src="hhttps://github.com/Ashnayak/feature-hunt/blob/31425bc63c99635a1f84c2910d66c360e68478ab/docs/Phase3_docs/screenshots/WhatsApp%20Image%202021-11-29%20at%209.18.00%20PM.jpeg" width="500" />
 
 ## Tools used
 The original team used React, JavaScript, Python3, Flask, MongoDB, HTML and CSS. In addition to these, we have used Bootstrap.
