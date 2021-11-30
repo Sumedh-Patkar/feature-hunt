@@ -58,7 +58,7 @@ const Feature = ({ features, index, setFeatures, editable }) => {
               {capitalizeFirstLetter(features[index].text)}
             </span>
             <br/>
-            <span style={{ marginTop: 'auto', marginBottom: 'auto', fontWeight: '200'}}>
+            <span style={{marginTop: 'auto', marginBottom: 'auto', fontWeight: '200', fontSize: '14px'}}>
               {capitalizeFirstLetter(features[index].desc || 'No Description Provided')}
             </span>
           </div>
