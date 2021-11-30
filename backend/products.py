@@ -46,12 +46,12 @@ def products():
         try:
             product_name = request.form.get("productName")
             product_description = request.form.get("productDescription")
-            image_url = request.form.get("imageUrl")
+            image_url = request.form.get("imageUrl", None)
             email = request.form.get("email")
             last_date = request.form.get("lastDate")
             tags = request.form.get("tags").split(' ')
 
-            feature_dict = {'id': 2, 'text': 'feature-1', 'votes': 1, 'timestamp': '1234567', 'tags': ['tag1']}
+            feature_dict = [{'id': 2, 'text': 'feature-1', 'votes': 1, 'timestamp': '1234567', 'tags': ['tag1']}]
 
             product_input = {'name': product_name, 'description': product_description, 'votes': 1,
                              'image_url': image_url, 'users': [email], 'tags': tags, 'features': feature_dict,
@@ -59,7 +59,7 @@ def products():
 
 
             product_records.insert_one(product_input)
-
+            # print(product_input)
             return jsonify({'ok': True, 'message': 'Product added successfully'}), 200
         except:
             return jsonify(success=False)
@@ -93,7 +93,6 @@ def get_feature(productname):
     if request.method == 'POST':
             data = request.json
             data['_id'] = ObjectId()
-            print(data)
             if data is None or data == {}:
                 return Response(response=json.dumps({"Error":
                                 "Please provide connection information"}),
@@ -104,6 +103,11 @@ def get_feature(productname):
             )
 
             return jsonify(success=True)
+    # data_sample = pd.json_normalize(list(data))
+    # print(data_sample.transpose(), data_sample.transpose().loc['features'][0])
+    # print(dumps(data))
+    # print(dumps(data))
+    # if
     return dumps(data)
 
 '''
