@@ -28,16 +28,14 @@ const Styles = styled.div`
    flex-direction: column;
    justify-content: space-around;
    margin: 0 auto;
-   max-width: 1000px;
-   padding: 50px 200px;
+   padding: 50px 150px;
  }
 
- input {
-   border: 1px solid #d9d9d9;
-   border-radius: 4px;
-   box-sizing: border-box;
-   padding: 10px;
-   width: 100%;
+ .input {
+   
+
+   margin: 10px 10px;
+   width: 500px;
  }
 
  label {
@@ -57,11 +55,13 @@ const Styles = styled.div`
  }
 
  .submitButton {
-   background-color: #6f6f6f;
+   background-color: #218888;
    color: white;
    font-family: sans-serif;
    font-size: 14px;
    margin: 20px 0px;
+   padding: 20px 10px;
+   border: none;
 `;
 
 //
@@ -145,18 +145,19 @@ function ProjectForm() {
 
   return (
     <div className="container">
-      <div className="child">
+
         <div className="product-title">
 
         </div>
-      </div>
+      
           <form data-testid="submit_form">
                <h3>PROJECT FORM</h3>
-              <label>Name</label>
+              
                 <TextField
                   data-testid="form_name"
                   id="name"
-                  label=""
+                  className="input"
+                  label="Name"
                   multiline
                   maxRows={1}
                   inputProps={{ "data-testid": "form-inputName" }}
@@ -164,10 +165,11 @@ function ProjectForm() {
                   onChange={handleNameChange}
                   fullWidth
                 />
-              <label>Description</label>
+
                 <TextField
                   id="description"
-                  label=""
+                  className="input"
+                  label="Description"
                   multiline
                   rows={3}
                   inputProps={{ "data-testid": "form-Desc" }}
@@ -175,10 +177,11 @@ function ProjectForm() {
                   onChange={handleDescriptionChange}
                   fullWidth
                 />
-                <label>Image URL</label>
+                
                 <TextField
                   id="imageURL"
-                  label=""
+                  label="Add Image URL"
+                  className="input"
                   multiline
                   maxRows={1}
                   inputProps={{ "data-testid": "form-Img" }}
@@ -186,10 +189,11 @@ function ProjectForm() {
                   onChange={handleImageURLChange}
                   fullWidth
                 />
-              <label>Tags</label>
+              
                 <TextField
                   id="tags"
-                  label=""
+                  label="Tags"
+                  className="input"
                   multiline
                   maxRows={1}
                   inputProps={{ "data-testid": "form-Tags" }}
@@ -197,10 +201,11 @@ function ProjectForm() {
                   onChange={handleTagsChange}
                   fullWidth
                 />
-                <label>Contributors</label>
+                
                 <TextField
                   id="contributors"
-                  label=""
+                  label="Contributors"
+                  className="input"
                   multiline
                   rows={5}
                   inputProps={{ "data-testid": "form-Contributors" }}
@@ -208,11 +213,12 @@ function ProjectForm() {
                   onChange={handleContributorsChange}
                   fullWidth
                 />
-                <label>Date</label>
+                
                 <TextField
                   id="date"
-                  label=""
+                  label="Date"
                   type="date"
+                  className="input"
                   multiline
                   maxRows={1}
                   inputProps={{ "data-testid": "form-Date" }}
@@ -220,8 +226,9 @@ function ProjectForm() {
                   onChange={handleDateChange}
                   fullWidth
                 />
-              
-            <button data-testid="submit_button" onClick={handleSubmit}>Submit</button>
+              <br/>
+            
+            <button data-testid="submit_button" onClick={handleSubmit} className = "submitButton">Submit</button>
           </form>
     </div>
   );
