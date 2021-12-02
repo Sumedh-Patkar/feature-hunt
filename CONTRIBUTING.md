@@ -27,6 +27,8 @@ Explain the problem and include additional details to help maintainers reproduce
 * Provide specific examples to demonstrate the steps. Include links to files or GitHub projects, or copy/pasteable snippets, which you use in those examples. 
 * If you encounter a bug in a specific branch, please note the branch name.
 
+Use the [Bug_Report Template](https://github.com/Ashnayak/feature-hunt/blob/main/issue_templates/Bug_Report.md) while creating the new bug request.
+
 **Do NOT report a bug on a specific file, line of code, or test case if the file, code, or test case in question is not present anywhere in the repository.**
 
 ## Suggesting Enhancements
@@ -44,7 +46,7 @@ Enhancement suggestions are tracked as Github issues. After you have determined 
 * Explain why this enhancement would be useful to most users and is not something that can or should be implemented as a community package.
 * List some other text editors or applications where this enhancement exists.
 * Specify the name and version of the OS you're using.
-
+Use the [Feature Request Template](https://github.com/Ashnayak/feature-hunt/blob/main/issue_templates/Feature_Request.md) while creating the new feature request.
 
 Alternatively, you can open a new discussion here: https://github.com/CSC510-Group-25/feature-hunt/discussions/categories/ideas
 

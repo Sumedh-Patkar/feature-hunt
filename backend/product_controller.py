@@ -23,12 +23,14 @@ def add_product():
             product_description = request.form.get("productDescription")
             image_url = request.form.get("imageUrl")
             email = request.form.get("email")
+            last_date = request.form.get("lastDate")
             tags = request.form.get("tags").split(' ')
 
-            feature_dict = {'id': 2, 'text': 'feature-1', 'votes': 1, 'timestamp': '1234567', 'tags': ['tag1']}
-
+            # feature_dict = [{'id': 2, 'text': 'feature-1', 'votes': 1, 'timestamp': '1234567', 'tags': ['tag1']}]
+            feature_dict = []
             product_input = {'name': product_name, 'description': product_description,
-                             'image_url': image_url, 'users': [email], 'tags': tags, 'features': feature_dict}
+                             'image_url': image_url, 'users': [email], 'tags': tags, 'features': feature_dict,
+                             'last_date': last_date}
 
 
             product_records.insert_one(product_input)
@@ -51,9 +53,9 @@ def add_product():
 #         result = product_records.find_one_and_update(
 #             {"project_name": productName}, {"$push": {"features": data}}
 #         )
-#
+
 #         return jsonify(success=True)
-#
+
 #     elif request.method == 'GET':
 #         result = mongo.db.products.find({"name": productname}, {"features": 1})
 #     return dumps(result)
