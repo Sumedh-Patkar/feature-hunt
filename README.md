@@ -105,7 +105,7 @@ https://docs.docker.com/get-docker
 ```
 #### 2. Git clone the Repository using 
 ```
-git clone https://github.com/CSC510-Group-25/feature-hunt.git
+git clone https://github.com/Ashnayak/feature-hunt.git
 ```
 
 #### 3. Run the following Commands
@@ -123,7 +123,7 @@ This will run two docker containers. The frontend will run on port 3000 and the 
 
 #### 1. Git clone the Repository using 
 ```
-git clone https://github.com/CSC510-Group-25/feature-hunt.git
+git clone https://github.com/Ashnayak/feature-hunt.git
 ```
 #### 2. Run the following Commands
 ```
