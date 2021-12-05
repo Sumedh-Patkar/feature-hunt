@@ -12,7 +12,7 @@
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/CSC510-Group-25/feature-hunt?color=red)](https://github.com/CSC510-Group-25/feature-hunt/issues?q=is%3Aissue+is%3Aclosed)
 [![Build](https://github.com/CSC510-Group-25/feature-hunt/actions/workflows/nodejs.yml/badge.svg)](https://github.com/CSC510-Group-25/feature-hunt/actions/workflows/nodejs.yml)
 [![Tests](https://github.com/CSC510-Group-25/feature-hunt/actions/workflows/nodejs_tests.yml/badge.svg)](https://github.com/CSC510-Group-25/feature-hunt/actions/workflows/nodejs_tests.yml)
-[![Coverage Status](https://coveralls.io/repos/github/CSC510-Group-25/feature-hunt/badge.svg?branch=main)](https://coveralls.io/github/CSC510-Group-25/feature-hunt?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/Ashnayak/feature-hunt/badge.svg)](https://coveralls.io/github/Ashnayak/feature-hunt)
 [![CodeQL](https://github.com/CSC510-Group-25/feature-hunt/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/CSC510-Group-25/feature-hunt/actions/workflows/codeql-analysis.yml)
 [![Pylint](https://github.com/CSC510-Group-25/feature-hunt/actions/workflows/pylint.yml/badge.svg)](https://github.com/CSC510-Group-25/feature-hunt/actions/workflows/pylint.yml)
 [![Netlify](https://img.shields.io/netlify/dbecc37c-c273-4b45-bfff-3fd33d20cae0)](https://feature-hunt-25.netlify.app/)
@@ -88,8 +88,19 @@ The **Comment** Section - Each product page has a comment section (Powered by [u
 ### Newest Features:
 You can now create an account and mange the products you are a part of! This includes - 
 
+**SignUp Page** - New users can now create an account to customize their dashboard with projects they are involved in.
+<img src="https://github.com/Ashnayak/feature-hunt/blob/d2e421c58edddf0c3ab9ce9076f8f91f6fb80171/docs/screenshots/WhatsApp%20Image%202021-11-29%20at%2012.12.21%20PM%20(2).jpeg" width="1200"/>
+
+**Login Page** - Recurring users can login to their dashboard via this portal.
+<img src="https://github.com/Ashnayak/feature-hunt/blob/d2e421c58edddf0c3ab9ce9076f8f91f6fb80171/docs/screenshots/WhatsApp%20Image%202021-11-29%20at%2012.12.21%20PM%20(1).jpeg" width="1200" />
+
 **Project Form** - You can instantly add new products to be reviewed by the community. 
 <img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="https://github.com/Ashnayak/feature-hunt/blob/3db2e61e4ad75a26f1b12da84e824e7dd22c1d76/docs/Phase3_docs/screenshots/WhatsApp%20Image%202021-12-04%20at%2011.11.25%20PM%20(1).jpeg">  
+
+**Seach Bar** -  Users can now search for their projects.
+<img src="https://github.com/Ashnayak/feature-hunt/blob/d2e421c58edddf0c3ab9ce9076f8f91f6fb80171/docs/screenshots/WhatsApp%20Image%202021-11-29%20at%2012.12.20%20PM%20(1).jpeg" width="1200" />
+
+
 
 **Tag Management** - You can now give feature feedback though tags. Want to say that you are working on a feature? Add a `IN DEVELOPMENT` tag!
 <img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="https://user-images.githubusercontent.com/78971563/140238752-a6ebe8ab-942f-462e-94b6-5d3d4064115e.png"> 
