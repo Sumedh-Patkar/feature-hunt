@@ -89,9 +89,11 @@ The **Comment** Section - Each product page has a comment section (Powered by [u
 You can now create an account and mange the products you are a part of! This includes - 
 
 **SignUp Page** - New users can now create an account to customize their dashboard with projects they are involved in.
+
 <img src="https://github.com/Ashnayak/feature-hunt/blob/d2e421c58edddf0c3ab9ce9076f8f91f6fb80171/docs/screenshots/WhatsApp%20Image%202021-11-29%20at%2012.12.21%20PM%20(2).jpeg" width="1200"/>
 
 **Login Page** - Recurring users can login to their dashboard via this portal.
+
 <img src="https://github.com/Ashnayak/feature-hunt/blob/d2e421c58edddf0c3ab9ce9076f8f91f6fb80171/docs/screenshots/WhatsApp%20Image%202021-11-29%20at%2012.12.21%20PM%20(1).jpeg" width="1200" />
 
 **Project Form** - You can instantly add new products to be reviewed by the community. 
