@@ -21,6 +21,8 @@
 
 https://www.youtube.com/watch?v=o80gwSOqjs4
 
+Refer to [Phase 3 improvement Doc](https://github.com/Ashnayak/feature-hunt/blob/main/docs/Phase3_docs/ImprovementDoc.md) to check for all the changes/updates summary done by Group-36 in phase3.
+
 
 ## INTRODUCTION ⚡️
 
@@ -88,8 +90,11 @@ The **Comment** Section - Each product page has a comment section (Powered by [u
 ### Newest Features:
 You can now create an account and mange the products you are a part of! This includes - 
 
-**Project Submittal** - You can instantly add new products to be reviewed by the community. 
-<img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="https://github.com/CSC510-Group-25/feature-hunt/blob/group25-improvements/docs/component-screenshots/Screenshot%202021-11-04%20submitform.png">  
+**Project Submittal** - You can instantly add new products to be reviewed by the community We added new sections to the form for better classification. 
+<img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="https://github.com/Ashnayak/feature-hunt/blob/main/docs/component-screenshots/Form.jpeg"> 
+
+**Description Addition** - You can add feature description along with the features
+<img width="1200" alt="Feateure Description" src="https://github.com/Ashnayak/feature-hunt/blob/main/docs/component-screenshots/Description.jpeg"> 
 
 **Tag Management** - You can now give feature feedback though tags. Want to say that you are working on a feature? Add a `IN DEVELOPMENT` tag!
 <img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="https://user-images.githubusercontent.com/78971563/140238752-a6ebe8ab-942f-462e-94b6-5d3d4064115e.png"> 
