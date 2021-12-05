@@ -81,7 +81,7 @@ const Product = ({query}) => {
           </input>
           <input 
           className="inputBar" 
-          data-testid="prod_input"
+          data-testid="prod_input1"
           value={newDesc} 
           onChange={handleNewFeatureDesc} 
           placeholder="Enter a description if you would like">
