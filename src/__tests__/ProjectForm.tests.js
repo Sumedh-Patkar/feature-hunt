@@ -44,11 +44,11 @@ describe("ProjectForm tests", () => {
         </RRouter>
       );
     const form = getByText(/Project Form/i);
-    const name = getByText(/Name/i);
-    const desc = getByText(/Description/i);
-    const img = getByText(/Image URL/i);
-    const sub = getByText(/submit/i);
-    const tags = getByText(/tags/i);
+    //const name = getByText(/Name/i);
+    //const desc = getByText(/Description/i);
+    //const img = getByText(/Image URL/i);
+    //const sub = getByText(/submit/i);
+    //const tags = getByText(/tags/i);
 
     expect(form).toBeInTheDocument();
     expect(name).toBeInTheDocument();
