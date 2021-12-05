@@ -27,8 +27,8 @@
     "start-api": "cd backend && flask run --no-debugger",
     "start-db": "cd backend && flask run",
     "lint": "./node_modules/.bin/prettier --single-quote --trailing-comma es5 --print-width 80 --write --no-bracket-spacing **/*.js",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "build": "react-scripts --openssl-legacy-provider build",
+    "test": "react-scripts --openssl-legacy-provider test",
     "eject": "react-scripts eject",
     "coverage": "react-scripts test --env=jsdom --coverage",
     "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls"
