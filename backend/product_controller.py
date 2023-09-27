@@ -30,7 +30,7 @@ def add_product():
             feature_dict = []
             product_input = {'name': product_name, 'description': product_description,
                              'image_url': image_url, 'users': [email], 'tags': tags, 'features': feature_dict,
-                             'last_date': last_date}
+                             'last_date': last_date,'votes':0}
 
 
             product_records.insert_one(product_input)
