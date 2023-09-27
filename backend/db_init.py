@@ -1,6 +1,7 @@
 import pymongo
-
-client = pymongo.MongoClient("mongodb+srv://bot:bot123@cluster0.xph5e.mongodb.net/feature-hunt?retryWrites=true&w=majority")
+import ssl
+uri = "mongodb+srv://nrpancho:Nidhay2110@cluster0.wwokmcs.mongodb.net/?retryWrites=true&w=majority"
+client = pymongo.MongoClient(uri,ssl_cert_reqs=ssl.CERT_NONE)
 db = client.get_database('feature-hunt')
 records = db.users
 product_records = db.products
