@@ -34,22 +34,17 @@ def add_product():
         return render_template("productform.html")
 
 
-@app.route("/getProducts", methods=['GET'])
+@app.route("/getCompanies", methods=['GET'])
 def get_products():
     res=Product.get_products()
     return res
 
-@app.route("/getProduct/<product_id>", methods=['GET'])
-def get_product(product_id):
-    res=Product.get_product(product_id)
+@app.route("/getCompany/<company_id>", methods=['GET'])
+def get_product(company_id):
+    res=Product.get_product(company_id)
     return res
 
-@app.route("/deleteProduct/<product_name>", methods=['DELETE'])
-def delete_product(product_name):
-    res=Product.delete_product(product_name)
-    return res
-
-@app.route("/getSortedProducts/<sort_by>", methods=['GET'])
-def get_sorted_products(sort_by):
-    res=Product.get_sorted_products(sort_by)
+@app.route("/deletecompany_name/<company_name>", methods=['DELETE'])
+def delete_product(company_name):
+    res=Product.delete_product(company_name)
     return res

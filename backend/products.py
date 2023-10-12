@@ -45,9 +45,25 @@ class Product:
         data = self.db.find().sort(sort_by, -1)
         return dumps(data)
 
-    
+        
     def add_view(self,product_id):
         db_response = self.db.update_one({'_id': ObjectId(product_id)},{'$inc': {'views': 1}})
+        if db_response.modified_count == 1:
+            response = {'ok': True, 'message': 'record updated'}
+        else:
+            response = {'ok': True, 'message': 'no record found'}
+        return jsonify(response), 200
+
+    def add_vote(self,product_id):
+        db_response = self.db.update_one({'_id': ObjectId(product_id)},{'$inc': {'votes': 1}})
+        if db_response.modified_count == 1:
+            response = {'ok': True, 'message': 'record updated'}
+        else:
+            response = {'ok': True, 'message': 'no record found'}
+        return jsonify(response), 200
+    
+    def remove_vote(self,product_id):
+        db_response = self.db.update_one({'_id': ObjectId(product_id)},{'$inc': {'votes': -1}})
         if db_response.modified_count == 1:
             response = {'ok': True, 'message': 'record updated'}
         else:
