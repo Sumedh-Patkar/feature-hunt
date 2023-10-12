@@ -4,9 +4,9 @@ from flask import jsonify
 from flask import request,render_template
 from app import app
 from db_init import product_records
-from product_controller import Product
+from product_controller import Company
 
-Product = Product()
+Product = Company()
 
 #################################################################################
 ##       Function: add_product
@@ -17,20 +17,18 @@ Product = Product()
 ##       Outputs:
 ##           - Returns true or false if new project is able to be added
 #################################################################################
-@app.route("/addProduct", methods=['Post','GET'])
+@app.route("/addCompany", methods=['Post','GET'])
 def add_product():
     if request.method == 'POST':
-        product_name = request.form.get("productName")
-        product_description = request.form.get("productDescription")
-        image_url = request.form.get("imageUrl")
-        email = request.form.get("email")
+        company_name = request.form.get("name")
+        company_description = request.form.get("description")
         tags = request.form.get("tags").split(',')
 
-        product_input = {'name': product_name, 'description': product_description,
-                            'tags': tags, 'features': [],'votes':0}
+        company_input = {'name': company_name, 'description': company_description,
+                            'tags': tags, 'features': [],'views':0}
 
 
-        res=Product.add_product(product_input)
+        res=Product.add_company(company)
         return jsonify(success=res)
     else:
         return render_template("productform.html")
@@ -54,9 +52,4 @@ def delete_product(product_name):
 @app.route("/getSortedProducts/<sort_by>", methods=['GET'])
 def get_sorted_products(sort_by):
     res=Product.get_sorted_products(sort_by)
-    return res
-
-@app.route("/addView/<product_id>", methods=['GET'])
-def add_view(product_id):
-    res=Product.add_view(product_id)
     return res
