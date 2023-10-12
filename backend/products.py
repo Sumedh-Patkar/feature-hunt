@@ -8,15 +8,6 @@ from bson.objectid import ObjectId
 from db_init import product_records
 
 
-'''
-Function: products
-Description: Get/ Add/ Update/ Delete the products from the database
-Inputs:
-  - NA
-Outputs:
-  - NA
-'''
-
 class Product:
     def __init__(self) -> None:
         self.db=product_records
