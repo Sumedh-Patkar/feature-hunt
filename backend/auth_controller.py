@@ -1,6 +1,6 @@
 # pylint: disable=wrong-import-position,pointless-string-statement,undefined-variable,line-too-long
 import json
-from flask import request, session, redirect, url_for,render_template
+from flask import request, session, redirect, url_for
 from flask import Response
 import bcrypt
 from app import app
@@ -15,11 +15,9 @@ from db_init import records
 ##       Outputs:
 ##           - message: output if user is registered successful or not
 #################################################################################
-@app.route("/signup", methods=['POST',"GET"])
+@app.route("/signup", methods=['POST'])
 def signup():
-    if request.method == "GET":
-        return render_template("signup.html")
-    user = request.form.get("name")
+    user = request.form.get("fullname")
     email = request.form.get("email")
     password = request.form.get("password")
     user_found = records.find_one({"name": user})
@@ -44,6 +42,7 @@ def signup():
     message = json.dumps(error_dict)
     return message
 
+#redirect_url = 'https://damp-citadel-25681.herokuapp.com/'
 redirect_url = 'http://localhost:5000/'
 
 #################################################################################
@@ -67,9 +66,9 @@ def logged_in():
             "name": name
         }
         message = json.dumps(logged_in_dict)
-        return redirect(redirect_url+'home')
+        return message
     else:
-        return redirect(url_for('login'))
+        return redirect(redirect_url + 'login')
 
 #################################################################################
 ##       Function: login
@@ -81,8 +80,6 @@ def logged_in():
 #################################################################################
 @app.route("/login", methods=["POST", "GET"])
 def login():
-    if 'email' in session:
-        return redirect(url_for('logged_in'))
     if request.method == "POST":
         email = request.form.get("email", None)
         print(email, flush=True)
@@ -101,8 +98,10 @@ def login():
             if bcrypt.checkpw(password.encode('utf-8'), password_check):
                 session["email"] = email_val
                 session["name"] = name
-                return redirect(url_for('logged_in'))
+                return redirect(redirect_url + 'logged_in')
             else:
+                if "email" in session:
+                    return redirect(redirect_url + 'logged_in')
                 error_dict = {
                     "code": 403,
                     "message": "Password is incorrect"
@@ -117,10 +116,12 @@ def login():
             }
             message = json.dumps(error_dict)
             return message
-        
-    else:
-        return render_template("login.html")
-    
+    loggedin_dict = {
+        "code": 200,
+        "message": "Sucessfully Logged In"
+    }
+    message = json.dumps(loggedin_dict)
+    return message
 
 #################################################################################
 ##       Function: logout

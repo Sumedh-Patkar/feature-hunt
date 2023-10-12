@@ -6,4 +6,3 @@ client = pymongo.MongoClient(uri,ssl_cert_reqs=ssl.CERT_NONE)
 db = client.get_database('feature-hunt')
 records = db.users
 product_records = db.products
-company_records = db.companies
