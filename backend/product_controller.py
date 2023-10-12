@@ -27,7 +27,7 @@ def add_product():
         tags = request.form.get("tags").split(',')
 
         product_input = {'name': product_name, 'description': product_description,
-                            'tags': tags, 'features': [],'votes':0}
+                            'tags': tags, 'features': [],'votes':0,'views':0}
 
 
         res=Product.add_product(product_input)
