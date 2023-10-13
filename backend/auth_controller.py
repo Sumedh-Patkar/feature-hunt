@@ -4,7 +4,9 @@ from flask import request, session, redirect, url_for,render_template
 from flask import Response
 import bcrypt
 from app import app
-from db_init import records
+from users import Users
+
+Users=Users()
 
 #################################################################################
 ##       Function: signup
@@ -19,13 +21,13 @@ from db_init import records
 def signup():
     if request.method == "GET":
         return render_template("signup.html")
+    
+    #implementation for POST
     user = request.form.get("name")
     email = request.form.get("email")
     password = request.form.get("password")
-    user_found = records.find_one({"name": user})
-    email_found = records.find_one({"email": email})
-    if user_found or email_found:
-
+    email_found = Users.get_user_by_email(email)
+    if email_found:
         error_dict = {
             "code": 409,
             "message": "This email already is already registered.",
@@ -35,14 +37,16 @@ def signup():
         return message
 
     hashed = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
-    user_input = {'name': user, 'email': email, 'password': hashed}
-    records.insert_one(user_input)
-    error_dict = {
-        "code": 200,
-        "message": "Registration Successful"
-    }
-    message = json.dumps(error_dict)
-    return message
+    user_input = {'name': user, 'email': email, 'password': hashed, 'votes': []}
+    res,code=Users.add_user(user_input)
+    if code==200:
+        session["email"] = email
+        session["name"] = user
+        session['userid']=res['UserID']
+
+        return redirect(url_for('logged_in'))
+    else:
+        return '<p>Something went wrong!. <a href="http://localhost:5000/signup">Signup again</a></p>'
 
 redirect_url = 'http://localhost:5000/'
 
@@ -67,7 +71,7 @@ def logged_in():
             "name": name
         }
         message = json.dumps(logged_in_dict)
-        return redirect(redirect_url+'home')
+        return redirect(url_for('logged_in'))
     else:
         return redirect(url_for('login'))
 
@@ -92,7 +96,7 @@ def login():
 
             return Response(status=403)
 
-        email_found = records.find_one({"email": email})
+        email_found = Users.get_user_by_email(email)
         if email_found:
             email_val = email_found['email']
             password_check = email_found['password']
@@ -103,21 +107,12 @@ def login():
                 session["name"] = name
                 return redirect(url_for('logged_in'))
             else:
-                error_dict = {
-                    "code": 403,
-                    "message": "Password is incorrect"
-                }
-                message = json.dumps(error_dict)
-                return message
+                #return html that the password was incorrect and a redirect link to the login page
+                return '<p>Invalid Password!. <a href="http://localhost:5000/login">Login again</a></p>'
         else:
-            error_dict = {
-                "code": 403,
-                "message": "We are unable to find a user with that email. Please double check you entered your email "
-                           "correctly "
-            }
-            message = json.dumps(error_dict)
-            return message
-        
+            #return html that the password was incorrect and a redirect link to the login page
+            return '<p>Invalid Email!. <a href="http://localhost:5000/login">Login again</a></p>'
+            
     else:
         return render_template("login.html")
     
@@ -133,7 +128,7 @@ def login():
 @app.route("/logout", methods=["POST", "GET"])
 def logout():
     if "email" in session:
-        session.pop("email", None)
-        return "Logout Successful"
+        session.flush()
+        return redirect(url_for('login'))
     else:
-        return "Logout Successful"
+        return redirect(url_for('login'))

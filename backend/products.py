@@ -29,7 +29,7 @@ class Product:
         if db_response.deleted_count == 1:
             response = {'ok': True, 'message': 'record deleted'}
         else:
-            response = {'ok': True, 'message': 'no record found'}
+            response = {'ok': False, 'message': 'no record found'}
         return jsonify(response), 200
     
     def get_sorted_products(self,sort_by):
@@ -42,7 +42,7 @@ class Product:
         if db_response.modified_count == 1:
             response = {'ok': True, 'message': 'record updated'}
         else:
-            response = {'ok': True, 'message': 'no record found'}
+            response = {'ok': False, 'message': 'no record found'}
         return jsonify(response), 200
 
     def add_vote(self,product_id):
@@ -50,7 +50,7 @@ class Product:
         if db_response.modified_count == 1:
             response = {'ok': True, 'message': 'record updated'}
         else:
-            response = {'ok': True, 'message': 'no record found'}
+            response = {'ok': False, 'message': 'no record found'}
         return jsonify(response), 200
     
     def remove_vote(self,product_id):
@@ -58,5 +58,5 @@ class Product:
         if db_response.modified_count == 1:
             response = {'ok': True, 'message': 'record updated'}
         else:
-            response = {'ok': True, 'message': 'no record found'}
+            response = {'ok': False, 'message': 'no record found'}
         return jsonify(response), 200

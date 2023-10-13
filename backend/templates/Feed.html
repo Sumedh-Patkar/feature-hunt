@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/Dashboard.css">
+    <title>Feature Hunt</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="Home.html" id="homeLink">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Page -->
+    <div class="home">
+        <header>
+            <h1>Welcome to Feature Hunt</h1>
+        </header>
+        <p>Collect, analyze, and organize feedback and feature requests in your product's feedback board to make better product decisions.</p>
+        <p>Feature Hunt is a platform that allows you to do just that. Users can share, vote, and discuss feature requests, and product owners can organize them to make better product decisions.</p>
+    </div>
+
+    <!-- Dashboard Page -->
+    <div class="dashboard">
+        <header>
+            <h1>Feature Hunt Dashboard</h1>
+        </header>
+        <div class="feature-list">
+            <!-- Dynamic feature requests will be added here through JavaScript -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<script>
+    // Sample feature data (you can load data dynamically from a server)
+const featureData = [
+    { title: "Feature Request 1", description: "Description of the feature request.", votes: 0 },
+    { title: "Feature Request 2", description: "Another feature description.", votes: 0 }
+];
+
+// Function to display feature requests in the dashboard
+function displayFeatureRequests() {
+    const featureList = document.querySelector('.feature-list');
+    featureList.innerHTML = '';
+
+    featureData.forEach((feature, index) => {
+        const featureRequest = document.createElement('div');
+        featureRequest.classList.add('feature-request');
+        featureRequest.innerHTML = `
+            <h2>${feature.title}</h2>
+            <p>${feature.description}</p>
+            <div class="vote-button">
+                <button id="upvoteBtn${index}">Upvote</button>
+                <button id="downvoteBtn${index}">Downvote</button>
+                <button id="countBtn${index}">${feature.votes} votes</button>
+                <span>${feature.votes} votes</span>
+                
+            </div>
+        `;
+        featureList.appendChild(featureRequest);
+
+        const upvoteButton = document.getElementById(`upvoteBtn${index}`);
+        const downvoteButton = document.getElementById(`downvoteBtn${index}`);
+        const countBtn = document.getElementById(`countBtn${index}`);
+
+        upvoteButton.addEventListener('click', () => {
+            feature.votes++;
+            updateVotes(index);
+        });
+
+        downvoteButton.addEventListener('click', () => {
+            feature.votes--;
+            updateVotes(index);
+        });
+    });
+}
+
+// Function to update the vote count
+function updateVotes(index) {
+    const voteSpan = document.querySelector(`#downvoteBtn${index}`).nextElementSibling;
+    voteSpan.textContent = `${featureData[index].votes} votes`;
+}
+
+// Show the dashboard and hide the home page
+function showDashboard() {
+    const homePage = document.querySelector('.home');
+    const dashboardPage = document.querySelector('.dashboard');
+    homePage.style.display = 'none';
+    dashboardPage.style.display = 'block';
+    displayFeatureRequests();
+}
+
+// Event listener to switch to the dashboard when a button is clicked
+document.addEventListener('DOMContentLoaded', () => {
+    const startButton = document.createElement('button');
+    startButton.textContent = 'Start Feature Hunt';
+    startButton.addEventListener('click', showDashboard);
+    document.body.appendChild(startButton);
+});
+
+</script>
+
+
