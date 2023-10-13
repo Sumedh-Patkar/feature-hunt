@@ -3,8 +3,7 @@
 from flask import jsonify
 from flask import request,render_template
 from app import app
-from db_init import product_records
-from product_controller import Product
+from products import Product
 
 Product = Product()
 
