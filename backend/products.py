@@ -13,12 +13,13 @@ class Product:
         self.db=product_records
     
     def get_products(self):
-        data = self.db.find()
+        #get timestamp sorted products
+        data = self.db.find().sort('timestamp', -1)
         return dumps(data)
     
     def get_product(self,product_id):
         data = self.db.find_one({'_id': ObjectId(product_id)})
-        return dumps(data)
+        return data
     
     def add_product(self,product_input):
         x=self.db.insert_one(product_input)
@@ -34,7 +35,7 @@ class Product:
     
     def get_sorted_products(self,sort_by):
         data = self.db.find().sort(sort_by, -1)
-        return dumps(data)
+        return data
 
         
     def add_view(self,product_id):

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../static/styles/ProductPage.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Feature Hunt</h1>
+    <p>Discover amazing products and their features</p>
+  </header>
+  <main>
+    <section id="product-details">
+      <h2>Product Name</h2>
+      <ul id="feature-list">
+        <!-- Features will be dynamically added here using JavaScript -->
+      </ul>
+    </section>
+  </main>
+  
+</body>
+</html>
+
+<script>
+    // Simulated product data for the example
+    const product = {
+    name: "Product 1",
+    features: [
+        { name: "Feature 1", description: "gafi ahidfa afand asd", votes: 25, views: 300 },
+        { name: "Feature 2", description: "gafi ahidfa afand asd",votes: 12, views: 150 },
+        { name: "Feature 3", description: "gafi ahidfa afand asd",votes: 20, views: 250 }
+    ]
+    };
+
+    const featureList = document.getElementById("feature-list");
+    const productName = document.querySelector("h2");
+
+    function displayProductDetails(product) {
+    productName.textContent = product.name;
+
+    product.features.forEach((feature) => {
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `
+        <h3>${feature.name}</h3>
+        <h4>${feature.description}</h4>
+        <p>Votes: ${feature.votes}</p>
+        <p>Views: ${feature.views}</p>
+        `;
+        featureList.appendChild(listItem);
+    });
+    }
+
+    displayProductDetails(product);
+</script>

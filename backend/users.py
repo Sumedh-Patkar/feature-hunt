@@ -25,6 +25,7 @@ class Users:
         return data
     
     def add_user(self,user_input):
+        user_input['_id']=user_input['email']
         x=self.db.insert_one(user_input)
         print(x.inserted_id)
         return {'UserID': str(x.inserted_id), 'message': 'User added successfully'}, 200
