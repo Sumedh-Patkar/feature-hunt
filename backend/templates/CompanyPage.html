@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../static/styles/CompanyPage.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Feature Hunt</h1>
+    <h2>{{data['name']}}</h2>
+    <p>{{data['description']}}</p>
+  </header>
+  <main>
+    <section id="product-list">
+      <!-- Product listings will be dynamically added here using JavaScript -->
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
+
+<script>
+    const products = [
+    { name: "Product 1", features: "Feature 1, Feature 2, Feature 3" },
+    { name: "Product 2", features: "Feature 4, Feature 5, Feature 6" },
+    { name: "Product 3", features: "Feature 7, Feature 8, Feature 9" },
+    // Add more products here
+    ];
+
+    const productList = document.getElementById("product-list");
+
+    function createProductCard(product) {
+    const card = document.createElement("div");
+    card.classList.add("card");
+    
+    card.innerHTML = `
+        <h2>${product.name}</h2>
+        <p>${product.features}</p>
+        <button>Learn More</button>
+    `;
+
+    productList.appendChild(card);
+    }
+
+    products.forEach((product) => {
+    createProductCard(product);
+    });
+</script>

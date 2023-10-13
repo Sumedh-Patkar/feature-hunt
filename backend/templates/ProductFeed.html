@@ -25,7 +25,7 @@
     </div>
 
     <!-- Dashboard Page -->
-    <div class="dashboard">
+    <div class="dashboard" onload="() => {displayFeatureRequests()}">
         <header>
             <h1>Feature Hunt Dashboard</h1>
         </header>
@@ -33,20 +33,20 @@
             <!-- Dynamic feature requests will be added here through JavaScript -->
         </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
 
 <script>
-    // Sample feature data (you can load data dynamically from a server)
-const featureData = [
-    { title: "Feature Request 1", description: "Description of the feature request.", votes: 0 },
-    { title: "Feature Request 2", description: "Another feature description.", votes: 0 }
-];
-
-// Function to display feature requests in the dashboard
+    //load data from server by calling api
+    
 function displayFeatureRequests() {
+    let api_url= "http://localhost:5000/getproducts";
+    console.log(api_url);
+    fetch(api_url)
+    .then(response => response.json())
+    .then(json => {
+        console.log(json);
+    })
     const featureList = document.querySelector('.feature-list');
     featureList.innerHTML = '';
 

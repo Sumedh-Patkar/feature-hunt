@@ -5,7 +5,7 @@ from flask import request,render_template
 from app import app
 from company import Company
 
-Product = Company()
+companydb = Company()
 
 #################################################################################
 ##       Function: add_product
@@ -27,23 +27,29 @@ def add_company():
                             'tags': tags,'views':0,'products':[]}
 
 
-        res=Product.add_company(company_input)
+        res=companydb.add_company(company_input)
         return jsonify(success=res)
     else:
-        return render_template("productform.html")
+        return render_template("companyform.html")
 
 
 @app.route("/getcompanies", methods=['GET'])
 def get_companies():
-    res=Company.get_companies()
+    res=companydb.get_companies()
     return res
 
-@app.route("/getcompany/<company_id>", methods=['GET'])
-def get_company(company_id):
-    res=Company.get_company(company_id)
-    return res
 
 @app.route("/deletecompany/<company_name>", methods=['DELETE'])
 def delete_company(company_name):
-    res=Product.delete_company(company_name)
+    res=companydb.delete_company(company_name)
     return res
+
+@app.route('/companyfeed', methods=['GET'])
+def company_feed():
+    return render_template('companyfeed.html')
+
+@app.route('/company/<company_id>', methods=['GET'])
+def company(company_id):
+    data= companydb.get_company(company_id)
+    print(data)
+    return render_template('CompanyPage.html',data=data)

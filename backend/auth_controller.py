@@ -6,7 +6,7 @@ import bcrypt
 from app import app
 from users import Users
 
-Users=Users()
+userdb=Users()
 
 #################################################################################
 ##       Function: signup
@@ -26,7 +26,7 @@ def signup():
     user = request.form.get("name")
     email = request.form.get("email")
     password = request.form.get("password")
-    email_found = Users.get_user_by_email(email)
+    email_found = userdb.get_user_by_email(email)
     if email_found:
         error_dict = {
             "code": 409,
@@ -38,7 +38,7 @@ def signup():
 
     hashed = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
     user_input = {'name': user, 'email': email, 'password': hashed, 'votes': []}
-    res,code=Users.add_user(user_input)
+    res,code=userdb.add_user(user_input)
     if code==200:
         session["email"] = email
         session["name"] = user
@@ -71,7 +71,7 @@ def logged_in():
             "name": name
         }
         message = json.dumps(logged_in_dict)
-        return redirect(url_for('logged_in'))
+        return redirect(url_for('product_feed'))
     else:
         return redirect(url_for('login'))
 
@@ -96,7 +96,7 @@ def login():
 
             return Response(status=403)
 
-        email_found = Users.get_user_by_email(email)
+        email_found = userdb.get_user_by_email(email)
         if email_found:
             email_val = email_found['email']
             password_check = email_found['password']

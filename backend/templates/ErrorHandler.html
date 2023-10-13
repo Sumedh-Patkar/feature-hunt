@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/ErrorHandler.css">
+    <title>Error Page - Feature Hunt</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="error">
+        <h1>Error</h1>
+        <p>Sorry, an error occurred. Please try again later.</p>
+    </div>
+</body>
+</html>
+
+<script>
+    // Your existing code for switching between pages, e.g., showing the dashboard, etc.
+
+    // Function to simulate an error (replace with actual error handling logic)
+    function simulateError() {
+        // For demonstration, let's simulate an error after a delay.
+        setTimeout(() => {
+            window.location.href = 'error.html'; // Redirect to the error page
+        }, 2000); // Delay for 2 seconds before showing the error page
+    }
+
+    // Example: Simulate an error after a button click
+    document.addEventListener('DOMContentLoaded', () => {
+        const errorButton = document.createElement('button');
+        errorButton.textContent = 'Simulate Error';
+        errorButton.addEventListener('click', simulateError);
+        document.body.appendChild(errorButton);
+    });
+</script>
