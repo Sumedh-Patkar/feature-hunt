@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/styles/Dashboard.css">
+    <link rel="stylesheet" href="Dashboard.css">
     <title>Feature Hunt</title>
 </head>
 <body>
@@ -25,28 +25,57 @@
     </div>
 
     <!-- Dashboard Page -->
-    <div class="dashboard" onload="() => {displayFeatureRequests()}">
+    <!-- <div class="dashboard">
         <header>
             <h1>Feature Hunt Dashboard</h1>
         </header>
-        <div class="feature-list">
+        <div class="feature-list"> -->
             <!-- Dynamic feature requests will be added here through JavaScript -->
+        <!--</div>
+    </div> -->
+
+    <div class="dashboard" style="display: none;">
+        <header>
+            <h1>Feature Hunt Dashboard</h1>
+        </header>
+
+        <div class="feature-list">
+            
+            <div class="feature-request">
+                <h2>Feature Request 1</h2>
+                <p>Description of the feature request.</p>
+                <div class="vote-button">
+                    <button>Upvote</button>
+                    <button>Downvote</button>
+                    <button>0 votes</button>
+                </div>
+            </div>
+
+            <div class="feature-request">
+                <h2>Feature Request 2</h2>
+                <p>Another feature description.</p>
+                <div class="vote-button">
+                    <button>Upvote</button>
+                    <button>Downvote</button>
+                    <button>0 votes</button>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- <script src="script.js"></script> -->
 </body>
 </html>
 
-<script>
-    //load data from server by calling api
-    
+<!-- <script>
+    // Sample feature data (you can load data dynamically from a server)
+const featureData = [
+    { title: "Feature Request 1", description: "Description of the feature request.", votes: 0 },
+    { title: "Feature Request 2", description: "Another feature description.", votes: 0 }
+];
+
+// Function to display feature requests in the dashboard
 function displayFeatureRequests() {
-    let api_url= "http://localhost:5000/getproducts";
-    console.log(api_url);
-    fetch(api_url)
-    .then(response => response.json())
-    .then(json => {
-        console.log(json);
-    })
     const featureList = document.querySelector('.feature-list');
     featureList.innerHTML = '';
 
@@ -105,6 +134,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.appendChild(startButton);
 });
 
-</script>
+</script> -->
 
 
