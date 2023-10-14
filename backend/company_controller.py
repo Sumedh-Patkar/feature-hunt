@@ -1,10 +1,12 @@
 # pylint: disable=wrong-import-position,pointless-string-statement,undefined-variable,line-too-long
 
 from flask import jsonify
-from flask import request,render_template
+from flask import request,render_template,session,redirect,url_for
 from app import app
 from company import Company
+from users import Users
 
+userdb=Users()
 companydb = Company()
 
 #################################################################################
@@ -18,17 +20,20 @@ companydb = Company()
 #################################################################################
 @app.route("/addcompany", methods=['Post','GET'])
 def add_company():
+    if 'email' not in session:
+        return redirect(url_for('login'))
     if request.method == 'POST':
         company_name = request.form.get("name")
         company_description = request.form.get("description")
         tags = request.form.get("tags").split(',')
 
         company_input = {'name': company_name, 'description': company_description,
-                            'tags': tags,'views':0,'products':[]}
+                            'tags': tags,'views':0,'products':[],"created_by":session['userid']}
 
 
         res=companydb.add_company(company_input)
-        return jsonify(success=res)
+        userdb.add_company(session['userid'],res['CompanyID'])
+        return redirect(url_for('product_feed'))
     else:
         return render_template("companyform.html")
 

@@ -27,7 +27,10 @@ def signup():
     email = request.form.get("email")
     password = request.form.get("password")
     email_found = userdb.get_user_by_email(email)
-    if email_found:
+    print(email_found)
+    
+
+    if email_found!='null':
         error_dict = {
             "code": 409,
             "message": "This email already is already registered.",
@@ -37,7 +40,7 @@ def signup():
         return message
 
     hashed = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
-    user_input = {'name': user, 'email': email, 'password': hashed, 'votes': []}
+    user_input = {'name': user, 'email': email, 'password': hashed, 'votes': [],'products':[],'companies':[]}
     res,code=userdb.add_user(user_input)
     if code==200:
         session["email"] = email
@@ -65,12 +68,6 @@ def logged_in():
         email = session["email"]
         name = session["name"]
 
-        logged_in_dict = {
-            "code": 200,
-            "email": email,
-            "name": name
-        }
-        message = json.dumps(logged_in_dict)
         return redirect(url_for('product_feed'))
     else:
         return redirect(url_for('login'))
@@ -86,10 +83,9 @@ def logged_in():
 @app.route("/login", methods=["POST", "GET"])
 def login():
     if 'email' in session:
-        return redirect(url_for('logged_in'))
+        return redirect(url_for('product_feed'))
     if request.method == "POST":
         email = request.form.get("email", None)
-        print(email, flush=True)
         password = request.form.get("password", None)
 
         if password is None or email is None:
@@ -97,7 +93,8 @@ def login():
             return Response(status=403)
 
         email_found = userdb.get_user_by_email(email)
-        if email_found:
+        print(email_found)
+        if email_found!="null":
             email_val = email_found['email']
             password_check = email_found['password']
             name = email_found['name']
@@ -105,7 +102,9 @@ def login():
             if bcrypt.checkpw(password.encode('utf-8'), password_check):
                 session["email"] = email_val
                 session["name"] = name
-                return redirect(url_for('logged_in'))
+                session['userid']=email_found['_id']
+                print("Logged in successfully!")
+                return redirect(url_for('product_feed'))
             else:
                 #return html that the password was incorrect and a redirect link to the login page
                 return '<p>Invalid Password!. <a href="http://localhost:5000/login">Login again</a></p>'

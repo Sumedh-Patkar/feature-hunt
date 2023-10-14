@@ -23,7 +23,7 @@ class Product:
     
     def add_product(self,product_input):
         x=self.db.insert_one(product_input)
-        return jsonify({'ProductID': str(x.inserted_id), 'message': 'Product added successfully'}), 200
+        return {'ProductID': str(x.inserted_id), 'message': 'Product added successfully'}
     
     def delete_product(self,product_name):
         db_response = self.db.delete_one({'name': product_name})
@@ -56,6 +56,14 @@ class Product:
     
     def remove_vote(self,product_id):
         db_response = self.db.update_one({'_id': ObjectId(product_id)},{'$inc': {'votes': -1}})
+        if db_response.modified_count == 1:
+            response = {'ok': True, 'message': 'record updated'}
+        else:
+            response = {'ok': False, 'message': 'no record found'}
+        return jsonify(response), 200
+
+    def add_feature(self,product_id,feature):
+        db_response = self.db.update_one({'_id': ObjectId(product_id)},{'$push': {'features': feature}})
         if db_response.modified_count == 1:
             response = {'ok': True, 'message': 'record updated'}
         else:

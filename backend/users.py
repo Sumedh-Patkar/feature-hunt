@@ -8,7 +8,7 @@ from db_init import records
 
 
 class Users:
-    def __init__(self) -> None:
+    def __init__(self):
         self.db=records
     
     def get_users(self):
@@ -21,11 +21,9 @@ class Users:
     
     def get_user_by_email(self,email):
         data = self.db.find_one({'email': email})
-        print(data)
-        return data
+        return dumps(data)
     
     def add_user(self,user_input):
-        user_input['_id']=user_input['email']
         x=self.db.insert_one(user_input)
         print(x.inserted_id)
         return {'UserID': str(x.inserted_id), 'message': 'User added successfully'}, 200
@@ -56,4 +54,22 @@ class Users:
             response = {'ok': True, 'message': 'vote removed'}
         else:
             response = {'ok': False, 'message': 'vote not removed'}
+        return jsonify(response), 200
+    
+    def add_product(self,user_id,product_id):
+        db_response = self.db.update_one({'_id': ObjectId(user_id)},{'$push': {'products': product_id}})
+        
+        if db_response.modified_count == 1:
+            response = {'ok': True, 'message': 'product added'}
+        else:
+            response = {'ok': False, 'message': 'product not added'}
+        return jsonify(response), 200
+    
+    def add_company(self,user_id,company_id):
+        db_response = self.db.update_one({'_id': ObjectId(user_id)},{'$push': {'companies': company_id}})
+        
+        if db_response.modified_count == 1:
+            response = {'ok': True, 'message': 'company added'}
+        else:
+            response = {'ok': False, 'message': 'company not added'}
         return jsonify(response), 200
