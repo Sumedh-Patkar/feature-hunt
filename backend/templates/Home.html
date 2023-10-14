@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/styles/Home.css">
+    <link rel="stylesheet" href="Home.css">
     <title>Feature Hunt</title>
 </head>
 <body>
     <header>
         <nav>
             <ul class="navbar">
-                <li><a href="{{url_for('home')}}" id="homeLink">Home</a></li>
-                <li><a href="{{url_for('login')}}" id="loginLink">Login</a></li>
-                <li><a href="{{url_for('signup')}}" id="signupLink">Sign Up</a></li>
-                <li><a href="{{url_for('feed')}}" id="signupLink">Feed</a></li>
+                <li><a href="#" id="homeLink">Home</a></li>
+                <li><a href="#" id="loginLink">Login</a></li>
+                <li><a href="#" id="signupLink">Sign Up</a></li>
+                <li><a href="ErrorHandler.html" id="errorHandler">Error</a></li>
+                <li><a href="Dashboard.html" id="signupLink">Dashboard</a></li>
             </ul>
         </nav>
     </header>
@@ -26,15 +27,17 @@
     </div>
 
     <!-- Dashboard Page -->
-    <div class="dashboard">
+    <div class="dashboard" style="display: none;">
         <h1>Feature Hunt Dashboard</h1>
         <div class="feature-list">
             <!-- Dynamic feature requests will be added here through JavaScript -->
         </div>
     </div>
+
+    <!-- <script src="script.js"></script> -->
 </body>
 </html>
-
+<!-- 
 <script>
     // Sample feature data (you can load data dynamically from a server)
 const featureData = [
@@ -113,4 +116,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-</script>
+</script> -->
