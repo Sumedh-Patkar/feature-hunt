@@ -4,7 +4,9 @@ from flask import jsonify
 from flask import request,render_template,session,redirect,url_for
 from app import app
 from products import Product
+from users import Users
 
+userdb=Users()
 productdb = Product()
 
 #################################################################################
@@ -16,7 +18,7 @@ productdb = Product()
 ##       Outputs:
 ##           - Returns true or false if new project is able to be added
 #################################################################################
-@app.route("/addproduct", methods=['Post','GET'])
+@app.route("/addproduct", methods=['POST','GET'])
 def add_product():
     if 'userid' not in session:
         return redirect(url_for('login'))
@@ -26,10 +28,11 @@ def add_product():
         tags = request.form.get("tags").split(',')
 
         product_input = {'name': product_name, 'description': product_description,
-                            'tags': tags, 'features': [],'votes':0,'views':0,'created_by':session['userid']}
+                            'tags': tags, 'features': [],'votes':0,'views':0,'created_by':session['userid'],'features':[]}
 
 
         res=productdb.add_product(product_input)
+        userdb.add_product(session['userid'],res['ProductID'])
         return redirect(url_for('product_feed'))
     else:
         return render_template("productform.html")
@@ -66,15 +69,31 @@ def add_view(product_id):
 
 @app.route('/feed', methods=['GET'])
 def product_feed():
-    if 'userid' not in session:
+    if 'email' not in session:
         return redirect(url_for('login'))
     
     products=productdb.get_products()
     return render_template('productfeed.html')
 
 
+#TODO: Fetch Product from backend
 @app.route('/viewproduct/<product_id>', methods=['GET'])
 def view_product(product_id):
     if 'userid' not in session:
         return redirect(url_for('login'))
     return render_template('productpage.html')
+
+
+@app.route("/suggestfeature/<product_id>", methods=['GET','POST'])
+def suggest_feature(product_id):
+    if 'userid' not in session:
+        return redirect(url_for('login'))
+    if request.method == 'POST':
+        feature_name = request.form.get("name")
+        feature_description = request.form.get("description")
+        feature_input = {'name': feature_name, 'description': feature_description,
+                            'votes':0,'product_id':product_id}
+        res=productdb.add_feature(product_id,feature_input)
+        return redirect(url_for('view_product',product_id=product_id))
+    else:
+        return render_template("featureform.html",product_id=product_id)
