@@ -5,7 +5,9 @@ from flask import request,render_template,session,redirect,url_for
 from app import app
 from company import Company
 from users import Users
+from products import Product
 
+productdb=Product()
 userdb=Users()
 companydb = Company()
 
@@ -49,12 +51,11 @@ def delete_company(company_name):
     res=companydb.delete_company(company_name)
     return res
 
-@app.route('/companyfeed', methods=['GET'])
-def company_feed():
-    return render_template('companyfeed.html')
-
 @app.route('/company/<company_id>', methods=['GET'])
 def company(company_id):
     data= companydb.get_company(company_id)
-    print(data)
-    return render_template('CompanyPage.html',data=data)
+    product_list=[]
+    for product in data['products']:
+        product_list.append(productdb.get_product(product['product_id']))
+    return data,product_list
+    return render_template('CompanyPage.html',data=data,product_list=product_list)

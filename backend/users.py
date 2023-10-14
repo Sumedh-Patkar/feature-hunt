@@ -13,15 +13,17 @@ class Users:
     
     def get_users(self):
         data = self.db.find()
-        return dumps(data)
+        return data
     
     def get_user(self,user_id):
         data = self.db.find_one({'_id': ObjectId(user_id)})
-        return dumps(data)
+        data['_id']=str(data['_id'])
+        return data
     
     def get_user_by_email(self,email):
         data = self.db.find_one({'email': email})
-        return dumps(data)
+        data['_id']=str(data['_id'])
+        return data
     
     def add_user(self,user_input):
         x=self.db.insert_one(user_input)
