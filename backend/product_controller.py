@@ -23,8 +23,8 @@ def add_product():
     if 'userid' not in session:
         return redirect(url_for('login'))
     if request.method == 'POST':
-        product_name = request.form.get("productName")
-        product_description = request.form.get("productDescription")
+        product_name = request.form.get("name")
+        product_description = request.form.get("description")
         tags = request.form.get("tags").split(',')
 
         product_input = {'name': product_name, 'description': product_description,
@@ -47,6 +47,7 @@ def get_products():
 @app.route("/getProduct/<product_id>", methods=['GET'])
 def get_product(product_id):
     res=productdb.get_product(product_id)
+    print(res)
     return res
 
 
@@ -65,6 +66,16 @@ def add_view(product_id):
     res=productdb.add_view(product_id)
     return res
 
+@app.route("/addVote/<product_id>", methods=['GET'])
+def add_vote(product_id):
+    res=productdb.add_vote(product_id)
+    return res
+
+
+@app.route("/removeVote/<product_id>", methods=['GET'])
+def remove_vote(product_id):
+    res=productdb.remove_vote(product_id)
+    return res
 
 
 @app.route('/feed', methods=['GET'])
@@ -73,7 +84,7 @@ def product_feed():
         return redirect(url_for('login'))
     
     products=productdb.get_products()
-    return render_template('productfeed.html')
+    return render_template('productfeed.html',products=products)
 
 
 #TODO: Fetch Product from backend

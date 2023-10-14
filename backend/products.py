@@ -15,10 +15,16 @@ class Product:
     def get_products(self):
         #get timestamp sorted products
         data = self.db.find().sort('timestamp', -1)
-        return dumps(data)
-    
+        product_data=[]
+        for product in data:
+            product['_id']=str(product['_id'])
+            product_data.append(product)
+            
+        return product_data
+        
     def get_product(self,product_id):
         data = self.db.find_one({'_id': ObjectId(product_id)})
+        data['_id']=str(data['_id'])
         return data
     
     def add_product(self,product_input):
