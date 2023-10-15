@@ -75,3 +75,8 @@ class Users:
         else:
             response = {'ok': False, 'message': 'company not added'}
         return jsonify(response), 200
+    
+    def get_user_companies(self,user_id):
+        data = self.db.find_one({'_id': ObjectId(user_id)})
+        data['_id']=str(data['_id'])
+        return data['companies']

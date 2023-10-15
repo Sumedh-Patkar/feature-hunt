@@ -26,7 +26,7 @@ def add_product():
         product_name = request.form.get("name")
         product_description = request.form.get("description")
         tags = request.form.get("tags").split(',')
-
+        
         product_input = {'name': product_name, 'description': product_description,
                             'tags': tags, 'features': [],'votes':0,'views':0,'created_by':session['userid'],'features':[]}
 
@@ -47,7 +47,7 @@ def get_products():
 @app.route("/getProduct/<product_id>", methods=['GET'])
 def get_product(product_id):
     res=productdb.get_product(product_id)
-    print(res)
+    print(type(res))
     return res
 
 
@@ -69,19 +69,19 @@ def add_view(product_id):
 @app.route("/addVote/<product_id>", methods=['GET'])
 def add_vote(product_id):
     res=productdb.add_vote(product_id)
-    return res
+    return redirect(url_for('product_feed'))
 
 
 @app.route("/removeVote/<product_id>", methods=['GET'])
 def remove_vote(product_id):
     res=productdb.remove_vote(product_id)
-    return res
+    return redirect(url_for('product_feed'))
 
 
 @app.route('/feed', methods=['GET'])
 def product_feed():
-    if 'email' not in session:
-        return redirect(url_for('login'))
+    #if 'email' not in session:
+     #   return redirect(url_for('login'))
     
     products=productdb.get_products()
     return render_template('productfeed.html',products=products)
@@ -90,20 +90,23 @@ def product_feed():
 #TODO: Fetch Product from backend
 @app.route('/viewproduct/<product_id>', methods=['GET'])
 def view_product(product_id):
-    if 'userid' not in session:
-        return redirect(url_for('login'))
-    return render_template('productpage.html')
+    #if 'userid' not in session:
+     #   return redirect(url_for('login'))
+    product=productdb.get_product(product_id)
+    print(product,type(product))
+    return render_template('productpage.html',product=product)
+    
 
 
 @app.route("/suggestfeature/<product_id>", methods=['GET','POST'])
 def suggest_feature(product_id):
-    if 'userid' not in session:
-        return redirect(url_for('login'))
+    #if 'userid' not in session:
+     #   return redirect(url_for('login'))
     if request.method == 'POST':
         feature_name = request.form.get("name")
         feature_description = request.form.get("description")
         feature_input = {'name': feature_name, 'description': feature_description,
-                            'votes':0,'product_id':product_id}
+                            'votes':0}
         res=productdb.add_feature(product_id,feature_input)
         return redirect(url_for('view_product',product_id=product_id))
     else:

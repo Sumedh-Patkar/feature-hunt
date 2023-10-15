@@ -24,9 +24,9 @@
                 <h2>{{ product.name}}</h2>
                 <p>{{ product.description }}</p>
                 <div class="vote-button">
-                    <button >Upvote</button>
-                    <button >Downvote</button>
-                    <button>Learn More</button>
+                    <button><a href="{{url_for('add_vote',product_id=product._id)}}">Upvote</a></button>
+                    <button><a href="{{url_for('remove_vote',product_id=product._id)}}">DownVote</a></button>
+                    <button><a href="{{url_for('view_product',product_id=product._id)}}">Learn More</a></button>
                     <span>{{ product.votes }} votes</span>
                 </div> 
         </div>
