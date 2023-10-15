@@ -92,8 +92,8 @@ def product_feed():
 def view_product(product_id):
     #if 'userid' not in session:
      #   return redirect(url_for('login'))
+    productdb.add_view(product_id)
     product=productdb.get_product(product_id)
-    print(product,type(product))
     return render_template('productpage.html',product=product)
     
 
