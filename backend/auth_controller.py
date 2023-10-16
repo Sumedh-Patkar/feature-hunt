@@ -30,7 +30,7 @@ def signup():
     print(email_found)
     
 
-    if email_found!='null':
+    if email_found:
         error_dict = {
             "code": 409,
             "message": "This email already is already registered.",
@@ -63,11 +63,7 @@ redirect_url = 'http://localhost:5000/'
 #################################################################################
 @app.route('/logged_in', methods=["POST", "GET"])
 def logged_in():
-    print(session)
     if "email" in session:
-        email = session["email"]
-        name = session["name"]
-
         return redirect(url_for('product_feed'))
     else:
         return redirect(url_for('login'))

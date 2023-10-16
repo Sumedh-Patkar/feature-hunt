@@ -43,3 +43,4 @@ class Company:
         self.db.save(company)
         return True
     
+    

@@ -5,7 +5,9 @@ from flask import request,render_template,session,redirect,url_for
 from app import app
 from products import Product
 from users import Users
+from company import Company
 
+companydb=Company()
 userdb=Users()
 productdb = Product()
 
@@ -26,16 +28,25 @@ def add_product():
         product_name = request.form.get("name")
         product_description = request.form.get("description")
         tags = request.form.get("tags").split(',')
-        
+        company_id=request.form.get("company")
+        get_company=companydb.get_company(company_id)
         product_input = {'name': product_name, 'description': product_description,
-                            'tags': tags, 'features': [],'votes':0,'views':0,'created_by':session['userid'],'features':[]}
+                            'tags': tags, 'features': [],'votes':0,'views':0,'created_by':session['userid'],'features':[],'company_id':company_id,'company_name':get_company['name']}
 
 
         res=productdb.add_product(product_input)
+        companydb.add_product_to_company(company_id,res['ProductID'])
         userdb.add_product(session['userid'],res['ProductID'])
         return redirect(url_for('product_feed'))
     else:
-        return render_template("productform.html")
+        user=userdb.get_user(session['userid'])
+        user_companies=[]
+        for company_id in user['companies']:
+            user_companies.append([company_id,companydb.get_company(company_id)['name']])
+
+
+
+        return render_template("productform.html",user_companies=user_companies)
 
 
 
