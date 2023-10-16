@@ -1,11 +1,12 @@
 /* Reset some default styles */
 body, h1, p {
+    font-family: Garamond, serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333;
+    background-color: #567191;
     color: #fff;
     padding: 10px 0;
 }
@@ -23,9 +24,9 @@ header {
 .navbar a {
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 30px;
+    text-align: center;
 }
-
 
 /* Basic styling for the pages */
 .home, .dashboard {
@@ -33,28 +34,35 @@ header {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
+    justify-content: center; /* Center align content horizontally */
 }
 
 header {
-    background-color: #333;
+    background-color: #567191;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
+    font-size: 25px;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 50px;
 }
 
 .feature-list {
+    display: flex; /* Make feature list items flex containers */
+    flex-wrap: wrap; /* Allow items to wrap to the next row when necessary */
     margin-top: 20px;
+    justify-content: center; /* Center align content horizontally */
 }
 
 .feature-request {
     background-color: #f5f5f5;
     border: 1px solid #ddd;
-    margin-bottom: 10px;
-    padding: 10px;
+    margin-right: 50px; /* Add margin to separate boxes horizontally */
+    padding: 50px;
+    width: 300px; /* Set a fixed width for the boxes */
+    border-radius: 5px; /* Add rounded corners */
 }
 
 .vote-button {
@@ -64,10 +72,15 @@ h1 {
 }
 
 button {
-    background-color: #007bff;
+    background-color: #567191;
     color: #fff;
     padding: 5px 10px;
     border: none;
     cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px; /* Add rounded corners to the buttons */
 }
 
+.feature-request h3 {
+    color: #567191;
+}
