@@ -89,8 +89,7 @@ def login():
             return Response(status=403)
 
         email_found = userdb.get_user_by_email(email)
-        print(email_found,type(email_found))
-
+        
         if email_found!="null":
             email_val = email_found['email']
             password_check = email_found['password']
@@ -101,7 +100,6 @@ def login():
                 session["name"] = name
                 session['userid']=email_found['_id']
                 print("Logged in successfully!")
-                print(session)
                 return redirect(url_for('product_feed'))
             else:
                 #return html that the password was incorrect and a redirect link to the login page

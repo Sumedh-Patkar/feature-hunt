@@ -3,40 +3,24 @@
 <head>
   <link rel="stylesheet" type="text/css" href="../static/styles/CompanyPage.css">
 </head>
+<title>{{data['name']}}'s FeatureHunt Page</title>
 <body>
   <header>
-    <h1>Welcome to Feature Hunt</h1>
-    <h2>Google</h2>
-    <p>Discover amazing products and their features</p>
+    <h2>{{data['name']}}'s FeatureHunt Page</h2>
+    <p>About the company: {{data['description']}}</p>
   </header>
   <main>
     <section id="product-list">
       <!-- Product cards will be manually pre-filled here -->
+      {% for product in product_list %}
       <div class="card">
-        <h2>Product 1</h2>
-        <p>Feature 1, Feature 2, Feature 3</p>
-        <button>Learn More</button>
+        <a href="{{url_for('view_product',product_id=product._id)}}" style="text-decoration: none;color: black;">
+          <h2>{{ product.name }}</h2>
+          <p>Views: {{product.views}}</p>
+          <p>Votes: {{product.votes}}</p>
+        </a>
       </div>
-      <div class="card">
-        <h2>Product 2</h2>
-        <p>Feature 4, Feature 5, Feature 6</p>
-        <button>Learn More</button>
-      </div>
-      <div class="card">
-        <h2>Product 3</h2>
-        <p>Feature 7, Feature 8, Feature 9</p>
-        <button>Learn More</button>
-      </div>
-      <div class="card">
-        <h2>Product 4</h2>
-        <p>Feature 10, Feature 11, Feature 12</p>
-        <button>Learn More</button>
-      </div>
-      <div class="card">
-        <h2>Product 5</h2>
-        <p>Feature 13, Feature 14, Feature 15</p>
-        <button>Learn More</button>
-      </div>
+      {% endfor %}
       <!-- Add more product cards here as needed -->
     </section>
   </main>

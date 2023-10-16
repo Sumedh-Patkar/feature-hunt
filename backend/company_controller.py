@@ -56,7 +56,6 @@ def view_company(company_id):
     data= companydb.get_company(company_id)
     product_list=[]
     for product in data['products']:
-        print(product)
         product_list.append(productdb.get_product(product))
-    print(product_list)
+    print(product_list,data)
     return render_template('CompanyPage.html',data=data,product_list=product_list)
