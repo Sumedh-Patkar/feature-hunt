@@ -52,10 +52,11 @@ def delete_company(company_name):
     return res
 
 @app.route('/company/<company_id>', methods=['GET'])
-def company(company_id):
+def view_company(company_id):
     data= companydb.get_company(company_id)
     product_list=[]
     for product in data['products']:
-        product_list.append(productdb.get_product(product['product_id']))
-    return data,product_list
+        print(product)
+        product_list.append(productdb.get_product(product))
+    print(product_list)
     return render_template('CompanyPage.html',data=data,product_list=product_list)

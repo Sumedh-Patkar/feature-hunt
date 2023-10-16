@@ -22,7 +22,8 @@ class Users:
     
     def get_user_by_email(self,email):
         data = self.db.find_one({'email': email})
-        data['_id']=str(data['_id'])
+        if data:
+            data['_id']=str(data['_id'])
         return data
     
     def add_user(self,user_input):

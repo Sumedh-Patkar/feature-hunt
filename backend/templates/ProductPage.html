@@ -13,6 +13,7 @@
     <section id="product-details">
       <div class="card">
         <h2>Product name - {{ product.name }}</h2>
+        <p>Created By - <a href="{{url_for('view_company',company_id=product.company_id)}}" style="text-decoration: none;">{{product.company_name}}</a></p>
         <p>Product Description - {{ product.description }}</p>
         
         <p>Tags - {{ ",".join(product['tags'])}}</p> 

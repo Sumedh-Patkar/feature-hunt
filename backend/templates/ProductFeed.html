@@ -20,18 +20,20 @@
         
         <div class="feature-list">
             {% for product in products %}
+            <a href="{{url_for('view_product',product_id=product._id)}}" style="text-decoration: none;">
             <div class="feature-request">
                 <h2>{{ product.name}}</h2>
-                <p>{{ product.description }}</p>
+                <p>Description: {{ product.description }}</p>
                 <div class="vote-button">
                     <button><a href="{{url_for('add_vote',product_id=product._id)}}">Upvote</a></button>
                     <button><a href="{{url_for('remove_vote',product_id=product._id)}}">DownVote</a></button>
-                    <button><a href="{{url_for('view_product',product_id=product._id)}}">Learn More</a></button>
-                    <span>{{ product.votes }} votes</span>
+                    <span>Votes: {{ product.votes }}</span>
+                    <span>Views: {{ product.views }} </span>
                 </div> 
+            </div>
+            </a>
+            {% endfor %}
         </div>
-        {% endfor %}
-    </div>
 
     
 </body>
