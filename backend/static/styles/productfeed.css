@@ -70,15 +70,24 @@ h1 {
     justify-content: space-between;
     align-items: center;
 }
-
-button {
-    background-color: #567191;
-    color: #fff;
-    padding: 5px 10px;
+.vote-button>button{
     border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
     cursor: pointer;
-    margin-top: 10px;
-    border-radius: 10px; /* Add rounded corners to the buttons */
+}
+
+#upvote_button {
+    background-color: #4CAF50; /* Green */
+}
+
+#downvote_button {
+    background-color: #f44336; /* Red */
 }
 
 .feature-request h3 {
