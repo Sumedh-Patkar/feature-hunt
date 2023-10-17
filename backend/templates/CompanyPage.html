@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../static/styles/CompanyPage.css">
+</head>
+<title>{{data['name']}}'s FeatureHunt Page</title>
+<style>
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #04AA6D;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+</style>
+<body>
+  <header>
+    <ul>
+      <li><a href="{{url_for('logout')}}">Logout</a></li>
+      <li><a href="{{url_for('add_product')}}">Create Product</a></li>
+      <li><a href="{{url_for('add_company')}}">Create Company</a></li>
+      <li><a href="{{url_for('product_feed')}}">Feed</a></li>
+    </ul>
+    
+  </header>
+  <main>
+    <h2>{{data['name']}}'s FeatureHunt Page</h2>
+    <p>About the company: {{data['description']}}</p>
+    <section id="product-list">
+      <!-- Product cards will be manually pre-filled here -->
+      {% for product in product_list %}
+      <div class="card">
+        <a href="{{url_for('view_product',product_id=product._id)}}" style="text-decoration: none;color: black;">
+          <h2>{{ product.name }}</h2>
+          <p>Views: {{product.views}}</p>
+          <p>Votes: {{product.votes}}</p>
+        </a>
+      </div>
+      {% endfor %}
+      <!-- Add more product cards here as needed -->
+    </section>
+  </main>
+  <!-- <script src="script.js"></script> -->
+</body>
+</html>
+
+<!-- <script>
+    const products = [
+    { name: "Product 1", features: "Feature 1, Feature 2, Feature 3" },
+    { name: "Product 2", features: "Feature 4, Feature 5, Feature 6" },
+    { name: "Product 3", features: "Feature 7, Feature 8, Feature 9" },
+    // Add more products here
+    ];
+
+    const productList = document.getElementById("product-list");
+
+    function createProductCard(product) {
+    const card = document.createElement("div");
+    card.classList.add("card");
+    
+    card.innerHTML = `
+        <h2>${product.name}</h2>
+        <p>${product.features}</p>
+        <button>Learn More</button>
+    `;
+
+    productList.appendChild(card);
+    }
+
+    products.forEach((product) => {
+    createProductCard(product);
+    });
+</script> -->
