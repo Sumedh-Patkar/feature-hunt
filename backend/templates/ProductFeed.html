@@ -30,9 +30,8 @@
     background-color: #04AA6D;
   }
   
-  .active {
-    background-color: #04AA6D;
-  }</style>
+    
+</style>
 <body>
     <header>
         <ul>
@@ -55,11 +54,11 @@
                 <h2>{{ product.name}}</h2>
                 <p>Description: {{ product.description }}</p>
                 <div class="vote-button">
-                    <button><a href="{{url_for('add_vote',product_id=product._id)}}">Upvote</a></button>
-                    <button><a href="{{url_for('remove_vote',product_id=product._id)}}">DownVote</a></button>
-                    <span>Votes: {{ product.votes }}</span>
-                    <span>Views: {{ product.views }} </span>
-                </div> 
+                    <button id="upvote_button"><a href="{{url_for('add_vote',product_id=product._id)}}" style="text-decoration: none;">Upvote</a></button>
+                    <button id="downvote_button"><a href="{{url_for('remove_vote',product_id=product._id)}}" style="text-decoration: none;">DownVote</a></button>
+                  </div> 
+                <span>Votes: {{ product.votes }}</span>
+                <span>Views: {{ product.views }} </span>
             </div>
             </a>
             {% endfor %}
