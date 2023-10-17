@@ -1,0 +1,70 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: Garamond, serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #567191;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  font-size: 25px;
+}
+
+main {
+  max-width: 800px; /* Limit content width for readability */
+  margin: 20px auto; /* Center content horizontally */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+}
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main>ul {
+  list-style: none;
+  padding: 0;
+}
+
+main>li {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+main>li h3 {
+  font-size: 20px;
+  margin: 0;
+  color: #333; /* Darken heading text */
+}
+
+main>li p {
+  font-size: 14px;
+  margin: 10px 0;
+  color: #666; /* Slightly darken content text */
+}
+
+/* Style links within the list items */
+main>li a {
+  text-decoration: none;
+  color: #567191; /* Use the header color for links */
+}
+
+main>li a:hover {
+  text-decoration: underline;
+}

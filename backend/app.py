@@ -10,6 +10,7 @@ from auth_controller import *
 from products import *
 from product_controller import *
 from db_init import db
+from company_controller import *
 app.secret_key = "testing"
 CORS(app)
 
