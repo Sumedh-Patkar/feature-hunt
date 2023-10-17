@@ -10,7 +10,6 @@
 [![Docker](https://img.shields.io/badge/Containerized-Docker-blue)](https://docs.docker.com/compose/)
 [![GitHub issues](https://img.shields.io/github/issues/CSC510-Group-25/feature-hunt)](https://github.com/CSC510-Group-25/feature-hunt/issues)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/CSC510-Group-25/feature-hunt?color=red)](https://github.com/CSC510-Group-25/feature-hunt/issues?q=is%3Aissue+is%3Aclosed)
-[![Tests](https://github.com/CSC510-Group-25/feature-hunt/actions/workflows/nodejs_tests.yml/badge.svg)](https://github.com/CSC510-Group-25/feature-hunt/actions/workflows/nodejs_tests.yml)
 [![Coverage Status](https://coveralls.io/repos/github/Ashnayak/feature-hunt/badge.svg)](https://coveralls.io/github/Ashnayak/feature-hunt)
 [![CodeQL](https://github.com/CSC510-Group-25/feature-hunt/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/CSC510-Group-25/feature-hunt/actions/workflows/codeql-analysis.yml)
 ![Pylint](https://img.shields.io/badge/Pylint-Passing-brightgreen.svg)
