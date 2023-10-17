@@ -4,12 +4,48 @@
   <link rel="stylesheet" type="text/css" href="../static/styles/CompanyPage.css">
 </head>
 <title>{{data['name']}}'s FeatureHunt Page</title>
+<style>
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #04AA6D;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+</style>
 <body>
   <header>
-    <h2>{{data['name']}}'s FeatureHunt Page</h2>
-    <p>About the company: {{data['description']}}</p>
+    <ul>
+      <li><a href="{{url_for('logout')}}">Logout</a></li>
+      <li><a href="{{url_for('add_product')}}">Create Product</a></li>
+      <li><a href="{{url_for('add_company')}}">Create Company</a></li>
+      <li><a href="{{url_for('product_feed')}}">Feed</a></li>
+    </ul>
+    
   </header>
   <main>
+    <h2>{{data['name']}}'s FeatureHunt Page</h2>
+    <p>About the company: {{data['description']}}</p>
     <section id="product-list">
       <!-- Product cards will be manually pre-filled here -->
       {% for product in product_list %}

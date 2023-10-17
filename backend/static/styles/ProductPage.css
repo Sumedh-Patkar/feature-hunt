@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-body {
+main {
   font-family: Garamond, serif;
   background-color: #f4f4f4;
 }
@@ -34,12 +34,12 @@ h2 {
   margin-bottom: 20px;
 }
 
-ul {
+main>ul {
   list-style: none;
   padding: 0;
 }
 
-li {
+main>li {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 20px 0;
@@ -47,24 +47,24 @@ li {
   border-radius: 5px;
 }
 
-li h3 {
+main>li h3 {
   font-size: 20px;
   margin: 0;
   color: #333; /* Darken heading text */
 }
 
-li p {
+main>li p {
   font-size: 14px;
   margin: 10px 0;
   color: #666; /* Slightly darken content text */
 }
 
 /* Style links within the list items */
-li a {
+main>li a {
   text-decoration: none;
   color: #567191; /* Use the header color for links */
 }
 
-li a:hover {
+main>li a:hover {
   text-decoration: underline;
 }

@@ -123,7 +123,9 @@ def login():
 @app.route("/logout", methods=["POST", "GET"])
 def logout():
     if "email" in session:
-        session.flush()
+        
+        #delete the entire session
+        session.clear()
         return redirect(url_for('login'))
     else:
         return redirect(url_for('login'))
