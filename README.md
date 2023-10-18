@@ -15,7 +15,7 @@
 ![Pylint](https://img.shields.io/badge/Pylint-Passing-brightgreen.svg)
 [![Netlify](https://img.shields.io/netlify/dbecc37c-c273-4b45-bfff-3fd33d20cae0)](https://feature-hunt-25.netlify.app/)
 
-## Project 2 Video 
+## Phase  project 2 Video 
 Here is the link to the video where we talk about the features we added in Phase 3 with a comparison to Phase 2.
 
 ??????? insert video link
@@ -38,9 +38,6 @@ https://user-images.githubusercontent.com/78971563/140450270-8782b2f8-3634-4bdc-
 The following technologies were used for the development of this project:  
 
 <p align="left">
-  <a href="https://www.reactjs.org" target="_blank">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="react" width="30" height="30"/>
-  </a>
   <a href="https://www.javascript.com" target="_blank"> 
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="js" width="30" height="30"/>
   </a> 
@@ -58,7 +55,6 @@ The following technologies were used for the development of this project:
   </a>
 </p>  
 
-React (P.S. we use hooks)  
 JavaScript  
 Python3  
 Flask  
@@ -66,9 +62,6 @@ MongoDB
 HTML  
 CSS  
 
-We have started using [MaterialUI] for styled components. 
-
-For more information, visit our [wiki page on tools, hooks, and services](https://github.com/CSC510-Group-25/feature-hunt/wiki/Tools,-Hooks,-Services).
 
 ## Preview
 
