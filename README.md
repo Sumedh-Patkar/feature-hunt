@@ -15,17 +15,14 @@
 ![Pylint](https://img.shields.io/badge/Pylint-Passing-brightgreen.svg)
 [![Netlify](https://img.shields.io/netlify/dbecc37c-c273-4b45-bfff-3fd33d20cae0)](https://feature-hunt-25.netlify.app/)
 
-## Phase 3 Video 
+## Project 2 Video 
 Here is the link to the video where we talk about the features we added in Phase 3 with a comparison to Phase 2.
 
-https://www.youtube.com/watch?v=o80gwSOqjs4
-
+??????? insert video link
 
 ## INTRODUCTION ⚡️
 
-Stop letting ideas slip through the cracks. Collect, analyze, and organize feedback and feature requests in your product's feedback board to make better product decisions.  
-  
-Feature Hunt is a platform that allows you to do just that. Users can share/vote/discuss feature requests and product owners can organize them to make better product decisions 🎯.
+Don't let brilliant ideas slip away! Harness the power of feedback and feature requests with our sleek product feedback board. It's the ultimate space where users can pitch, vote, and chat about the features they crave. Our secret sauce? Feature Hunt! This dynamic platform transforms user input into a goldmine of insights, giving product owners the tools to curate, prioritize, and turn those ideas into reality. Stay ahead in the innovation game—because great products are born from great conversations!
 
 ### Watch this short video to know more:
 
