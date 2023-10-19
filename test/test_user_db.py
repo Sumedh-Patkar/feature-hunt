@@ -1,5 +1,5 @@
 import pytest
-from ..app.users import Users  
+from app.users import Users  
 
 # Define test data and fixtures
 @pytest.fixture
