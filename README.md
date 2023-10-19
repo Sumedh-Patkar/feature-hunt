@@ -121,7 +121,7 @@ You can now create an account and mange the products you are a part of! This inc
 
 #### 1. Git clone the Repository using 
 ```
-git clone https://github.com/Ashnayak/feature-hunt.git
+git clone https://github.com/NidhayPancholi/feature-hunt
 ```
 #### 2. Run the following Commands
 ```
@@ -151,12 +151,12 @@ You will also see any lint errors in the console.
 
 ## Deployment
 
-This app has been deployed using Netlify and Heroku. Check it out [here!](https://feature-hunt-25.netlify.app/)
+This app has been deployed using Deta Space. Check it out [here!](https://featurehunt-1-v6614040.deta.app/feed)
 
 You can now run and test the project locally and in deployments. More info about our deplyments and switching between production and devlopment can be found in our [Wiki](https://github.com/CSC510-Group-25/feature-hunt/wiki/Deployment:-Heroku-and-Netlify)
 
 ## Contributions to the Project
-Please refer to the [Contributing.md](https://github.com/Ashnayak/feature-hunt/blob/main/CONTRIBUTING.md) if you want to contrbute to the Feature Hunt source code. Follow all the guidelines mentioned and raise a pull request for the developers to review before the code goes to the main source code.
+Please refer to the [Contributing.md](https://github.com/NidhayPancholi/feature-hunt/blob/development/CONTRIBUTING.md) if you want to contrbute to the Feature Hunt source code. Follow all the guidelines mentioned and raise a pull request for the developers to review before the code goes to the main source code.
 
 ## Future Scope
 We believe in the ability to add new features in any project (including our own). 
@@ -183,6 +183,7 @@ We believe in the ability to add new features in any project (including our own)
     <td align="center"><a href="https://github.com/snapcat/"><img src="https://avatars.githubusercontent.com/u/89357283?v=4" width="80px;" alt=""/><br /><sub><b>Leila Moran</b></sub></a><br /></td>
     <td align="center"><a href="https://www.github.com/shraddhamishra7"><img src="https://avatars.githubusercontent.com/u/7471821?v=4" width="80px;" alt=""/><br /><sub><b>Shraddha Mishra</b></sub></a><br /></td>
   </tr>
+  
   <tr>
      <td> Phase 3</td>
     <td align="center"><a href="https://github.com/surajdm123/"><img src="https://avatars.githubusercontent.com/u/42767118?v=4" width="100px;" alt=""/><br /><sub><b>Suraj Devatha</b></sub></a></td>
@@ -191,5 +192,6 @@ We believe in the ability to add new features in any project (including our own)
     <td align="center"><a href="https://github.com/Himanshuu-Gupta"><img src="https://avatars.githubusercontent.com/u/15701338?v=4" width="100px;" alt=""/><br /><sub><b>Himanshuu Gupta</b></sub></a><br /></td>
     <td align="center"><a href="https://github.com/ShreyanshPrajapati/"><img src="https://avatars.githubusercontent.com/u/13018358?v=4" width="100px;" alt=""/><br /><sub><b>Shreyansh Prajapati</b></sub></a><br /></td>
  </tr>
+ 
   
 </table>
