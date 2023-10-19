@@ -23,13 +23,26 @@ https://youtu.be/xwCHYNFJZXg
 
 ## INTRODUCTION ⚡️
 
-Stop letting ideas slip through the cracks. Collect, analyze, and organize feedback and feature requests in your product's feedback board to make better product decisions.  
-  
-Feature Hunt is a platform that allows you to do just that. Users can share/vote/discuss feature requests and product owners can organize them to make better product decisions 🎯.
+Eliminate the loss of valuable ideas and suggestions and seize control over the collection, assessment, and organization of feedback and feature proposals within your product's feedback platform to enhance your decision-making for product development.
+
+Introducing Feature Hunt: Your Ultimate Solution
+
+Feature Hunt provides the ideal solution for this mission. It empowers users to effortlessly submit, endorse, and participate in discussions surrounding feature requests. Simultaneously, product administrators can efficiently categorize and prioritize these submissions to strengthen their product development decisions.
+
+Key Technologies Used in This Project:
+
+Python
+JavaScript
+Flask
+MongoDB
+HTML
+CSS
+Get started today and make informed decisions for your product development by leveraging Feature Hunt. 🎯.
 
 ### Watch this short video to know more:
 
 https://user-images.githubusercontent.com/26930183/135515516-d84f3a28-6d8c-49de-8068-50748e2a76b0.mp4
+
 https://user-images.githubusercontent.com/42051115/140450152-61fcce18-c307-41bc-bfa4-92afe4fc1c40.mp4
 
 
