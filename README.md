@@ -18,7 +18,7 @@
 ## Phase 3 Video 
 Here is the link to the video where we talk about the features we added in Phase 3 with a comparison to Phase 2.
 
-https://www.youtube.com/watch?v=o80gwSOqjs4
+https://youtu.be/xwCHYNFJZXg
 
 
 ## INTRODUCTION ⚡️
