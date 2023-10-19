@@ -147,38 +147,21 @@ git clone https://github.com/Ashnayak/feature-hunt.git
 #### 2. Run the following Commands
 ```
 cd feature-hunt
+cd app
 ```
->Optional: In the project directory run `git config --local core.hooksPath hooks` to make sure you have access to the Git Hooks.
-Run the following commands in order:
-
-#### 3. `npm install`
-
-Installs the dependencies for the React App
-
-#### 4. `pip install -r backend/requirements.txt`
+#### 3. `pip install -r backend/requirements.txt`
 
 Installs the requirements for the Flask API
 
-#### 5. `yarn start`
+#### 4. `python app.py`
 
-Runs the frontend React app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Runs the Flask app in the development mode.\
+Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-To run backend flask api in development mode:  
- 
- export DB="mongodb+srv://bot:bot123@feature-hunt.6gqvj.mongodb.net/feature-hunt?retryWrites=true&w=majority"
 
- export ROOT_PATH="./"
-
-#### 6. `yarn start-api`
-
-Runs the backend flask API in development mode.\
-The API runs on [http://localhost:5000](http://localhost:5000).
-
-Requests made to [http://localhost:3000](http://localhost:3000) that don't exist on the react server are automatically forwarded to this API
 
 
 ## Connecting with a Database
