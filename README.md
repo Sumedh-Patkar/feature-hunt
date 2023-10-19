@@ -192,6 +192,13 @@ We believe in the ability to add new features in any project (including our own)
     <td align="center"><a href="https://github.com/Himanshuu-Gupta"><img src="https://avatars.githubusercontent.com/u/15701338?v=4" width="100px;" alt=""/><br /><sub><b>Himanshuu Gupta</b></sub></a><br /></td>
     <td align="center"><a href="https://github.com/ShreyanshPrajapati/"><img src="https://avatars.githubusercontent.com/u/13018358?v=4" width="100px;" alt=""/><br /><sub><b>Shreyansh Prajapati</b></sub></a><br /></td>
  </tr>
- 
+
+ <tr>
+     <td> Phase 4</td>
+    <td align="center"><a href="https://github.com/NidhayPancholi"><img src="https://avatars.githubusercontent.com/u/52347410?v=4" width="100px;" alt=""/><br /><sub><b>Nidhay Pancholi</b></sub></a></td>
+    <td align="center"><a href="https://github.com/AryanvGupta"><img src="https://avatars.githubusercontent.com/u/81721081?v=4" width="100px;" alt=""/><br /><sub><b>Aryan Gupta</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/Lagani21"><img src="https://avatars.githubusercontent.com/u/143046933?v=4" width="100px;" alt=""/><br /><sub><b>Lagani Patel</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/aditigvarma"><img src="https://avatars.githubusercontent.com/u/78954407?v=4" width="100px;" alt=""/><br /><sub><b>Aditi Verma</b></sub></a><br /></td>
+ </tr>
   
 </table>
