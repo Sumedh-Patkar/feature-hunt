@@ -29,15 +29,9 @@ Introducing Feature Hunt: Your Ultimate Solution
 
 Feature Hunt provides the ideal solution for this mission. It empowers users to effortlessly submit, endorse, and participate in discussions surrounding feature requests. Simultaneously, product administrators can efficiently categorize and prioritize these submissions to strengthen their product development decisions.
 
-Key Technologies Used in This Project:
+Key Technologies Used in This Project: Python, JavaScript, Flask, MongoDB, HTML, CSS.
 
-Python
-JavaScript
-Flask
-MongoDB
-HTML
-CSS
-Get started today and make informed decisions for your product development by leveraging Feature Hunt. 🎯.
+Get started today and make informed decisions for your product development by leveraging Feature Hunt 🎯.
 
 ### Watch this short video to know more:
 
