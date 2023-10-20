@@ -13,7 +13,6 @@
 [![Coverage Status](https://coveralls.io/repos/github/Ashnayak/feature-hunt/badge.svg)](https://coveralls.io/github/Ashnayak/feature-hunt)
 [![CodeQL](https://github.com/CSC510-Group-25/feature-hunt/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/CSC510-Group-25/feature-hunt/actions/workflows/codeql-analysis.yml)
 ![Pylint](https://img.shields.io/badge/Pylint-Passing-brightgreen.svg)
-[![Netlify](https://img.shields.io/netlify/dbecc37c-c273-4b45-bfff-3fd33d20cae0)](https://feature-hunt-25.netlify.app/)
 
 ## Phase 4 Video 
 Here is the link to the video where we talk about the features we added in Phase 4 with a comparison to Phase 3.
