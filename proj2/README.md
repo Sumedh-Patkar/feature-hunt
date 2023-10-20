@@ -31,8 +31,7 @@
 | Evidence that the whole team is using the same tools | 3 |  |
 | Evidence that the members of the team are working across multiple places in the code base | 2 |  |
 | Short release cycles | 3 |  |
-| Does your website and documentation provide a clear, high-level overview of your software? | 
-3 |  |
+| Does your website and documentation provide a clear, high-level overview of your software? | 3 |  |
 | Does your website and documentation clearly describe the type of user who should use your software? | 3 |  |
 | Do you publish case studies to show how your software has been used by yourself and others? | 3 |  |
 | Is the name of your project/software unique? | 2 |  |
