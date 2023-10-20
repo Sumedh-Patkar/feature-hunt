@@ -1,5 +1,7 @@
 # Project 2 Grading Rubric
 
+### Total Grade: 144
+
 | Factor | Score | Notes |
 | --- | --- | --- |
 | Video | 3 | Link: https://youtu.be/xwCHYNFJZXg |
