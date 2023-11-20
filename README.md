@@ -13,20 +13,30 @@
 [![Coverage Status](https://coveralls.io/repos/github/Ashnayak/feature-hunt/badge.svg)](https://coveralls.io/github/Ashnayak/feature-hunt)
 [![CodeQL](https://github.com/NidhayPancholi/feature-hunt/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/CSC510-Group-25/feature-hunt/actions/workflows/codeql-analysis.yml)
 ![Pylint](https://img.shields.io/badge/Pylint-Passing-brightgreen.svg)
-[![Netlify](https://img.shields.io/netlify/dbecc37c-c273-4b45-bfff-3fd33d20cae0)](https://feature-hunt-25.netlify.app/)
 
-## Phase  project 2 Video 
-Here is the link to the video where we talk about the features we added in Phase 3 with a comparison to Phase 2.
 
-??????? insert video link
+## Phase 4 Video 
+Here is the link to the video where we talk about the features we added in Phase 4 with a comparison to Phase 3.
+
+https://youtu.be/xwCHYNFJZXg
+
 
 ## INTRODUCTION ⚡️
 
-Don't let brilliant ideas slip away! Harness the power of feedback and feature requests with our sleek product feedback board. It's the ultimate space where users can pitch, vote, and chat about the features they crave. Our secret sauce? Feature Hunt! This dynamic platform transforms user input into a goldmine of insights, giving product owners the tools to curate, prioritize, and turn those ideas into reality. Stay ahead in the innovation game—because great products are born from great conversations!
+Eliminate the loss of valuable ideas and suggestions and seize control over the collection, assessment, and organization of feedback and feature proposals within your product's feedback platform to enhance your decision-making for product development.
+
+Introducing Feature Hunt: Your Ultimate Solution
+
+Feature Hunt provides the ideal solution for this mission. It empowers users to effortlessly submit, endorse, and participate in discussions surrounding feature requests. Simultaneously, product administrators can efficiently categorize and prioritize these submissions to strengthen their product development decisions.
+
+Key Technologies Used in This Project: Python, JavaScript, Flask, MongoDB, HTML, CSS.
+
+Get started today and make informed decisions for your product development by leveraging Feature Hunt 🎯.
 
 ### Watch this short video to know more:
 
 https://user-images.githubusercontent.com/26930183/135515516-d84f3a28-6d8c-49de-8068-50748e2a76b0.mp4
+
 https://user-images.githubusercontent.com/42051115/140450152-61fcce18-c307-41bc-bfa4-92afe4fc1c40.mp4
 
 
@@ -65,8 +75,8 @@ CSS
 
 ## Preview
 
-The **Home** Page - It has a list of different products for which you can provide feature requests
-<img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="https://user-images.githubusercontent.com/11090612/133943516-d55244b5-9f5e-4166-a18e-af35cf020146.png">  
+The **Home** Page after Login - It has a list of different products for which you can provide feature requests
+<img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="docs/component-screenshots/Screenshot 2023-10-19 at 23.02.25.png">  
 
 The **Product** Page - It has a list of feature requests added by users
 <img width="1148" alt="Screen Shot 2021-09-19 at 5 25 04 PM" src="https://user-images.githubusercontent.com/11090612/133944169-5529ea32-40c8-4786-b198-6e5c1eecd64f.png">  
@@ -81,10 +91,13 @@ You can now create an account and mange the products you are a part of! This inc
 <img src="https://github.com/Ashnayak/feature-hunt/blob/d2e421c58edddf0c3ab9ce9076f8f91f6fb80171/docs/screenshots/WhatsApp%20Image%202021-11-29%20at%2012.12.21%20PM%20(2).jpeg" width="1200"/>
 
 **Login Page** - If yopu are a recurring user, then you can login to your dashboard via this portal.
-<img src="https://github.com/Ashnayak/feature-hunt/blob/d2e421c58edddf0c3ab9ce9076f8f91f6fb80171/docs/screenshots/WhatsApp%20Image%202021-11-29%20at%2012.12.21%20PM%20(1).jpeg" width="1200" />
+<img src="docs/component-screenshots/Screenshot 2023-10-19 at 23.00.15.png" width="1200" />
 
-**Project Form** - You can instantly add new products to be reviewed by the community. 
-<img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="https://github.com/Ashnayak/feature-hunt/blob/3db2e61e4ad75a26f1b12da84e824e7dd22c1d76/docs/Phase3_docs/screenshots/WhatsApp%20Image%202021-12-04%20at%2011.11.25%20PM%20(1).jpeg">  
+**New Company Form** - You can instantly add new products to be reviewed by the community. 
+<img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="docs/component-screenshots/Screenshot 2023-10-19 at 23.01.35.png"> 
+
+**New Product Form** - You can instantly add new products to be reviewed by the community. 
+<img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="docs/component-screenshots/Screenshot 2023-10-19 at 23.02.07.png"> 
 
 **Seach Bar** -  You can now search for your project
 <img src="https://github.com/Ashnayak/feature-hunt/blob/d2e421c58edddf0c3ab9ce9076f8f91f6fb80171/docs/screenshots/WhatsApp%20Image%202021-11-29%20at%2012.12.20%20PM%20(1).jpeg" width="1200" />
@@ -93,82 +106,46 @@ You can now create an account and mange the products you are a part of! This inc
 <img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="https://user-images.githubusercontent.com/78971563/140238752-a6ebe8ab-942f-462e-94b6-5d3d4064115e.png"> 
 
 **Features with Description!** - You can now create an "elevator pitch" for your features to help others vote for your feature (How cool!)
-<img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="https://github.com/Ashnayak/feature-hunt/blob/74147e70a272de8e87d0f9898607867e970bea76/docs/Phase3_docs/screenshots/WhatsApp%20Image%202021-12-04%20at%2011.11.25%20PM%20(2).jpeg"> 
+<img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="docs/component-screenshots/Screenshot 2023-10-19 at 23.00.39.png"> 
+
+**Product Page!** - You can now create an "elevator pitch" for your product to help others vote for your feature (How cool!)
+<img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="docs/component-screenshots/Screenshot 2023-10-19 at 23.00.58.png"> 
+
+**Company Page!** - You can now create an Company page and post your products and it's features to help others vote for your feature (How cool!)
+<img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="docs/component-screenshots/Screenshot 2023-10-19 at 23.01.18.png"> 
 
 **Receive autogenerated email notifications!** - Contributors can now receive an email that ranks features based on popularity! Additionally, we provide an attachment listing out all the features suggested for the particular project.
 <img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="https://github.com/Ashnayak/feature-hunt/blob/3db2e61e4ad75a26f1b12da84e824e7dd22c1d76/docs/Phase3_docs/screenshots/WhatsApp%20Image%202021-12-04%20at%2011.20.25%20PM.jpeg"> 
 
 ## Getting Started
 #### Before you get started, if you are using Windows, please visit our [wiki page on Windows development](https://github.com/CSC510-Group-25/feature-hunt/wiki/How-to-develop-with-Windows).
-There are two ways to install and develop for featurehunt 
 
-1. Using Docker
-
-2. Using Local machine
-
-## Installation With Docker.
-
-#### 1.  Follow the steps to install Docker for your OS
-```
-https://docs.docker.com/get-docker
-```
-#### 2. Git clone the Repository using 
-```
-git clone https://github.com/Ashnayak/feature-hunt.git
-```
-
-#### 3. Run the following Commands
-```
-cd feature-hunt
-
-docker-compose up --build (This is only needed when you're running the project for the first time. Upon building once, you can run this command without providing --build option)
-```
-
-This will run two docker containers. The frontend will run on port 3000 and the backend will run on port 5000
-
-## Installation in Local Machine without Docker.
+## Installation in Local Machine.
 
 ### First Time Setup
 
 #### 1. Git clone the Repository using 
 ```
-git clone https://github.com/Ashnayak/feature-hunt.git
+git clone https://github.com/NidhayPancholi/feature-hunt
 ```
 #### 2. Run the following Commands
 ```
 cd feature-hunt
+cd app
 ```
->Optional: In the project directory run `git config --local core.hooksPath hooks` to make sure you have access to the Git Hooks.
-Run the following commands in order:
-
-#### 3. `npm install`
-
-Installs the dependencies for the React App
-
-#### 4. `pip install -r backend/requirements.txt`
+#### 3. `pip install -r backend/requirements.txt`
 
 Installs the requirements for the Flask API
 
-#### 5. `yarn start`
+#### 4. `python app.py`
 
-Runs the frontend React app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Runs the Flask app in the development mode.\
+Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-To run backend flask api in development mode:  
- 
- export DB="mongodb+srv://bot:bot123@feature-hunt.6gqvj.mongodb.net/feature-hunt?retryWrites=true&w=majority"
 
- export ROOT_PATH="./"
-
-#### 6. `yarn start-api`
-
-Runs the backend flask API in development mode.\
-The API runs on [http://localhost:5000](http://localhost:5000).
-
-Requests made to [http://localhost:3000](http://localhost:3000) that don't exist on the react server are automatically forwarded to this API
 
 
 ## Connecting with a Database
@@ -177,37 +154,14 @@ Requests made to [http://localhost:3000](http://localhost:3000) that don't exist
 
 #### Check out our [tutorial](https://github.com/CSC510-Group-25/feature-hunt/wiki/Getting-Started-with-Database-Development:-Connection-and-Setup) to get started with creating and connecting to a database.
 
-> You can also connect to the database from your shell using [mongosh](https://docs.mongodb.com/mongodb-shell/)
-
-## Other Available Scripts
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn lint`
-
-Applies Prettier to all .js files.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
 ## Deployment
 
-This app has been deployed using Netlify and Heroku. Check it out [here!](https://feature-hunt-25.netlify.app/)
+This app has been deployed using Deta Space. Check it out [here!](https://featurehunt-1-v6614040.deta.app/feed)
 
 You can now run and test the project locally and in deployments. More info about our deplyments and switching between production and devlopment can be found in our [Wiki](https://github.com/CSC510-Group-25/feature-hunt/wiki/Deployment:-Heroku-and-Netlify)
 
 ## Contributions to the Project
-Please refer to the [Contributing.md](https://github.com/Ashnayak/feature-hunt/blob/main/CONTRIBUTING.md) if you want to contrbute to the Feature Hunt source code. Follow all the guidelines mentioned and raise a pull request for the developers to review before the code goes to the main source code.
+Please refer to the [Contributing.md](https://github.com/NidhayPancholi/feature-hunt/blob/development/CONTRIBUTING.md) if you want to contrbute to the Feature Hunt source code. Follow all the guidelines mentioned and raise a pull request for the developers to review before the code goes to the main source code.
 
 ## Future Scope
 We believe in the ability to add new features in any project (including our own). 
@@ -234,6 +188,7 @@ We believe in the ability to add new features in any project (including our own)
     <td align="center"><a href="https://github.com/snapcat/"><img src="https://avatars.githubusercontent.com/u/89357283?v=4" width="80px;" alt=""/><br /><sub><b>Leila Moran</b></sub></a><br /></td>
     <td align="center"><a href="https://www.github.com/shraddhamishra7"><img src="https://avatars.githubusercontent.com/u/7471821?v=4" width="80px;" alt=""/><br /><sub><b>Shraddha Mishra</b></sub></a><br /></td>
   </tr>
+  
   <tr>
      <td> Phase 3</td>
     <td align="center"><a href="https://github.com/surajdm123/"><img src="https://avatars.githubusercontent.com/u/42767118?v=4" width="100px;" alt=""/><br /><sub><b>Suraj Devatha</b></sub></a></td>
@@ -241,6 +196,14 @@ We believe in the ability to add new features in any project (including our own)
     <td align="center"><a href="https://github.com/Ashnayak"><img src="https://avatars.githubusercontent.com/u/18304940?v=4" width="100px;" alt=""/><br /><sub><b>Ashwini Nayak</b></sub></a><br /></td>
     <td align="center"><a href="https://github.com/Himanshuu-Gupta"><img src="https://avatars.githubusercontent.com/u/15701338?v=4" width="100px;" alt=""/><br /><sub><b>Himanshuu Gupta</b></sub></a><br /></td>
     <td align="center"><a href="https://github.com/ShreyanshPrajapati/"><img src="https://avatars.githubusercontent.com/u/13018358?v=4" width="100px;" alt=""/><br /><sub><b>Shreyansh Prajapati</b></sub></a><br /></td>
+ </tr>
+
+ <tr>
+     <td> Phase 4</td>
+    <td align="center"><a href="https://github.com/NidhayPancholi"><img src="https://avatars.githubusercontent.com/u/52347410?v=4" width="100px;" alt=""/><br /><sub><b>Nidhay Pancholi</b></sub></a></td>
+    <td align="center"><a href="https://github.com/AryanvGupta"><img src="https://avatars.githubusercontent.com/u/55129067?v=4" width="100px;" alt=""/><br /><sub><b>Aryan Gupta</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/Lagani21"><img src="https://avatars.githubusercontent.com/u/143046933?v=4" width="100px;" alt=""/><br /><sub><b>Lagani Patel</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/aditigvarma"><img src="https://avatars.githubusercontent.com/u/78954407?v=4" width="100px;" alt=""/><br /><sub><b>Aditi Verma</b></sub></a><br /></td>
  </tr>
   
 </table>
