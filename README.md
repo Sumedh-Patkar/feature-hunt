@@ -27,7 +27,8 @@ Start leveraging Feature Hunt today to help you make informed decisions for your
 
 <p align="left">
   <a href="https://www.javascript.com" target="_blank"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="js" width="30" height="30"/> JavaScript
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="js" width="30" height="30"/>
+	<p>JavaScript</p>
   </a>
   <a href="https://www.mongodb.com" target="_blank"> 
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="mongo" width="30" height="30"/> MongoDB
