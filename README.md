@@ -25,64 +25,35 @@ Start leveraging Feature Hunt today to help you make informed decisions for your
 
 ## 🖥️ Technologies
 
-<html>
-<head>
-    <title>Technology Icons</title>
-    <style>
-        .tech {
-            margin-bottom: 10px; /* space between lines */
-            align-items: center; /* align items vertically in the middle */
-            display: flex; /* use flexbox for layout */
-        }
-        .tech img {
-            margin-right: 10px; /* space between icon and text */
-            width: 50px; /* larger icon size */
-            height: auto; /* maintain aspect ratio */
-        }
-        .tech a {
-            text-decoration: none; /* remove underline from links */
-            color: black; /* text color for links */
-        }
-        /* Add any additional styling you need here */
-    </style>
-</head>
-<body style="background-color: #333; color: white; font-family: Arial, sans-serif;">
-    <div class="tech">
+<p align="left">
+  <div class="icon-text">
         <a href="https://www.javascript.com" target="_blank"> 
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="JavaScript" />
-            JavaScript
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="JavaScript" /> JavaScript
         </a>
     </div>
-    <div class="tech">
+    <div class="icon-text">
         <a href="https://www.mongodb.com" target="_blank"> 
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
-            MongoDB
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="MongoDB" /> MongoDB
         </a>
     </div>
-    <div class="tech">
+    <div class="icon-text">
         <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML" target="_blank"> 
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-plain.svg" alt="HTML" />
-            HTML
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-plain.svg" alt="HTML" /> HTML
         </a>
     </div>
-    <div class="tech">
+    <div class="icon-text">
         <a href="https://www.python.org" target="_blank"> 
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-plain.svg" alt="Python" />
-            Python
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-plain.svg" alt="Python" /> Python
         </a>
     </div>
-    <div class="tech">
+    <div class="icon-text">
         <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS" target="_blank"> 
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain.svg" alt="CSS" />
-            CSS
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain.svg" alt="CSS" /> CSS
         </a>
     </div>
-</body>
-</html>
+</p>
 
-
-
-## Preview
+## 🔬 Preview
 
 The **Home** Page after Login - It has a list of different products for which you can provide feature requests
 <img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="docs/component-screenshots/Screenshot 2023-10-19 at 23.02.25.png">  
@@ -233,6 +204,5 @@ https://youtu.be/xwCHYNFJZXg
 https://user-images.githubusercontent.com/26930183/135515516-d84f3a28-6d8c-49de-8068-50748e2a76b0.mp4
 
 https://user-images.githubusercontent.com/42051115/140450152-61fcce18-c307-41bc-bfa4-92afe4fc1c40.mp4
-
 
 https://user-images.githubusercontent.com/78971563/140450270-8782b2f8-3634-4bdc-86d6-4e4bbcf19a4a.mp4
