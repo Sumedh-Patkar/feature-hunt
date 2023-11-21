@@ -15,13 +15,7 @@
 ![Pylint](https://img.shields.io/badge/Pylint-Passing-brightgreen.svg)
 
 
-## Phase 4 Video 
-Here is the link to the video where we talk about the features we added in Phase 4 with a comparison to Phase 3.
-
-https://youtu.be/xwCHYNFJZXg
-
-
-## INTRODUCTION ⚡️
+##⚡️Introduction
 
 Eliminate the loss of valuable ideas and suggestions and seize control over the collection, assessment, and organization of feedback and feature proposals within your product's feedback platform to enhance your decision-making for product development.
 
@@ -207,3 +201,13 @@ We believe in the ability to add new features in any project (including our own)
  </tr>
   
 </table>
+
+
+
+
+# ARCHIVE DELETE LATER
+
+## Phase 4 Video 
+Here is the link to the video where we talk about the features we added in Phase 4 with a comparison to Phase 3.
+
+https://youtu.be/xwCHYNFJZXg
