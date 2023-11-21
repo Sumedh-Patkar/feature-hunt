@@ -15,7 +15,7 @@
 ![Pylint](https://img.shields.io/badge/Pylint-Passing-brightgreen.svg)
 
 
-## 🎯 Introduction
+# 🎯 Introduction
 
 Being able to receive and track feedback from customers is a valuable tool when it comes to product development. 
 
@@ -23,7 +23,9 @@ Feature Hunt allows one to effortlessly submit, endorse, and participate in disc
 
 Start leveraging Feature Hunt today to help you make informed decisions for your product.
 
-## 🖥️ Technologies
+
+
+# 🖥️ Technologies
 
 <p align="left">
 <div>
@@ -53,14 +55,16 @@ Start leveraging Feature Hunt today to help you make informed decisions for your
 </div>  
 </p>
 
-## 🔬 Showcase
+
+
+# 🔬 Showcase
 
 WIP
 
-## 🏁 Getting Started
+# 🏁 Getting Started
 #### Before you get started, if you are using Windows, please visit our [wiki page on Windows development](https://github.com/CSC510-Group-25/feature-hunt/wiki/How-to-develop-with-Windows).
 
-# Installation in Local Machine.
+## Installation in Local Machine.
 
 ### First Time Setup
 
@@ -85,30 +89,33 @@ Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-
-
-
-# Connecting with a Database
+## Connecting with a Database
 
 > We use Mongo Cloud Atlas for our project as we find it very convenient. You may choose to use a local mongodb instance or run a docker container
 
 #### Check out our [tutorial](https://github.com/CSC510-Group-25/feature-hunt/wiki/Getting-Started-with-Database-Development:-Connection-and-Setup) to get started with creating and connecting to a database.
 
-# Deployment
+## Deployment
 
 This app has been deployed using Deta Space. Check it out [here!](https://featurehunt-1-v6614040.deta.app/feed)
 
 You can now run and test the project locally and in deployments. More info about our deplyments and switching between production and devlopment can be found in our [Wiki](https://github.com/CSC510-Group-25/feature-hunt/wiki/Deployment:-Heroku-and-Netlify)
 
-## ⚙️ Contributions to the Project
+
+
+# ⚙️ Contributions to the Project
 Please refer to the [Contributing.md](https://github.com/NidhayPancholi/feature-hunt/blob/development/CONTRIBUTING.md) if you want to contrbute to the Feature Hunt source code. Follow all the guidelines mentioned and raise a pull request for the developers to review before the code goes to the main source code.
 
-## 🔮 Future Scope
+
+
+# 🔮 Future Scope
 We believe in the ability to add new features in any project (including our own). 
 
 #### Check out our ideas for the future: [Future scope](https://github.com/CSC510-Group-25/feature-hunt/projects/3)
 
-## 👤 Contributors
+
+
+# 👤 Contributors
 
 <table>
   <tr>
