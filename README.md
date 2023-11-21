@@ -28,7 +28,7 @@ Start leveraging Feature Hunt today to help you make informed decisions for your
 <p align="left">
 <div>
   <a href="https://www.javascript.com" target="_blank"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="js" width="15" height="15"/><a>JavaScript</a>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="js" width="15" height="15"/><a> JavaScript</a>
   </a>
 </div>
 <div>
