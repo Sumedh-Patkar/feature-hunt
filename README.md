@@ -26,31 +26,21 @@ Start leveraging Feature Hunt today to help you make informed decisions for your
 ## 🖥️ Technologies
 
 <p align="left">
-  <div class="icon-text">
-        <a href="https://www.javascript.com" target="_blank"> 
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="JavaScript" /> JavaScript
-        </a>
-    </div>
-    <div class="icon-text">
-        <a href="https://www.mongodb.com" target="_blank"> 
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="MongoDB" /> MongoDB
-        </a>
-    </div>
-    <div class="icon-text">
-        <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML" target="_blank"> 
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-plain.svg" alt="HTML" /> HTML
-        </a>
-    </div>
-    <div class="icon-text">
-        <a href="https://www.python.org" target="_blank"> 
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-plain.svg" alt="Python" /> Python
-        </a>
-    </div>
-    <div class="icon-text">
-        <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS" target="_blank"> 
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain.svg" alt="CSS" /> CSS
-        </a>
-    </div>
+  <a href="https://www.javascript.com" target="_blank"> 
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="js" width="30" height="30"/> JavaScript
+  </a>
+  <a href="https://www.mongodb.com" target="_blank"> 
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="mongo" width="30" height="30"/> MongoDB
+  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML" target="_blank"> 
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-plain.svg" alt="html" width="30" height="30"/> HTML
+  </a>
+  <a href="https://www.python.org" target="_blank"> 
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-plain.svg" alt="python" width="30" height="30"/> Python
+  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS" target="_blank"> 
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain.svg" alt="css" width="30" height="30"/> CSS
+  </a>
 </p>
 
 ## 🔬 Preview
