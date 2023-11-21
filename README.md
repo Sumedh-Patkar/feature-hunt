@@ -27,20 +27,24 @@ Start leveraging Feature Hunt today to help you make informed decisions for your
 
 <p align="left">
   <a href="https://www.javascript.com" target="_blank"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="js" width="30" height="30"/>
-	<a> JavaScript</a>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="js" width="15" height="15"/>
+	<a>JavaScript</a>
   </a>
   <a href="https://www.mongodb.com" target="_blank"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="mongo" width="30" height="30"/> MongoDB
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="mongo" width="15" height="15"/>
+	<a>MongoDB</a>
   </a>
   <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML" target="_blank"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-plain.svg" alt="html" width="30" height="30"/> HTML
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-plain.svg" alt="html" width="15" height="15"/>
+	<a>HTML</a>
   </a>
   <a href="https://www.python.org" target="_blank"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-plain.svg" alt="python" width="30" height="30"/> Python
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-plain.svg" alt="python" width="15" height="15"/>
+	<a>Python</a>
   </a>
   <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS" target="_blank"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain.svg" alt="css" width="30" height="30"/> CSS
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain.svg" alt="css" width="15" height="15"/>
+	<a>CSS</a>
   </a>
 </p>
 
