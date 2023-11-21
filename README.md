@@ -15,7 +15,7 @@
 ![Pylint](https://img.shields.io/badge/Pylint-Passing-brightgreen.svg)
 
 
-# 🎯 Introduction
+## 🎯 Introduction
 
 Being able to receive and track feedback from customers is a valuable tool when it comes to product development. 
 
@@ -53,7 +53,7 @@ Start leveraging Feature Hunt today to help you make informed decisions for your
 </div>  
 </p>
 
-# 👤 Contributors
+## 👤 Contributors
 
 <table>
 	<tr>
@@ -98,10 +98,9 @@ Start leveraging Feature Hunt today to help you make informed decisions for your
 
 
 
-# 🏁 Getting Started
-#### Before you get started, if you are using Windows, please visit our [wiki page on Windows development](https://github.com/CSC510-Group-25/feature-hunt/wiki/How-to-develop-with-Windows).
+## 🏁 Getting Started
 
-## Installation in Local Machine.
+#### Before you get started, if you are using Windows, please visit our [wiki page on Windows development](https://github.com/CSC510-Group-25/feature-hunt/wiki/How-to-develop-with-Windows).
 
 ### First Time Setup
 
@@ -126,13 +125,13 @@ Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-## Connecting with a Database
+### Connecting with a Database
 
 > We use Mongo Cloud Atlas for our project as we find it very convenient. You may choose to use a local mongodb instance or run a docker container
 
 #### Check out our [tutorial](https://github.com/CSC510-Group-25/feature-hunt/wiki/Getting-Started-with-Database-Development:-Connection-and-Setup) to get started with creating and connecting to a database.
 
-## Deployment
+### Deployment
 
 This app has been deployed using Deta Space. Check it out [here!](https://featurehunt-1-v6614040.deta.app/feed)
 
