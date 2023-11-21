@@ -15,7 +15,7 @@
 ![Pylint](https://img.shields.io/badge/Pylint-Passing-brightgreen.svg)
 
 
-##⚡️Introduction
+## ⚡️ Introduction
 
 Eliminate the loss of valuable ideas and suggestions and seize control over the collection, assessment, and organization of feedback and feature proposals within your product's feedback platform to enhance your decision-making for product development.
 
