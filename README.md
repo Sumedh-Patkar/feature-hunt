@@ -25,23 +25,60 @@ Start leveraging Feature Hunt today to help you make informed decisions for your
 
 ## 🖥️ Technologies
 
-<p align="left">
-  <a href="https://www.javascript.com" target="_blank"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="js" width="30" height="30"/> JavaScript
-  </a>
-  <a href="https://www.mongodb.com" target="_blank"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="mongo" width="30" height="30"/> MongoDB
-  </a>
-  <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML" target="_blank"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-plain.svg" alt="html" width="30" height="30"/> HTML
-  </a>
-  <a href="https://www.python.org" target="_blank"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-plain.svg" alt="python" width="30" height="30"/> Python
-  </a>
-  <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS" target="_blank"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain.svg" alt="css" width="30" height="30"/> CSS
-  </a>
-</p>
+<html>
+<head>
+    <title>Technology Icons</title>
+    <style>
+        .tech {
+            margin-bottom: 10px; /* space between lines */
+            align-items: center; /* align items vertically in the middle */
+            display: flex; /* use flexbox for layout */
+        }
+        .tech img {
+            margin-right: 10px; /* space between icon and text */
+            width: 50px; /* larger icon size */
+            height: auto; /* maintain aspect ratio */
+        }
+        .tech a {
+            text-decoration: none; /* remove underline from links */
+            color: black; /* text color for links */
+        }
+        /* Add any additional styling you need here */
+    </style>
+</head>
+<body style="background-color: #333; color: white; font-family: Arial, sans-serif;">
+    <div class="tech">
+        <a href="https://www.javascript.com" target="_blank"> 
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="JavaScript" />
+            JavaScript
+        </a>
+    </div>
+    <div class="tech">
+        <a href="https://www.mongodb.com" target="_blank"> 
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+            MongoDB
+        </a>
+    </div>
+    <div class="tech">
+        <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML" target="_blank"> 
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-plain.svg" alt="HTML" />
+            HTML
+        </a>
+    </div>
+    <div class="tech">
+        <a href="https://www.python.org" target="_blank"> 
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-plain.svg" alt="Python" />
+            Python
+        </a>
+    </div>
+    <div class="tech">
+        <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS" target="_blank"> 
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain.svg" alt="CSS" />
+            CSS
+        </a>
+    </div>
+</body>
+</html>
 
 
 
