@@ -26,14 +26,18 @@ Start leveraging Feature Hunt today to help you make informed decisions for your
 ## 🖥️ Technologies
 
 <p align="left">
+<div>
   <a href="https://www.javascript.com" target="_blank"> 
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="js" width="15" height="15"/>
 	<a>JavaScript</a>
   </a>
+</div>
+<div>
   <a href="https://www.mongodb.com" target="_blank"> 
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="mongo" width="15" height="15"/>
 	<a>MongoDB</a>
   </a>
+</div>
   <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML" target="_blank"> 
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-plain.svg" alt="html" width="15" height="15"/>
 	<a>HTML</a>
