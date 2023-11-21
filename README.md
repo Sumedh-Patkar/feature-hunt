@@ -15,59 +15,44 @@
 ![Pylint](https://img.shields.io/badge/Pylint-Passing-brightgreen.svg)
 
 
-## ⚡️ Introduction
+## 🎯 Introduction
 
-Eliminate the loss of valuable ideas and suggestions and seize control over the collection, assessment, and organization of feedback and feature proposals within your product's feedback platform to enhance your decision-making for product development.
+Being able to receive and track feedback from customers is a valuable tool when it comes to product development. 
 
-Introducing Feature Hunt: Your Ultimate Solution
+Feature Hunt allows one to effortlessly submit, endorse, and participate in discussions surrounding feature and change requests. The software also allows product administrators to efficiently categorize and prioritize submissions to strengthen their decision making process.
 
-Feature Hunt provides the ideal solution for this mission. It empowers users to effortlessly submit, endorse, and participate in discussions surrounding feature requests. Simultaneously, product administrators can efficiently categorize and prioritize these submissions to strengthen their product development decisions.
+Start leveraging Feature Hunt today to help you make informed decisions for your product.
 
-Key Technologies Used in This Project: Python, JavaScript, Flask, MongoDB, HTML, CSS.
-
-Get started today and make informed decisions for your product development by leveraging Feature Hunt 🎯.
-
-### Watch this short video to know more:
-
-https://user-images.githubusercontent.com/26930183/135515516-d84f3a28-6d8c-49de-8068-50748e2a76b0.mp4
-
-https://user-images.githubusercontent.com/42051115/140450152-61fcce18-c307-41bc-bfa4-92afe4fc1c40.mp4
-
-
-https://user-images.githubusercontent.com/78971563/140450270-8782b2f8-3634-4bdc-86d6-4e4bbcf19a4a.mp4
-
-
-
-
-The following technologies were used for the development of this project:  
+## 🖥️ Technologies
 
 <p align="left">
+<div>
   <a href="https://www.javascript.com" target="_blank"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="js" width="30" height="30"/>
-  </a> 
-  <a href="https://www.mongodb.com" target="_blank"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="mongo" width="30" height="30"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="js" width="15" height="15"/>
+	<a>JavaScript</a>
   </a>
+</div>
+<div>
+  <a href="https://www.mongodb.com" target="_blank"> 
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="mongo" width="15" height="15"/>
+	<a>MongoDB</a>
+  </a>
+</div>
   <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML" target="_blank"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-plain.svg" alt="js" width="30" height="30"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-plain.svg" alt="html" width="15" height="15"/>
+	<a>HTML</a>
   </a>
   <a href="https://www.python.org" target="_blank"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-plain.svg" alt="python" width="30" height="30"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-plain.svg" alt="python" width="15" height="15"/>
+	<a>Python</a>
   </a>
   <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS" target="_blank"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain.svg" alt="css" width="30" height="30"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain.svg" alt="css" width="15" height="15"/>
+	<a>CSS</a>
   </a>
-</p>  
+</p>
 
-JavaScript  
-Python3  
-Flask  
-MongoDB  
-HTML  
-CSS  
-
-
-## Preview
+## 🔬 Preview
 
 The **Home** Page after Login - It has a list of different products for which you can provide feature requests
 <img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="docs/component-screenshots/Screenshot 2023-10-19 at 23.02.25.png">  
@@ -211,3 +196,12 @@ We believe in the ability to add new features in any project (including our own)
 Here is the link to the video where we talk about the features we added in Phase 4 with a comparison to Phase 3.
 
 https://youtu.be/xwCHYNFJZXg
+
+
+### Watch this short video to know more:
+
+https://user-images.githubusercontent.com/26930183/135515516-d84f3a28-6d8c-49de-8068-50748e2a76b0.mp4
+
+https://user-images.githubusercontent.com/42051115/140450152-61fcce18-c307-41bc-bfa4-92afe4fc1c40.mp4
+
+https://user-images.githubusercontent.com/78971563/140450270-8782b2f8-3634-4bdc-86d6-4e4bbcf19a4a.mp4
