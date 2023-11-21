@@ -137,7 +137,7 @@ We believe in the ability to add new features in any project (including our own)
   </tr>
   
   <tr>
-     <td> Phase 3</td>
+    <td> Phase 3</td>
     <td align="center"><a href="https://github.com/surajdm123/"><img src="https://avatars.githubusercontent.com/u/42767118?v=4" width="100px;" alt=""/><br /><sub><b>Suraj Devatha</b></sub></a></td>
     <td align="center"><a href="https://github.com/Sneha-at"><img src="https://avatars.githubusercontent.com/u/81721081?v=4" width="100px;" alt=""/><br /><sub><b>Sneha Aradhey</b></sub></a><br /></td>
     <td align="center"><a href="https://github.com/Ashnayak"><img src="https://avatars.githubusercontent.com/u/18304940?v=4" width="100px;" alt=""/><br /><sub><b>Ashwini Nayak</b></sub></a><br /></td>
@@ -146,12 +146,21 @@ We believe in the ability to add new features in any project (including our own)
  </tr>
 
  <tr>
-     <td> Phase 4</td>
+    <td> Phase 4</td>
     <td align="center"><a href="https://github.com/NidhayPancholi"><img src="https://avatars.githubusercontent.com/u/52347410?v=4" width="100px;" alt=""/><br /><sub><b>Nidhay Pancholi</b></sub></a></td>
     <td align="center"><a href="https://github.com/AryanvGupta"><img src="https://avatars.githubusercontent.com/u/55129067?v=4" width="100px;" alt=""/><br /><sub><b>Aryan Gupta</b></sub></a><br /></td>
     <td align="center"><a href="https://github.com/Lagani21"><img src="https://avatars.githubusercontent.com/u/143046933?v=4" width="100px;" alt=""/><br /><sub><b>Lagani Patel</b></sub></a><br /></td>
     <td align="center"><a href="https://github.com/aditigvarma"><img src="https://avatars.githubusercontent.com/u/78954407?v=4" width="100px;" alt=""/><br /><sub><b>Aditi Verma</b></sub></a><br /></td>
  </tr>
+
+<tr>
+	<td> Phase 5</td>
+    <td align="center"><a href="https://github.com/Alderheart"><img src="https://github.com/account" width="100px;" alt=""/><br /><sub><b>Mark Feng</b></sub></a></td>
+    <td align="center"><a href="https://github.com/Cynamide"><img src="https://avatars.githubusercontent.com/u/56030842?v=4" width="100px;" alt=""/><br /><sub><b>Arjit Agarwan</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/Sumedh-Patkar"><img src="https://avatars.githubusercontent.com/u/34613429?v=4" width="100px;" alt=""/><br /><sub><b>Sumedh Patkar</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/northst20/"><img src="https://avatars.githubusercontent.com/u/23139691?v=4" width="100px;" alt=""/><br /><sub><b>Reuben Thomas</b></sub></a><br /></td>
+</tr>
+
 </table>
 
 
