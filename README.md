@@ -53,14 +53,54 @@ Start leveraging Feature Hunt today to help you make informed decisions for your
 </div>  
 </p>
 
-## 🔬 Showcase
+## 👤 Contributors
 
-WIP
+<table>
+	<tr>
+		<td> Phase 1</td>
+		<td align="center"><a href="https://github.com/shahrk/"><img src="https://avatars.githubusercontent.com/u/11090612?v=4" width="80px;" alt=""/><br /><sub><b>Raj Shah</b></sub></a></td>
+		<td align="center"><a href="https://github.com/Nirav1929/"><img src="https://avatars.githubusercontent.com/u/11133468?v=4" width="80px;" alt=""/><br /><sub><b>Nirav Patel</b></sub></a><br /></td>
+		<td align="center"><a href="https://github.com/Parth59/"><img src="https://avatars.githubusercontent.com/u/22288099?v=4" width="80px;" alt=""/><br /><sub><b>Parth Kanakiya</b></sub></a><br /></td>
+		<td align="center"><a href="https://github.com/mithildave/"><img src="https://avatars.githubusercontent.com/u/26930183?v=4" width="80px;" alt=""/><br /><sub><b>Mithil Dave</b></sub></a><br /></td>
+		<td align="center"><a href="https://www.github.com/BhargavJethwa"><img src="https://avatars.githubusercontent.com/u/70560970?v=4" width="80px;" alt=""/><br /><sub><b>Bhargav Jethwa</b></sub></a><br /></td>   
+	</tr>
+	<tr>
+		<td> Phase 2</td>
+		<td align="center"><a href="https://github.com/etracey7/"><img src="https://avatars.githubusercontent.com/u/78971563?v=4" width="80px;" alt=""/><br /><sub><b>Emily Tracey</b></sub></a></td>
+		<td align="center"><a href="https://github.com/peeyush10234/"><img src="https://avatars.githubusercontent.com/u/10905673?v=4" width="80px;" alt=""/><br /><sub><b>Peeyush Taneja</b></sub></a><br /></td>
+		<td align="center"><a href="https://github.com/jhnguye4/"><img src="https://avatars.githubusercontent.com/u/42051115?v=4" width="80px;" alt=""/><br /><sub><b>Jonathan Nguyen</b></sub></a><br /></td>
+		<td align="center"><a href="https://github.com/snapcat/"><img src="https://avatars.githubusercontent.com/u/89357283?v=4" width="80px;" alt=""/><br /><sub><b>Leila Moran</b></sub></a><br /></td>
+		<td align="center"><a href="https://www.github.com/shraddhamishra7"><img src="https://avatars.githubusercontent.com/u/7471821?v=4" width="80px;" alt=""/><br /><sub><b>Shraddha Mishra</b></sub></a><br /></td>
+	</tr>
+	<tr>
+		<td> Phase 3</td>
+		<td align="center"><a href="https://github.com/surajdm123/"><img src="https://avatars.githubusercontent.com/u/42767118?v=4" width="100px;" alt=""/><br /><sub><b>Suraj Devatha</b></sub></a></td>
+		<td align="center"><a href="https://github.com/Sneha-at"><img src="https://avatars.githubusercontent.com/u/81721081?v=4" width="100px;" alt=""/><br /><sub><b>Sneha Aradhey</b></sub></a><br /></td>
+		<td align="center"><a href="https://github.com/Ashnayak"><img src="https://avatars.githubusercontent.com/u/18304940?v=4" width="100px;" alt=""/><br /><sub><b>Ashwini Nayak</b></sub></a><br /></td>
+		<td align="center"><a href="https://github.com/Himanshuu-Gupta"><img src="https://avatars.githubusercontent.com/u/15701338?v=4" width="100px;" alt=""/><br /><sub><b>Himanshuu Gupta</b></sub></a><br /></td>
+		<td align="center"><a href="https://github.com/ShreyanshPrajapati/"><img src="https://avatars.githubusercontent.com/u/13018358?v=4" width="100px;" alt=""/><br /><sub><b>Shreyansh Prajapati</b></sub></a><br /></td>
+	</tr>
+	<tr>
+		<td> Phase 4</td>
+		<td align="center"><a href="https://github.com/NidhayPancholi"><img src="https://avatars.githubusercontent.com/u/52347410?v=4" width="100px;" alt=""/><br /><sub><b>Nidhay Pancholi</b></sub></a></td>
+		<td align="center"><a href="https://github.com/AryanvGupta"><img src="https://avatars.githubusercontent.com/u/55129067?v=4" width="100px;" alt=""/><br /><sub><b>Aryan Gupta</b></sub></a><br /></td>
+		<td align="center"><a href="https://github.com/Lagani21"><img src="https://avatars.githubusercontent.com/u/143046933?v=4" width="100px;" alt=""/><br /><sub><b>Lagani Patel</b></sub></a><br /></td>
+		<td align="center"><a href="https://github.com/aditigvarma"><img src="https://avatars.githubusercontent.com/u/78954407?v=4" width="100px;" alt=""/><br /><sub><b>Aditi Verma</b></sub></a><br /></td>
+	</tr>
+	<tr>
+		<td> Phase 5</td>
+		<td align="center"><a href="https://github.com/Alderheart"><img src="https://avatars.githubusercontent.com/u/53315508?v=4" width="100px;" alt=""/><br /><sub><b>Mark Feng</b></sub></a></td>
+		<td align="center"><a href="https://github.com/Cynamide"><img src="https://avatars.githubusercontent.com/u/56030842?v=4" width="100px;" alt=""/><br /><sub><b>Arjit Agarwan</b></sub></a><br /></td>
+		<td align="center"><a href="https://github.com/Sumedh-Patkar"><img src="https://avatars.githubusercontent.com/u/34613429?v=4" width="100px;" alt=""/><br /><sub><b>Sumedh Patkar</b></sub></a><br /></td>
+		<td align="center"><a href="https://github.com/northst20/"><img src="https://avatars.githubusercontent.com/u/23139691?v=4" width="100px;" alt=""/><br /><sub><b>Reuben Thomas</b></sub></a><br /></td>
+	</tr>
+</table>
+
+
 
 ## 🏁 Getting Started
-#### Before you get started, if you are using Windows, please visit our [wiki page on Windows development](https://github.com/CSC510-Group-25/feature-hunt/wiki/How-to-develop-with-Windows).
 
-# Installation in Local Machine.
+#### Before you get started, if you are using Windows, please visit our [wiki page on Windows development](https://github.com/CSC510-Group-25/feature-hunt/wiki/How-to-develop-with-Windows).
 
 ### First Time Setup
 
@@ -85,20 +125,27 @@ Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-
-
-
-# Connecting with a Database
+### Connecting with a Database
 
 > We use Mongo Cloud Atlas for our project as we find it very convenient. You may choose to use a local mongodb instance or run a docker container
 
 #### Check out our [tutorial](https://github.com/CSC510-Group-25/feature-hunt/wiki/Getting-Started-with-Database-Development:-Connection-and-Setup) to get started with creating and connecting to a database.
 
-# Deployment
+### Deployment
 
 This app has been deployed using Deta Space. Check it out [here!](https://featurehunt-1-v6614040.deta.app/feed)
 
 You can now run and test the project locally and in deployments. More info about our deplyments and switching between production and devlopment can be found in our [Wiki](https://github.com/CSC510-Group-25/feature-hunt/wiki/Deployment:-Heroku-and-Netlify)
+
+
+
+
+
+# WORK IN PROGRESS
+
+## 🔬 Showcase
+
+#### WIP
 
 ## ⚙️ Contributions to the Project
 Please refer to the [Contributing.md](https://github.com/NidhayPancholi/feature-hunt/blob/development/CONTRIBUTING.md) if you want to contrbute to the Feature Hunt source code. Follow all the guidelines mentioned and raise a pull request for the developers to review before the code goes to the main source code.
@@ -108,49 +155,8 @@ We believe in the ability to add new features in any project (including our own)
 
 #### Check out our ideas for the future: [Future scope](https://github.com/CSC510-Group-25/feature-hunt/projects/3)
 
-## 👤 Contributors
 
-<table>
-  <tr>
-    <td> Phase 1</td>
-    <td align="center"><a href="https://github.com/shahrk/"><img src="https://avatars.githubusercontent.com/u/11090612?v=4" width="80px;" alt=""/><br /><sub><b>Raj Shah</b></sub></a></td>
-    <td align="center"><a href="https://github.com/Nirav1929/"><img src="https://avatars.githubusercontent.com/u/11133468?v=4" width="80px;" alt=""/><br /><sub><b>Nirav Patel</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/Parth59/"><img src="https://avatars.githubusercontent.com/u/22288099?v=4" width="80px;" alt=""/><br /><sub><b>Parth Kanakiya</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/mithildave/"><img src="https://avatars.githubusercontent.com/u/26930183?v=4" width="80px;" alt=""/><br /><sub><b>Mithil Dave</b></sub></a><br /></td>
-    <td align="center"><a href="https://www.github.com/BhargavJethwa"><img src="https://avatars.githubusercontent.com/u/70560970?v=4" width="80px;" alt=""/><br /><sub><b>Bhargav Jethwa</b></sub></a><br /></td>   
-  </tr>
-  
-  <tr>
-    <td> Phase 2</td>
-    <td align="center"><a href="https://github.com/etracey7/"><img src="https://avatars.githubusercontent.com/u/78971563?v=4" width="80px;" alt=""/><br /><sub><b>Emily Tracey</b></sub></a></td>
-    <td align="center"><a href="https://github.com/peeyush10234/"><img src="https://avatars.githubusercontent.com/u/10905673?v=4" width="80px;" alt=""/><br /><sub><b>Peeyush Taneja</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/jhnguye4/"><img src="https://avatars.githubusercontent.com/u/42051115?v=4" width="80px;" alt=""/><br /><sub><b>Jonathan Nguyen</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/snapcat/"><img src="https://avatars.githubusercontent.com/u/89357283?v=4" width="80px;" alt=""/><br /><sub><b>Leila Moran</b></sub></a><br /></td>
-    <td align="center"><a href="https://www.github.com/shraddhamishra7"><img src="https://avatars.githubusercontent.com/u/7471821?v=4" width="80px;" alt=""/><br /><sub><b>Shraddha Mishra</b></sub></a><br /></td>
-  </tr>
-  
-  <tr>
-     <td> Phase 3</td>
-    <td align="center"><a href="https://github.com/surajdm123/"><img src="https://avatars.githubusercontent.com/u/42767118?v=4" width="100px;" alt=""/><br /><sub><b>Suraj Devatha</b></sub></a></td>
-    <td align="center"><a href="https://github.com/Sneha-at"><img src="https://avatars.githubusercontent.com/u/81721081?v=4" width="100px;" alt=""/><br /><sub><b>Sneha Aradhey</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/Ashnayak"><img src="https://avatars.githubusercontent.com/u/18304940?v=4" width="100px;" alt=""/><br /><sub><b>Ashwini Nayak</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/Himanshuu-Gupta"><img src="https://avatars.githubusercontent.com/u/15701338?v=4" width="100px;" alt=""/><br /><sub><b>Himanshuu Gupta</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/ShreyanshPrajapati/"><img src="https://avatars.githubusercontent.com/u/13018358?v=4" width="100px;" alt=""/><br /><sub><b>Shreyansh Prajapati</b></sub></a><br /></td>
- </tr>
-
- <tr>
-     <td> Phase 4</td>
-    <td align="center"><a href="https://github.com/NidhayPancholi"><img src="https://avatars.githubusercontent.com/u/52347410?v=4" width="100px;" alt=""/><br /><sub><b>Nidhay Pancholi</b></sub></a></td>
-    <td align="center"><a href="https://github.com/AryanvGupta"><img src="https://avatars.githubusercontent.com/u/55129067?v=4" width="100px;" alt=""/><br /><sub><b>Aryan Gupta</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/Lagani21"><img src="https://avatars.githubusercontent.com/u/143046933?v=4" width="100px;" alt=""/><br /><sub><b>Lagani Patel</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/aditigvarma"><img src="https://avatars.githubusercontent.com/u/78954407?v=4" width="100px;" alt=""/><br /><sub><b>Aditi Verma</b></sub></a><br /></td>
- </tr>
-</table>
-
-
-
-
-# ARCHIVE DELETE LATER
+## ARCHIVE DELETE LATER
 
 ## Phase 4 Video 
 Here is the link to the video where we talk about the features we added in Phase 4 with a comparison to Phase 3.
