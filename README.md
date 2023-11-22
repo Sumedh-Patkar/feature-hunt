@@ -2,19 +2,6 @@
 <img width="657" alt="Feature Hunt" src="https://user-images.githubusercontent.com/11090612/135201949-a1f1de9d-f80a-4adf-a7ac-886c77c4c226.png">
 </p>
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bb78c7431a71487595f3031af06dac4c)](https://app.codacy.com/gh/CSC510-Group-25/feature-hunt?utm_source=github.com&utm_medium=referral&utm_content=CSC510-Group-25/feature-hunt&utm_campaign=Badge_Grade_Settings)
-[![DOI](https://zenodo.org/badge/432041373.svg)](https://zenodo.org/badge/latestdoi/432041373)
-[![GitHub license](https://img.shields.io/github/license/shahrk/feature-hunt)](https://github.com/shahrk/feature-hunt/blob/main/LICENSE)
-![Python](https://img.shields.io/badge/Python-3.9-blue.svg)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![Docker](https://img.shields.io/badge/Containerized-Docker-blue)](https://docs.docker.com/compose/)
-[![GitHub issues](https://img.shields.io/github/issues/CSC510-Group-25/feature-hunt)](https://github.com/CSC510-Group-25/feature-hunt/issues)
-[![GitHub closed issues](https://img.shields.io/github/issues-closed/CSC510-Group-25/feature-hunt?color=red)](https://github.com/CSC510-Group-25/feature-hunt/issues?q=is%3Aissue+is%3Aclosed)
-[![Coverage Status](https://coveralls.io/repos/github/Ashnayak/feature-hunt/badge.svg)](https://coveralls.io/github/Ashnayak/feature-hunt)
-[![CodeQL](https://github.com/NidhayPancholi/feature-hunt/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/CSC510-Group-25/feature-hunt/actions/workflows/codeql-analysis.yml)
-![Pylint](https://img.shields.io/badge/Pylint-Passing-brightgreen.svg)
-
-
 ## 🎯 Introduction
 
 Being able to receive and track feedback from customers is a valuable tool when it comes to product development. 
@@ -142,6 +129,18 @@ You can now run and test the project locally and in deployments. More info about
 
 
 # WORK IN PROGRESS
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bb78c7431a71487595f3031af06dac4c)](https://app.codacy.com/gh/CSC510-Group-25/feature-hunt?utm_source=github.com&utm_medium=referral&utm_content=CSC510-Group-25/feature-hunt&utm_campaign=Badge_Grade_Settings)
+[![DOI](https://zenodo.org/badge/432041373.svg)](https://zenodo.org/badge/latestdoi/432041373)
+[![GitHub license](https://img.shields.io/github/license/shahrk/feature-hunt)](https://github.com/shahrk/feature-hunt/blob/main/LICENSE)
+![Python](https://img.shields.io/badge/Python-3.9-blue.svg)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![Docker](https://img.shields.io/badge/Containerized-Docker-blue)](https://docs.docker.com/compose/)
+[![GitHub issues](https://img.shields.io/github/issues/CSC510-Group-25/feature-hunt)](https://github.com/CSC510-Group-25/feature-hunt/issues)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed/CSC510-Group-25/feature-hunt?color=red)](https://github.com/CSC510-Group-25/feature-hunt/issues?q=is%3Aissue+is%3Aclosed)
+[![Coverage Status](https://coveralls.io/repos/github/Ashnayak/feature-hunt/badge.svg)](https://coveralls.io/github/Ashnayak/feature-hunt)
+[![CodeQL](https://github.com/NidhayPancholi/feature-hunt/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/CSC510-Group-25/feature-hunt/actions/workflows/codeql-analysis.yml)
+![Pylint](https://img.shields.io/badge/Pylint-Passing-brightgreen.svg)
 
 ## 🔬 Showcase
 
