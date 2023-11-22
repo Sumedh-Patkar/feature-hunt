@@ -1,6 +1,5 @@
 from flask import request, jsonify, Response
 from flask import json
-import pandas as pd
 from bson.json_util import dumps
 from bson.objectid import ObjectId
 from db_init import records
