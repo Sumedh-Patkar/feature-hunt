@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Center,
   Box,
@@ -25,44 +25,62 @@ export const FeedCard = ({
   image,
   likes_count,
   dislikes_count,
+  is_liked,
 }) => {
   const [like, setLike] = React.useState(likes_count);
   const [dislike, setDislike] = React.useState(dislikes_count);
-  const [isLiked, setIsLiked] = React.useState(false);
-  const [isDisliked, setIsDisliked] = React.useState(false);
+  const [isLiked, setIsLiked] = React.useState(is_liked == "1" ? true : false);
+  const [isDisliked, setIsDisliked] = React.useState(
+    is_liked == "0" ? true : false,
+  );
 
   const navigate = useNavigate();
   const handleNavigate = () => {
     navigate(`/product/${id}`);
   };
 
+  console.log(is_liked);
+
   const handleReaction = (reaction) => async () => {
     if (reaction === "like") {
       if (!isDisliked) {
         if (isLiked) {
           setIsLiked(false);
+          setLike(like - 1);
           await ReactionAPI("unlike");
         } else {
           setIsLiked(true);
+          setLike(like + 1);
           await ReactionAPI("like");
         }
-      } 
-      else {
+      } else {
         setIsDisliked(false);
         setIsLiked(true);
+        setLike(like + 1);
+        setDislike(dislike - 1);
         await ReactionAPI("unlike");
         await ReactionAPI("like");
-        
-    
-    // else if (reaction === "dislike" && !isLiked) {
-    //   if (isDisliked) {
-    //     setIsDisliked(false);
-    //     await ReactionAPI("unlike");
-    //   } else {
-    //     setIsDisliked(true);
-    //     await ReactionAPI("dislike");
-    //   }
-    // }
+      }
+    } else if (reaction === "dislike") {
+      if (!isLiked) {
+        if (isDisliked) {
+          setIsDisliked(false);
+          setDislike(dislike - 1);
+          await ReactionAPI("unlike");
+        } else {
+          setIsDisliked(true);
+          setDislike(dislike + 1);
+          await ReactionAPI("dislike");
+        }
+      } else {
+        setIsLiked(false);
+        setIsDisliked(true);
+        setLike(like - 1);
+        setDislike(dislike + 1);
+        await ReactionAPI("unlike");
+        await ReactionAPI("dislike");
+      }
+    }
   };
 
   async function ReactionAPI(reaction) {
@@ -74,8 +92,8 @@ export const FeedCard = ({
           // Add any other headers as needed
         },
         body: JSON.stringify({
-          product_id: id,
-          email: localStorage.getItem("email"),
+          product_name: name,
+          user_email: localStorage.getItem("email"),
         }),
       });
       if (!response.ok) {
@@ -87,13 +105,14 @@ export const FeedCard = ({
       }
       // Do something with the response
       const responseData = await response.json();
+      console.log("Reaction successful:", responseData);
     } catch (error) {
       console.error("Error during fetch:", error.message);
     }
   }
 
   return (
-    <Card bgColor="gray.100" variant="outline" maxW="sm">
+    <Card id={id} bgColor="gray.100" variant="outline" maxW="sm">
       <CardBody>
         <Center>
           <Image
@@ -113,7 +132,7 @@ export const FeedCard = ({
           <Flex>
             <Button
               onClick={handleReaction("like")}
-              variant="ghost"
+              variant={isLiked ? "solid" : "ghost"}
               colorScheme="green"
             >
               <AiOutlineLike />
@@ -121,7 +140,11 @@ export const FeedCard = ({
             <Center ml="2">{like}</Center>
           </Flex>
           <Spacer />
-          <Button variant="ghost" colorScheme="green">
+          <Button
+            onClick={handleReaction("dislike")}
+            variant={isDisliked ? "solid" : "ghost"}
+            colorScheme="red"
+          >
             <AiOutlineDislike />
           </Button>
           <Center ml="2">{dislike}</Center>
