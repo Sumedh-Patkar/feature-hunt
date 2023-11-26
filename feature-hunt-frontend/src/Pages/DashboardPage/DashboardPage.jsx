@@ -11,27 +11,32 @@ export const DashboardPage = () => {
     navigate("/dashboard");
   }
 
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const response = await fetch("http://127.0.0.1:5000/feed", {
-          method: "GET",
-        });
-        if (!response.ok) {
-          // Handle server error
-          const errorData = await response.json();
-          console.error("Server responded with error status:", response.status);
-          console.error("Error data:", errorData);
-          return;
-        }
-
-        const responseData = await response.json();
-        console.log(responseData);
-        setProducts(responseData.products);
-      } catch (error) {
-        console.error("Error during fetch:", error.message);
+  async function fetchData() {
+    try {
+      const response = await fetch("http://127.0.0.1:5000/feed", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ user_email: localStorage.getItem("email") }),
+      });
+      if (!response.ok) {
+        // Handle server error
+        const errorData = await response.json();
+        console.error("Server responded with error status:", response.status);
+        console.error("Error data:", errorData);
+        return;
       }
+
+      const responseData = await response.json();
+      console.log(responseData);
+      setProducts(responseData.products);
+    } catch (error) {
+      console.error("Error during fetch:", error.message);
     }
+  }
+
+  useEffect(() => {
     fetchData();
   }, []);
 
@@ -49,17 +54,18 @@ export const DashboardPage = () => {
       </Box>
       <Box p="2rem">
         <SimpleGrid columns={[2, null, 4]} spacing="20px">
-          {products.map((product) => (
-            <FeedCard
-              id={product._id}
-              name={product.name}
-              description={product.description}
-              image={product.image_link}
-              likes_count={product.likes_count}
-              dislikes_count={product.dislikes_count}
-              is_like={product.is_like}
-            />
-          ))}
+          {products.length > 0 &&
+            products.map((product) => (
+              <FeedCard
+                id={product._id}
+                name={product.name}
+                description={product.description}
+                image={product.image_link}
+                likes_count={product.popularity.likes_count}
+                dislikes_count={product.popularity.dislikes_count}
+                is_like={product.popularity.user_liked}
+              />
+            ))}
         </SimpleGrid>
       </Box>
     </>

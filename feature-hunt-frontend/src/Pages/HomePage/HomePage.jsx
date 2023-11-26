@@ -168,7 +168,6 @@ const HomePage = () => {
 
   const handleLogin = async () => {
     try {
-      console.log(emailRefLogin);
       const email = emailRefLogin.current.value;
       const password = passwordRefLogin.current.value;
       try {

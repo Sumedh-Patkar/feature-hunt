@@ -34,9 +34,6 @@ const Navbar = () => {
         alignItems="center"
         flexGrow={1}
       >
-        <Link href="/" p={2}>
-          Home
-        </Link>
         <Link href="/feed" p={2}>
           Feed
         </Link>
@@ -46,7 +43,7 @@ const Navbar = () => {
         <Link href="/create-product" p={2}>
           Create Product
         </Link>
-        <Link href="/logout" p={2}>
+        <Link href="/" p={2}>
           Logout
         </Link>
       </Box>
