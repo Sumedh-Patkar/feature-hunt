@@ -1,23 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Home.css">
-    <title>Feature Hunt</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul class="navbar">
-                <li><a href="#" id="homeLink">Home</a></li>
-                <li><a href="#" id="loginLink">Login</a></li>
-                <li><a href="#" id="signupLink">Sign Up</a></li>
-                <li><a href="ErrorHandler.html" id="errorHandler">Error</a></li>
-                <li><a href="Dashboard.html" id="signupLink">Dashboard</a></li>
-            </ul>
-        </nav>
-    </header>
+{% extends 'base.html' %}
+
+{% block title %}
+    Feature Hunt
+{% endblock %}
+
+{% block body %}
+{{ super() }}
 
     <!-- Home Page -->
     <div class="home">
@@ -35,8 +23,9 @@
     </div>
 
     <!-- <script src="script.js"></script> -->
-</body>
-</html>
+
+{% endblock %}
+
 <!-- 
 <script>
     // Sample feature data (you can load data dynamically from a server)

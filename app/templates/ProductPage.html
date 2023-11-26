@@ -1,46 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" type="text/css" href="../static/styles/ProductPage.css">
-</head>
-<title>{{product.name}} Page</title>
-<style>
-  
-  header>ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
+{% extends 'base.html' %}
 
-header>li {
-  float: right;
-}
+{% block title %}
+  {{product.name}} Page
+{% endblock %}
 
-header>li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+{% block body %}
+{{ super() }}
 
-header>li a:hover:not(.active) {
-  background-color: #04AA6D;
-}
-
-</style>
-<body>
-  <header>
-    <ul>
-      <li><a href="{{url_for('logout')}}">Logout</a></li>
-      <li><a href="{{url_for('add_product')}}">Create Product</a></li>
-      <li><a href="{{url_for('add_company')}}">Create Company</a></li>
-      <li><a href="{{url_for('product_feed')}}">Feed</a></li>
-    </ul>
-    
-  </header>
   <main>
     <section id="product-details">
       <div class="card">
@@ -65,5 +31,5 @@ header>li a:hover:not(.active) {
     </section>
   </main>
   <!-- <script src="product.js"></script> -->
-</body>
-</html>
+
+{% endblock %}

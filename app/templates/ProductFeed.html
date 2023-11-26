@@ -1,52 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/styles/productfeed.css">
-    <title>Feature Hunt</title>
-</head>
-<style>ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: right;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: #04AA6D;
-  }
-  
-    
-</style>
-<body>
-    <header>
-        <ul>
-            <li><a href="{{url_for('logout')}}">Logout</a></li>
-            <li><a href="{{url_for('add_product')}}">Create Product</a></li>
-            <li><a href="{{url_for('add_company')}}">Create Company</a></li>
-            <li><a href="{{url_for('product_feed')}}">Feed</a></li>
-        </ul>
-          
-    </header>
+{% extends 'base.html' %}
 
-    
+{% block title %}
+    Product Feed
+{% endblock %}
+
+{% block body %}
+
+    {{ super() }}
 
     <div class="dashboard" >
-        
         <div class="feature-list">
             {% for product in products %}
             <a href="{{url_for('view_product',product_id=product._id)}}" style="text-decoration: none;">
@@ -65,8 +27,4 @@
             {% endfor %}
         </div>
 
-    
-</body>
-</html>
-
-
+{% endblock %}
