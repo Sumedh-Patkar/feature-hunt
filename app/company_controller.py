@@ -11,17 +11,12 @@ productdb=Product()
 userdb=Users()
 companydb = Company()
 
-#################################################################################
-##       Function: add_product
-##       Description: This post request is used to gather all the information from
-##                    the project form and send it to the database to be stored
-##       Inputs:
-##           - NA
-##       Outputs:
-##           - Returns true or false if new project is able to be added
-#################################################################################
 @app.route("/addcompany", methods=['Post','GET'])
 def add_company():
+    """
+    This post request is used to gather all the information from
+    the project form and send it to the database to be stored
+    """
     if 'email' not in session:
         return redirect(url_for('login'))
     if request.method == 'POST':
