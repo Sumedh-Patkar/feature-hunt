@@ -8,17 +8,12 @@ from users import Users
 
 userdb=Users()
 
-#################################################################################
-##       Function: signup
-##       Description: Post request to register a new user, will give error if user is already
-##                    registered
-##       Inputs:
-##           - NA
-##       Outputs:
-##           - message: output if user is registered successful or not
-#################################################################################
 @app.route("/signup", methods=['POST',"GET"])
 def signup():
+    """
+    Post request to register a new user, will give error if user is already
+    """
+    print("Signup debugging")
     if request.method == "GET":
         return render_template("signup.html")
     
@@ -53,31 +48,22 @@ def signup():
 
 redirect_url = 'http://localhost:5000/'
 
-#################################################################################
-##       Function: logged_in
-##       Description: Checks if there is a session
-##       Inputs:
-##           - NA
-##       Outputs:
-##           - Sends a valid message or redirects to login url
-#################################################################################
+
 @app.route('/logged_in', methods=["POST", "GET"])
 def logged_in():
+    """
+    Checks if there is a session
+    """
     if "email" in session:
         return redirect(url_for('product_feed'))
     else:
         return redirect(url_for('login'))
 
-#################################################################################
-##       Function: login
-##       Description: Checks if user and email is in database to login
-##       Inputs:
-##           - NA
-##       Outputs:
-##           - Returns valid or invalid message if user can login
-#################################################################################
 @app.route("/login", methods=["POST", "GET"])
 def login():
+    """
+    Checks if user and email is in database to login
+    """
     if 'email' in session:
         return redirect(url_for('product_feed'))
     if request.method == "POST":
@@ -111,17 +97,11 @@ def login():
     else:
         return render_template("login.html")
     
-
-#################################################################################
-##       Function: logout
-##       Description: Checks if user is in session and removes them from it
-##       Inputs:
-##           - NA
-##       Outputs:
-##           - Successful or Unsuccessful Message
-#################################################################################
 @app.route("/logout", methods=["POST", "GET"])
 def logout():
+    """
+    Checks if user is in session and removes them from it
+    """
     if "email" in session:
         
         #delete the entire session
