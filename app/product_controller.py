@@ -11,17 +11,12 @@ companydb=Company()
 userdb=Users()
 productdb = Product()
 
-#################################################################################
-##       Function: add_product
-##       Description: This post request is used to gather all the information from
-##                    the project form and send it to the database to be stored
-##       Inputs:
-##           - NA
-##       Outputs:
-##           - Returns true or false if new project is able to be added
-#################################################################################
 @app.route("/addproduct", methods=['POST','GET'])
 def add_product():
+    """
+    This post request is used to gather all the information from
+    the project form and send it to the database to be stored
+    """
     if 'userid' not in session:
         return redirect(url_for('login'))
     if request.method == 'POST':
@@ -47,7 +42,6 @@ def add_product():
 
 
         return render_template("productform.html",user_companies=user_companies)
-
 
 
 @app.route("/getproducts", methods=['GET'])
@@ -95,7 +89,7 @@ def product_feed():
      #   return redirect(url_for('login'))
     
     products=productdb.get_products()
-    return render_template('productfeed.html',products=products)
+    return render_template('ProductFeed.html',products=products)
 
 
 #TODO: Fetch Product from backend
@@ -105,7 +99,7 @@ def view_product(product_id):
      #   return redirect(url_for('login'))
     productdb.add_view(product_id)
     product=productdb.get_product(product_id)
-    return render_template('productpage.html',product=product)
+    return render_template('ProductPage.html',product=product)
     
 
 

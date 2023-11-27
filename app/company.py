@@ -42,5 +42,3 @@ class Company:
         company['products'].append(product_id)
         self.db.save(company)
         return True
-    
-    
