@@ -247,8 +247,7 @@ X|Number of commits|in GH|
 X|Number of commits: by different people|in GH|
 X|Issues reports: there are **many**|
 X|Issues are being closed|evidence in GH|
-|DOI badge: exists|3|
-Below the banner. 10.5281/zenodo.5759268|
+|DOI badge: exists|3|https://github.com/Sumedh-Patkar/feature-hunt/tree/main, Below the banner. 10.5281/zenodo.5759268|
 X|Docs: doco generated, format not ugly |in GH|
 X|Docs: what: point descriptions of each class/function (in isolation) |
 x|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|doc page entries|
