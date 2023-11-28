@@ -21,7 +21,12 @@
 - [🖥️ Technologies](https://github.com/Sumedh-Patkar/feature-hunt/tree/main#%EF%B8%8F-technologies)
 - [📎 Usage Instructions]()
 	- [Landing Page](https://github.com/Sumedh-Patkar/feature-hunt#landing-page)
-		- 
+		- [Signing Up](https://github.com/Sumedh-Patkar/feature-hunt#signing-up)
+		- [Logging In](https://github.com/Sumedh-Patkar/feature-hunt#logging-in)
+	- [Feed Page](https://github.com/Sumedh-Patkar/feature-hunt#feed-page)
+		- [Product Details](https://github.com/Sumedh-Patkar/feature-hunt#product-details)
+	- [Company and Product Creation](https://github.com/Sumedh-Patkar/feature-hunt#product-details)
+		- [Product Creation](https://github.com/Sumedh-Patkar/feature-hunt#product-creation)
 - [👤 Contributors](https://github.com/Sumedh-Patkar/feature-hunt/tree/main#-contributors)
 
 
@@ -112,7 +117,7 @@ If you'd like to add your own product and have it available for feedback, you'll
 
 With the creation of your company, you can click the "Create Product" button at the top left to add your product to Feature Hunt. Make sure to select the right company for your product!
 
-<img src="docs/instructions/7_product_create" width="1200"/>
+<img src="docs/instructions/7_product_create.png" width="1200"/>
 
 
 ## 👤 Contributors
