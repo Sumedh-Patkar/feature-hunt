@@ -5,70 +5,65 @@ from flask import Response
 import bcrypt
 from app import app
 from users import Users
+import pdb
+from bson import json_util
 
 userdb=Users()
 
-@app.route("/signup", methods=['POST',"GET"])
+@app.route("/signup", methods=['POST'])
 def signup():
     """
     Post request to register a new user, will give error if user is already
     """
     print("Signup debugging")
-    if request.method == "GET":
-        return render_template("signup.html")
-    
-    #implementation for POST
-    user = request.form.get("name")
-    email = request.form.get("email")
-    password = request.form.get("password")
-    email_found = userdb.get_user_by_email(email)
-    print(email_found)
-    
+    if request.method == "POST":
+        request_data = json_util.loads(request.data)
+        user = request_data["name"]
+        email = request_data["email"]
+        password = request_data["password"]
 
-    if email_found:
-        error_dict = {
-            "code": 409,
-            "message": "This email already is already registered.",
-            "email": email
-        }
-        message = json.dumps(error_dict)
-        return message
+        print(user)
+        print(email)
+        print(password)
 
-    hashed = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
-    user_input = {'name': user, 'email': email, 'password': hashed, 'votes': [],'products':[],'companies':[]}
-    res,code=userdb.add_user(user_input)
-    if code==200:
-        session["email"] = email
-        session["name"] = user
-        session['userid']=res['UserID']
+        email_found = userdb.get_user_by_email(email)
+        print(email_found)
 
-        return redirect(url_for('logged_in'))
-    else:
-        return '<p>Something went wrong!. <a href="http://localhost:5000/signup">Signup again</a></p>'
+        if email_found:
+            error_dict = {
+                "code": 409,
+                "message": "This email already is already registered.",
+            }
+            message = json.dumps(error_dict)
+            return message
 
-redirect_url = 'http://localhost:5000/'
+        hashed = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+        user_input = {'name': user, 'email': email, 'password': hashed}
+        res, code = userdb.add_user(user_input)
+        
+        if code == 200:
+            session["email"] = email
+            session["name"] = user
+            session['userid'] = res['UserID']
 
+            return Response(200)
+        else:
+            error_dict = {
+                "code": 409,
+                "message": "Something went wrong. Please try again",
+            }
+            message = json.dumps(error_dict)
+            return message
 
-@app.route('/logged_in', methods=["POST", "GET"])
-def logged_in():
-    """
-    Checks if there is a session
-    """
-    if "email" in session:
-        return redirect(url_for('product_feed'))
-    else:
-        return redirect(url_for('login'))
-
-@app.route("/login", methods=["POST", "GET"])
+@app.route("/login", methods=["POST"])
 def login():
     """
     Checks if user and email is in database to login
     """
-    if 'email' in session:
-        return redirect(url_for('product_feed'))
     if request.method == "POST":
-        email = request.form.get("email", None)
-        password = request.form.get("password", None)
+        request_data = json_util.loads(request.data)
+        email = request_data["email"]
+        password = request_data["password"]
 
         if password is None or email is None:
 
@@ -88,14 +83,19 @@ def login():
                 print("Logged in successfully!")
                 return redirect(url_for('product_feed'))
             else:
-                #return html that the password was incorrect and a redirect link to the login page
-                return '<p>Invalid Password!. <a href="http://localhost:5000/login">Login again</a></p>'
+                error_dict = {
+                    "code": 409,
+                    "message": "Incorrect Email or Password!. Try again"
+                }
+                message = json.dumps(error_dict)
+                return message
         else:
-            #return html that the password was incorrect and a redirect link to the login page
-            return '<p>Invalid Email!. <a href="http://localhost:5000/login">Login again</a></p>'
-            
-    else:
-        return render_template("login.html")
+            error_dict = {
+                "code": 409,
+                "message": "Incorrect Email or Password!. Try again"
+            }
+            message = json.dumps(error_dict)
+            return message
     
 @app.route("/logout", methods=["POST", "GET"])
 def logout():
@@ -103,8 +103,7 @@ def logout():
     Checks if user is in session and removes them from it
     """
     if "email" in session:
-        
-        #delete the entire session
+        # delete the entire session
         session.clear()
         return redirect(url_for('login'))
     else:

@@ -7,3 +7,4 @@ db = client.get_database('feature-hunt')
 records = db.users
 product_records = db.products
 company_records = db.companies
+popularity_records = db.popularity

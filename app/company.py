@@ -16,10 +16,14 @@ class Company:
     def get_company(self,company_id):
         data = self.db.find_one({'_id': ObjectId(company_id)})
         return data
+
+    def get_company_by_name(self, company_name):
+        data = self.db.find_one({'name': company_name})
+        return data
     
     def add_company(self,company_input):
         x=self.db.insert_one(company_input)
-        return {'CompanyID': str(x.inserted_id), 'message': 'Product added successfully'}
+        return {'CompanyID': str(x.inserted_id), 'message': 'Company {} added successfully'.format(company_input['name'])}
     
     def delete_company(self,company_name):
         db_response = self.db.delete_one({'name': company_name})
@@ -42,5 +46,3 @@ class Company:
         company['products'].append(product_id)
         self.db.save(company)
         return True
-    
-    

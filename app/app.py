@@ -19,5 +19,6 @@ if __name__ == "__main__":
 
 @app.route('/')
 def index():
-    """ Default home page """
-    return render_template('Home.html')
+   """ Default home page """
+   if 'email' in session:
+      return Response(status=200)
