@@ -2,6 +2,7 @@
 <img width="800" alt="Feature Hunt" src="https://user-images.githubusercontent.com/11090612/135201949-a1f1de9d-f80a-4adf-a7ac-886c77c4c226.png">
 </p>
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/58e08879db504594a6453339779e5573)](https://app.codacy.com/gh/Sumedh-Patkar/feature-hunt?utm_source=github.com&utm_medium=referral&utm_content=Sumedh-Patkar/feature-hunt&utm_campaign=Badge_Grade)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/0aafe7a50d164bbfbe1e453ed9c8f4ce)](https://app.codacy.com/gh/Sumedh-Patkar/feature-hunt/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10211849.svg)](https://doi.org/10.5281/zenodo.10211849)
 [![GitHub license](https://img.shields.io/github/license/Sumedh-Patkar/feature-hunt)](https://github.com/Sumedh-Patkar/feature-hunt/blob/main/LICENSE)
