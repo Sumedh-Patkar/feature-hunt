@@ -247,11 +247,11 @@ X|Number of commits|in GH|
 X|Number of commits: by different people|in GH|
 X|Issues reports: there are **many**|
 X|Issues are being closed|evidence in GH|
-|DOI badge: exists|3|https://github.com/Sumedh-Patkar/feature-hunt/tree/main, Below the banner. 10.5281/zenodo.5759268|
+|DOI badge: exists|3|feature-hunt/tree/main/README.md, Below the banner. 10.5281/zenodo.5759268|
 X|Docs: doco generated, format not ugly |in GH|
 X|Docs: what: point descriptions of each class/function (in isolation) |
-x|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|doc page entries|
-X|Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing|
+|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|3|feature-hunt/tree/main/README.md, under the Instructions section|
+|Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing|3|feature-hunt/tree/main/README.md, The sections Introduction to Contributors tells the story of who Feature Hunt is for, why they should use it, usecases, as well the vision|
 X|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.|
 X|Use of version control tools|
 x|Use of style checkers |config files in GH showing your config|
@@ -268,7 +268,7 @@ X|Test cases: a large proportion of the issues related to handling failing cases
 X|Evidence that the whole team is using the same tools: everyone can get to all tools and files|
 X|Evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)|
 X|Evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)|
-X|Evidence that the members of the team are working across multiple places in the code base|
+|Evidence that the members of the team are working across multiple places in the code base|3|feature-hunt/commits/main, feature-hunt/commits/project3, and feature-hunt/commits/vite-react-port have commits over frontend, backend, and documentation|
 X|Short release cycles | (hard to see in short projects) project members are committing often enough so that everyone can get your work|
 
 
