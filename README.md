@@ -19,6 +19,11 @@ Start leveraging Feature Hunt today to help you make informed decisions for your
   </a>
 </div>	
 <div>
+  <a href="https://react.dev/" target="_blank"> 
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png" alt="js" width="15" height="15"/><a> React</a>
+  </a>
+</div>	
+<div>
   <a href="https://www.javascript.com" target="_blank"> 
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="js" width="15" height="15"/><a> JavaScript</a>
   </a>
