@@ -239,7 +239,7 @@ You can now run and test the project locally and in deployments. More info about
 
 ## Rubric
 
-|Notes|evidence|
+|Notes|Score|Evidence|
 |-----|-|--------|
 X|Video|2min video of new functionality, showing a significant delta from prior.|
 X|Workload is spread over the whole team|evidence in GH|
@@ -247,7 +247,7 @@ X|Number of commits|in GH|
 X|Number of commits: by different people|in GH|
 X|Issues reports: there are **many**|
 X|Issues are being closed|evidence in GH|
-|DOI badge: exists|3|https://github.com/Sumedh-Patkar/feature-hunt/tree/main
+|DOI badge: exists|3|
 Below the banner. 10.5281/zenodo.5759268|
 X|Docs: doco generated, format not ugly |in GH|
 X|Docs: what: point descriptions of each class/function (in isolation) |
