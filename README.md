@@ -196,9 +196,44 @@ We fully believe in supporting and updating our products and Feature Hunt is no 
 
 ## Rubric
 
+|Notes|Score|Evidence|
+|-----|-|--------|
+X|Video|2min video of new functionality, showing a significant delta from prior.|
+|Workload is spread over the whole team|3|feature-hunt/commits/main, feature-hunt/commits/project3, and feature-hunt/commits/vite-react-port show commits for all members working on different features together|
+|Number of commits|3|feature-hunt/commits/40+ in main (i stopped counting), 24 in feature-hunt/commits/project3, and 13 in feature-hunt/commits/vite-react-port|
+|Number of commits: by different people|3|feature-hunt/commits/main, feature-hunt/commits/project3, and feature-hunt/commits/vite-react-port show multiple commits for all members|
+|Issues reports: there are **many**|3|https://github.com/Sumedh-Patkar/feature-hunt/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc, many issues have been opened, worked on, and closed|
+|Issues are being closed|3|https://github.com/Sumedh-Patkar/feature-hunt/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed, multiple issues have been finished and closed|
+|DOI badge: exists|3|feature-hunt/tree/main/README.md, Below the banner. 10.5281/zenodo.5759268|
+X|Docs: doco generated, format not ugly |in GH|
+X|Docs: what: point descriptions of each class/function (in isolation) |
+|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|3|feature-hunt/tree/main/README.md, under the Instructions section|
+|Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing|3|feature-hunt/tree/main/README.md, The sections Introduction to Contributors tells the story of who Feature Hunt is for, why they should use it, usecases, as well the vision|
+X|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.|
+|Use of version control tools|3|Version control using Git|s
+x|Use of style checkers |config files in GH showing your config|
+X|Use of code formatters. |config files in GH showing your this formatter's  config|
+X|Use of syntax checkers. |config files iin  GH showing this checker's config  |
+x|Use of code coverage |config files in GH|
+x|Other automated analysis tools|config files in GH|
+X|Test cases exist|dozens of tests and those test cases are more than 30% of the code base|
+X|Test cases are routinely executed|E.g. travis-com.com or github actions or something|
+X|The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up|
+X|Issues are discussed before they are closed|even if you discuss in slack, need a sumamry statement here|
+|Chat channel: exists|3|<img src="docs/evidence/1_chat_channel.png" width="1200"/>|
+X|Test cases: a large proportion of the issues related to handling failing cases.|If a test case fails, open an issue and fix it|
+|Evidence that the whole team is using the same tools: everyone can get to all tools and files|3|feature-hunt/commits/main, feature-hunt/commits/project3, and feature-hunt/commits/vite-react-port show commits for all members implying access to the repo, dependencies installation is automated|
+|Evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)|3|feature-hunt/commits/main, feature-hunt/commits/project3, and feature-hunt/commits/vite-react-port show commits for all members over various parts of the code used in the program|
+|Evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)|3|All members can run the program|
+|Evidence that the members of the team are working across multiple places in the code base|3|feature-hunt/commits/main, feature-hunt/commits/project3, and feature-hunt/commits/vite-react-port have commits over frontend, backend, and documentation|
+X|Short release cycles | (hard to see in short projects) project members are committing often enough so that everyone can get your work|
+
+
+## ARCHIVE DELETE LATER
+
 ## 🏁 Getting Started
 
-### Dependency Setu
+### Dependency Setup
 
 
 ### First Time Setup
@@ -236,49 +271,9 @@ This app has been deployed using Deta Space. Check it out [here!](https://featur
 
 You can now run and test the project locally and in deployments. More info about our deplyments and switching between production and devlopment can be found in our [Wiki](https://github.com/CSC510-Group-25/feature-hunt/wiki/Deployment:-Heroku-and-Netlify)
 
-
-## Rubric
-
-|Notes|Score|Evidence|
-|-----|-|--------|
-X|Video|2min video of new functionality, showing a significant delta from prior.|
-X|Workload is spread over the whole team|evidence in GH|
-X|Number of commits|in GH|
-X|Number of commits: by different people|in GH|
-X|Issues reports: there are **many**|
-X|Issues are being closed|evidence in GH|
-|DOI badge: exists|3|feature-hunt/tree/main/README.md, Below the banner. 10.5281/zenodo.5759268|
-X|Docs: doco generated, format not ugly |in GH|
-X|Docs: what: point descriptions of each class/function (in isolation) |
-|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|3|feature-hunt/tree/main/README.md, under the Instructions section|
-|Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing|3|feature-hunt/tree/main/README.md, The sections Introduction to Contributors tells the story of who Feature Hunt is for, why they should use it, usecases, as well the vision|
-X|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.|
-X|Use of version control tools|
-x|Use of style checkers |config files in GH showing your config|
-X|Use of code formatters. |config files in GH showing your this formatter's  config|
-X|Use of syntax checkers. |config files iin  GH showing this checker's config  |
-x|Use of code coverage |config files in GH|
-x|Other automated analysis tools|config files in GH|
-X|Test cases exist|dozens of tests and those test cases are more than 30% of the code base|
-X|Test cases are routinely executed|E.g. travis-com.com or github actions or something|
-X|The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up|
-X|Issues are discussed before they are closed|even if you discuss in slack, need a sumamry statement here|
-|Chat channel: exists|3|<img src="docs/evidence/1_chat_channel.png" width="1200"/>|
-X|Test cases: a large proportion of the issues related to handling failing cases.|If a test case fails, open an issue and fix it|
-|Evidence that the whole team is using the same tools: everyone can get to all tools and files|3|feature-hunt/commits/main, feature-hunt/commits/project3, and feature-hunt/commits/vite-react-port show commits for all members implying access to the repo, dependencies installation is automated|
-|Evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)|3|feature-hunt/commits/main, feature-hunt/commits/project3, and feature-hunt/commits/vite-react-port show commits for all members over various parts of the code used in the program|
-|Evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)|3|All members can run the program|
-|Evidence that the members of the team are working across multiple places in the code base|3|feature-hunt/commits/main, feature-hunt/commits/project3, and feature-hunt/commits/vite-react-port have commits over frontend, backend, and documentation|
-X|Short release cycles | (hard to see in short projects) project members are committing often enough so that everyone can get your work|
-
-
-
-# WORK IN PROGRESS
-
 ## ⚙️ Contributions to the Project
-Please refer to the [Contributing.md](https://github.com/NidhayPancholi/feature-hunt/blob/development/CONTRIBUTING.md) if you want to contrbute to the Feature Hunt source code. Follow all the guidelines mentioned and raise a pull request for the developers to review before the code goes to the main source code.
 
-## ARCHIVE DELETE LATER
+Please refer to the [Contributing.md](https://github.com/NidhayPancholi/feature-hunt/blob/development/CONTRIBUTING.md) if you want to contrbute to the Feature Hunt source code. Follow all the guidelines mentioned and raise a pull request for the developers to review before the code goes to the main source code.
 
 ## Phase 4 Video 
 Here is the link to the video where we talk about the features we added in Phase 4 with a comparison to Phase 3.
