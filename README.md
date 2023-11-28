@@ -20,6 +20,8 @@
 - [🎯 Introduction](https://github.com/Sumedh-Patkar/feature-hunt/tree/main#-introduction)
 - [🖥️ Technologies](https://github.com/Sumedh-Patkar/feature-hunt/tree/main#%EF%B8%8F-technologies)
 - [📎 Usage Instructions]()
+	- [Landing Page](https://github.com/Sumedh-Patkar/feature-hunt#landing-page)
+		- 
 - [👤 Contributors](https://github.com/Sumedh-Patkar/feature-hunt/tree/main#-contributors)
 
 
@@ -80,7 +82,38 @@ Feature Hunt is built with:
 
 Our intuitive home page is the first thing you'll see. If you're a new user, go ahead and click the login button. Otherwise, the sign up button will allow you create a new account for Feature Hunt.
 
-<img src="docs/instructions/1_home.png" width="1200" />
+<img src="docs/instructions/1_home.png" width="1200"/>
+
+#### Signing Up
+
+<img src="docs/instructions/2_signup.png" width="1200"/>
+
+#### Logging In
+
+<img src="docs/instructions/3_login.png" width="1200"/>
+
+### Feed Page
+
+Once you're logged in, you'll be greeted by the Feed page. Here, you can view existing products as well as express your feedback by upvoting or downvoting. Clicking on the product also allows you to view more information about it.
+
+<img src="docs/instructions/4_feed.png" width="1200"/>
+
+#### Product Details
+
+<img src="docs/instructions/5_product.png" width="1200"/>
+
+### Company and Product Creation
+
+If you'd like to add your own product and have it available for feedback, you'll first have to create a Company. To do this, click "Create Company" first at the top left. This will bring you to the company creation page where you can enter details such as a brief description or keywords.
+
+<img src="docs/instructions/6_company.png" width="1200"/>
+
+#### Product Creation
+
+With the creation of your company, you can click the "Create Product" button at the top left to add your product to Feature Hunt. Make sure to select the right company for your product!
+
+<img src="docs/instructions/7_product_create" width="1200"/>
+
 
 ## 👤 Contributors
 
