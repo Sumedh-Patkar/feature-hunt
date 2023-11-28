@@ -20,6 +20,7 @@ import {
   FormLabel,
   Input,
   Textarea,
+  Center,
 } from "@chakra-ui/react";
 import Navbar from "../../components/Navbar/NavBar";
 
@@ -108,14 +109,15 @@ export const ProductPage = () => {
         >
           Instagram
         </Heading>
-        <Box textAlign="center">
+        <Center textAlign="center">
           <Image
             src={productData.imageUrl}
             alt="Product Image"
             mb={4}
+            maxH={150}
             borderRadius="md"
           />
-        </Box>
+        </Center>
         <Box mb={4}>
           <Text fontWeight="bold">Created By (Company):</Text>
           <Text>{productData.createdBy}</Text>
