@@ -4,12 +4,13 @@
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/0aafe7a50d164bbfbe1e453ed9c8f4ce)](https://app.codacy.com/gh/Sumedh-Patkar/feature-hunt/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10211849.svg)](https://doi.org/10.5281/zenodo.10211849)
+[![GitHub issues](https://img.shields.io/github/issues/Sumedh-Patkar/feature-hunt)](https://github.com/Sumedh-Patkar/feature-hunt/issues)
 [![GitHub license](https://img.shields.io/github/license/Sumedh-Patkar/feature-hunt)](https://github.com/Sumedh-Patkar/feature-hunt/blob/main/LICENSE)
 ![Python](https://img.shields.io/badge/Python-3.9-blue.svg)
+[![Docker](https://img.shields.io/badge/Containerized-Docker-blue)](https://docs.docker.com/compose/)
+
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![Docker](https://img.shields.io/badge/Containerized-Docker-blue)](https://docs.docker.com/compose/)
-[![GitHub issues](https://img.shields.io/github/issues/CSC510-Group-25/feature-hunt)](https://github.com/CSC510-Group-25/feature-hunt/issues)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/CSC510-Group-25/feature-hunt?color=red)](https://github.com/CSC510-Group-25/feature-hunt/issues?q=is%3Aissue+is%3Aclosed)
 [![Coverage Status](https://coveralls.io/repos/github/Ashnayak/feature-hunt/badge.svg)](https://coveralls.io/github/Ashnayak/feature-hunt)
 [![CodeQL](https://github.com/NidhayPancholi/feature-hunt/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/CSC510-Group-25/feature-hunt/actions/workflows/codeql-analysis.yml)
@@ -17,7 +18,7 @@
 
 ## 📋 Table of contents
 
-- [Introduction](## 🎯 Introduction)
+- [Introduction](https://github.com/Sumedh-Patkar/feature-hunt/tree/main#-introduction)
 
 
 ## 🎯 Introduction
