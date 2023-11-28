@@ -26,7 +26,7 @@
 		- [Product Details](https://github.com/Sumedh-Patkar/feature-hunt#product-details)
 	- [Company and Product Creation](https://github.com/Sumedh-Patkar/feature-hunt#product-details)
 		- [Product Creation](https://github.com/Sumedh-Patkar/feature-hunt#product-creation)
-- [🏁 Getting Started](https://github.com/Sumedh-Patkar/feature-hunt/feature-hunt#-getting-started)
+- [🏁 Getting Started](https://github.com/Sumedh-Patkar/feature-hunt#-getting-started)
 - [🆕 Changelog](https://github.com/Sumedh-Patkar/feature-hunt#-changelog)
 - [🔮 Future Scope](https://github.com/Sumedh-Patkar/feature-hunt#-future-scope)
 - [⚙️ Contributions](https://github.com/Sumedh-Patkar/feature-hunt/tree/main#%EF%B8%8F-contributions-to-the-project)
