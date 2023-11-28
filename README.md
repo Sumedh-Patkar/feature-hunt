@@ -27,6 +27,7 @@
 		- [Product Details](https://github.com/Sumedh-Patkar/feature-hunt#product-details)
 	- [Company and Product Creation](https://github.com/Sumedh-Patkar/feature-hunt#product-details)
 		- [Product Creation](https://github.com/Sumedh-Patkar/feature-hunt#product-creation)
+- [🆕 Changelog]()
 - [👤 Contributors](https://github.com/Sumedh-Patkar/feature-hunt/tree/main#-contributors)
 
 
@@ -118,6 +119,19 @@ If you'd like to add your own product and have it available for feedback, you'll
 With the creation of your company, you can click the "Create Product" button at the top left to add your product to Feature Hunt. Make sure to select the right company for your product!
 
 <img src="docs/instructions/7_product_create.png" width="1200"/>
+
+
+## 🆕 Changelog
+
+### Version 5.1
+#### 11/27/2023
+
+- Migrated frontend to React
+- Rebuilt the UI from the ground up
+- Added support for Docker
+- Added support for user uploadable images
+- Fixed major critical breaking bugs and issues
+- Fixed voting functionality
 
 
 ## 👤 Contributors
