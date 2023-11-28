@@ -240,7 +240,7 @@ You can now run and test the project locally and in deployments. More info about
 ## Rubric
 
 |Notes|evidence|
-|-----|---------|
+|-----|-|--------|
 X|Video|2min video of new functionality, showing a significant delta from prior.|
 X|Workload is spread over the whole team|evidence in GH|
 X|Number of commits|in GH|
