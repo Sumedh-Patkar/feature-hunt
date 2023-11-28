@@ -265,8 +265,8 @@ X|The files CONTRIBUTING.md lists coding standards and lots of tips on how to ex
 X|Issues are discussed before they are closed|even if you discuss in slack, need a sumamry statement here|
 |Chat channel: exists|3|<img src="docs/evidence/1_chat_channel.png" width="1200"/>|
 X|Test cases: a large proportion of the issues related to handling failing cases.|If a test case fails, open an issue and fix it|
-|Evidence that the whole team is using the same tools: everyone can get to all tools and files|feature-hunt/commits/main, feature-hunt/commits/project3, and feature-hunt/commits/vite-react-port show commits for all members implying access to the repo, dependencies installation is automated|
-|Evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)|feature-hunt/commits/main, feature-hunt/commits/project3, and feature-hunt/commits/vite-react-port show commits for all members over various parts of the code used in the program|
+|Evidence that the whole team is using the same tools: everyone can get to all tools and files|3|feature-hunt/commits/main, feature-hunt/commits/project3, and feature-hunt/commits/vite-react-port show commits for all members implying access to the repo, dependencies installation is automated|
+|Evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)|3|feature-hunt/commits/main, feature-hunt/commits/project3, and feature-hunt/commits/vite-react-port show commits for all members over various parts of the code used in the program|
 |Evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)|3|All members can run the program|
 |Evidence that the members of the team are working across multiple places in the code base|3|feature-hunt/commits/main, feature-hunt/commits/project3, and feature-hunt/commits/vite-react-port have commits over frontend, backend, and documentation|
 X|Short release cycles | (hard to see in short projects) project members are committing often enough so that everyone can get your work|
