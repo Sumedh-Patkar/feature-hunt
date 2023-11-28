@@ -7,18 +7,19 @@
 [![GitHub issues](https://img.shields.io/github/issues/Sumedh-Patkar/feature-hunt)](https://github.com/Sumedh-Patkar/feature-hunt/issues)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/Sumedh-Patkar/feature-hunt?color=red)](https://github.com/Sumedh-Patkar/feature-hunt/issues?q=is%3Aissue+is%3Aclosed)
 [![GitHub license](https://img.shields.io/github/license/Sumedh-Patkar/feature-hunt)](https://github.com/Sumedh-Patkar/feature-hunt/blob/main/LICENSE)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
 ![Python](https://img.shields.io/badge/Python-3.9-blue.svg)
 [![Docker](https://img.shields.io/badge/Containerized-Docker-blue)](https://docs.docker.com/compose/)
-
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![Coverage Status](https://coveralls.io/repos/github/Ashnayak/feature-hunt/badge.svg)](https://coveralls.io/github/Ashnayak/feature-hunt)
-[![CodeQL](https://github.com/NidhayPancholi/feature-hunt/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/CSC510-Group-25/feature-hunt/actions/workflows/codeql-analysis.yml)
 ![Pylint](https://img.shields.io/badge/Pylint-Passing-brightgreen.svg)
+
+
 
 ## 📋 Table of contents
 
 - [🎯 Introduction](https://github.com/Sumedh-Patkar/feature-hunt/tree/main#-introduction)
 - [🖥️ Technologies](https://github.com/Sumedh-Patkar/feature-hunt/tree/main#%EF%B8%8F-technologies)
+- [📎 Usage Instructions]()
 - [👤 Contributors](https://github.com/Sumedh-Patkar/feature-hunt/tree/main#-contributors)
 
 
@@ -72,6 +73,14 @@ Feature Hunt is built with:
   </a>
 </div>  
 </p>
+
+## 📎 Usage Instructions
+
+### Landing Page
+
+Our intuitive home page is the first thing you'll see. If you're a new user, go ahead and click the login button. Otherwise, the sign up button will allow you create a new account for Feature Hunt.
+
+<img src="docs/instructions/1_home.png" width="1200" />
 
 ## 👤 Contributors
 
