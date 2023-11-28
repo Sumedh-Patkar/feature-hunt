@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Box,
   Heading,
@@ -56,6 +56,43 @@ export const ProductPage = () => {
   const [isFeaturesModalOpen, setIsFeaturesModalOpen] = useState(false);
   const [newFeature, setNewFeature] = useState({ ...initialFeatureState });
 
+  useEffect(() => {
+    const fetchProductDetails = async () => {
+      try {
+        let windowUrl = window.location.href.split("/")
+        let productId = windowUrl[windowUrl.length-1]
+        console.log("product ID = ")
+        console.log(productId)
+        const response = await fetch("http://127.0.0.1:5000/getProduct/"+productId, {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            // Add any other headers as needed
+          }
+        });
+        if (!response.ok) {
+          // Handle server error
+          const errorData = await response.json();
+          console.error("Server responded with error status:", response.status);
+          console.error("Error data:", errorData);
+          return;
+        }
+        // Do something with the response
+        const responseData = await response.json();
+        console.log("Got Product Details successfully:");
+        console.log(responseData)
+        setProductData(responseData)
+      } catch (error) {
+        console.error("Error during fetch:", error.message);
+      }
+    }
+  
+    fetchProductDetails();
+  }, []); // The empty dependency array ensures the effect runs only once when the component mounts
+
+
+
+
   const openFeaturesModal = () => {
     setIsFeaturesModalOpen(true);
   };
@@ -65,21 +102,55 @@ export const ProductPage = () => {
     setNewFeature({ ...initialFeatureState });
   };
 
-  const handleAddFeature = () => {
+  const handleAddFeature = async () => {
     // Validate the form fields
-    if (!newFeature.name || !newFeature.description || !newFeature.tags) {
+    console.log("handling feature addition")
+    console.log(newFeature)
       // Display an error message or take appropriate action
-      return;
-    }
+      console.log(newFeature.name)
+      console.log(newFeature.description)
+      
+      try {
+        let windowUrl = window.location.href.split("/")
+        let productId = windowUrl[windowUrl.length-1]
+        console.log("product ID = ")
+        console.log(productId)
+        const response = await fetch("http://127.0.0.1:5000/suggestfeature/"+productId, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            // Add any other headers as needed
+          },
+          body: JSON.stringify({
+            'name': newFeature.name,
+            'description': newFeature.description
+          }),
+        });
+        if (!response.ok) {
+          // Handle server error
+          const errorData = await response.json();
+          console.error("Server responded with error status:", response.status);
+          console.error("Error data:", errorData);
+          return;
+        }
+        // Do something with the response
+        const responseData = await response.json();
+        console.log("Feature suggestion successful:", responseData);
+        // navigate("/feed");
+        setIsFeaturesModalOpen(false);
+      } catch (error) {
+        console.error("Error during fetch:", error.message);
+      }
+      
 
     // Update the features state with the new feature
-    setProductData((prevProductData) => ({
-      ...prevProductData,
-      features: [...prevProductData.features, newFeature],
-    }));
+    // setProductData((prevProductData) => ({
+    //   ...prevProductData,
+    //   features: [...prevProductData.features, newFeature],
+    // }));
 
     // Close the modal
-    closeFeaturesModal();
+    // closeFeaturesModal();
   };
 
   const backgroundColor = useColorModeValue("green.100", "green.800");
@@ -120,7 +191,7 @@ export const ProductPage = () => {
         </Center>
         <Box mb={4}>
           <Text fontWeight="bold">Created By (Company):</Text>
-          <Text>{productData.createdBy}</Text>
+          <Text>{productData.company_name}</Text>
         </Box>
         <Box mb={4}>
           <Text fontWeight="bold">Description:</Text>
