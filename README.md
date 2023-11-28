@@ -274,16 +274,3 @@ You can now run and test the project locally and in deployments. More info about
 ## ⚙️ Contributions to the Project
 
 Please refer to the [Contributing.md](https://github.com/NidhayPancholi/feature-hunt/blob/development/CONTRIBUTING.md) if you want to contrbute to the Feature Hunt source code. Follow all the guidelines mentioned and raise a pull request for the developers to review before the code goes to the main source code.
-
-## Phase 4 Video 
-Here is the link to the video where we talk about the features we added in Phase 4 with a comparison to Phase 3.
-
-https://youtu.be/xwCHYNFJZXg
-
-### Watch this short video to know more:
-
-https://user-images.githubusercontent.com/26930183/135515516-d84f3a28-6d8c-49de-8068-50748e2a76b0.mp4
-
-https://user-images.githubusercontent.com/42051115/140450152-61fcce18-c307-41bc-bfa4-92afe4fc1c40.mp4
-
-https://user-images.githubusercontent.com/78971563/140450270-8782b2f8-3634-4bdc-86d6-4e4bbcf19a4a.mp4
