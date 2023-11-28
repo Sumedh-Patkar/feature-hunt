@@ -5,6 +5,8 @@ from flask import Response
 import bcrypt
 from app import app
 from users import Users
+import pdb
+from bson import json_util
 
 userdb=Users()
 
@@ -15,9 +17,15 @@ def signup():
     """
     print("Signup debugging")
     if request.method == "POST":
-        user = request.form.get("name")
-        email = request.form.get("email")
-        password = request.form.get("password")
+        request_data = json_util.loads(request.data)
+        user = request_data["name"]
+        email = request_data["email"]
+        password = request_data["password"]
+
+        print(user)
+        print(email)
+        print(password)
+
         email_found = userdb.get_user_by_email(email)
         print(email_found)
 
@@ -32,6 +40,7 @@ def signup():
         hashed = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
         user_input = {'name': user, 'email': email, 'password': hashed}
         res, code = userdb.add_user(user_input)
+        
         if code == 200:
             session["email"] = email
             session["name"] = user
@@ -52,8 +61,9 @@ def login():
     Checks if user and email is in database to login
     """
     if request.method == "POST":
-        email = request.form.get("email", None)
-        password = request.form.get("password", None)
+        request_data = json_util.loads(request.data)
+        email = request_data["email"]
+        password = request_data["password"]
 
         if password is None or email is None:
 
