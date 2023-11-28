@@ -1,27 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/styles/ErrorHandler.css">
-    <title>Error Page - Feature Hunt</title>
-</head>
-<body>
-    <header>
-        
-        <ul>
-            <li><a href="{{url_for('logout')}}">Logout</a></li>
-            <li><a href="{{url_for('add_product')}}">Create Product</a></li>
-            <li><a href="{{url_for('add_company')}}">Create Company</a></li>
-            <li><a href="{{url_for('product_feed')}}">Feed</a></li>
-        </ul>
-  
-    </header>
+{% extends 'base.html' %}
+
+{% block title %}
+    Error Page - Feature Hunt
+{% endblock %}
+
+{% block body %}
+{{ super() }}
 
     <div class="error">
         <h1>Error</h1>
         <p>Sorry, an error occurred. Please try again later.</p>
     </div>
-</body>
-</html>
 
+{% endblock %}
