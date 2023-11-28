@@ -2,10 +2,11 @@
 <img width="800" alt="Feature Hunt" src="https://user-images.githubusercontent.com/11090612/135201949-a1f1de9d-f80a-4adf-a7ac-886c77c4c226.png">
 </p>
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/0aafe7a50d164bbfbe1e453ed9c8f4ce)](https://app.codacy.com/gh/Sumedh-Patkar/feature-hunt/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10211849.svg)](https://doi.org/10.5281/zenodo.10211849)
 [![GitHub license](https://img.shields.io/github/license/Sumedh-Patkar/feature-hunt)](https://github.com/Sumedh-Patkar/feature-hunt/blob/main/LICENSE)
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bb78c7431a71487595f3031af06dac4c)](https://app.codacy.com/gh/CSC510-Group-25/feature-hunt?utm_source=github.com&utm_medium=referral&utm_content=CSC510-Group-25/feature-hunt&utm_campaign=Badge_Grade_Settings)
+
 ![Python](https://img.shields.io/badge/Python-3.9-blue.svg)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Docker](https://img.shields.io/badge/Containerized-Docker-blue)](https://docs.docker.com/compose/)
