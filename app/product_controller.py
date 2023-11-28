@@ -8,6 +8,7 @@ from users import Users
 from company import Company
 from bson import json_util
 import json
+import pdb
 
 companydb=Company()
 userdb=Users()
@@ -78,8 +79,8 @@ def remove_vote(product_id):
 
 @app.route('/feed', methods=['GET'])
 def product_feed():
-    if 'email' not in session:
-       return redirect(url_for('/'))
+    # if 'email' not in session:
+    #    return redirect(url_for('/'))
     
     products=productdb.get_products()
     
@@ -87,8 +88,8 @@ def product_feed():
 
 @app.route('/viewproduct/<product_id>', methods=['GET'])
 def view_product(product_id):
-    if 'userid' not in session:
-       return redirect(url_for('login'))
+    # if 'userid' not in session:
+    #    return redirect(url_for('login'))
 
     productdb.add_view(product_id)
     product = productdb.get_product(product_id)
