@@ -121,7 +121,7 @@ const HomePage = () => {
             </FormControl>
           </ModalBody>
           <ModalFooter>
-            <Button colorScheme="green" mr={3} onClick={handleSignup}>
+            <Button colorScheme="green" mr={3}>
               Signup
             </Button>
             <Button onClick={onCloseSignup} variant="ghost">
@@ -133,26 +133,26 @@ const HomePage = () => {
     );
   };
 
-  const handleSignup = async () => {
-    try {
-      const response = await axios.post("http://localhost:5000/signup", {
-        name,
-        email,
-        password,
-      });
+  //   const handleSignup = async () => {
+  //     try {
+  //       const response = await axios.post("http://localhost:5000/signup", {
+  //         name,
+  //         email,
+  //         password,
+  //       });
 
-      // Handle the response as needed
-      console.log(response.data);
-      localStorage.setItem("name", response.data.name);
-      localStorage.setItem("email", response.data.email);
-      onCloseSignupse();
-      navigate("/dashboard");
-      // Redirect or perform other actions based on the response
-    } catch (error) {
-      // Handle errors, e.g., display an error message to the user
-      console.error("Signup error:", error);
-    }
-  };
+  //       // Handle the response as needed
+  //       console.log(response.data);
+  //       localStorage.setItem("name", response.data.name);
+  //       localStorage.setItem("email", response.data.email);
+  //       onCloseSignupse();
+  //       navigate("/dashboard");
+  //       // Redirect or perform other actions based on the response
+  //     } catch (error) {
+  //       // Handle errors, e.g., display an error message to the user
+  //       console.error("Signup error:", error);
+  //     }
+  //   };
 
   return (
     <>
