@@ -3,9 +3,9 @@
 </p>
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10211849.svg)](https://doi.org/10.5281/zenodo.10211849)
+[![GitHub license](https://img.shields.io/github/license/Sumedh-Patkar/feature-hunt)](https://github.com/Sumedh-Patkar/feature-hunt/blob/main/LICENSE)
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/bb78c7431a71487595f3031af06dac4c)](https://app.codacy.com/gh/CSC510-Group-25/feature-hunt?utm_source=github.com&utm_medium=referral&utm_content=CSC510-Group-25/feature-hunt&utm_campaign=Badge_Grade_Settings)
-[![GitHub license](https://img.shields.io/github/license/shahrk/feature-hunt)](https://github.com/shahrk/feature-hunt/blob/main/LICENSE)
 ![Python](https://img.shields.io/badge/Python-3.9-blue.svg)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Docker](https://img.shields.io/badge/Containerized-Docker-blue)](https://docs.docker.com/compose/)
