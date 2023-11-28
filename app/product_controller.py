@@ -82,7 +82,8 @@ def product_feed():
        return redirect(url_for('/'))
     
     products=productdb.get_products()
-    return render_template('ProductFeed.html',products=products)
+    
+    return jsonify({'products': products}), 200
 
 @app.route('/viewproduct/<product_id>', methods=['GET'])
 def view_product(product_id):
