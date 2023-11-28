@@ -191,7 +191,7 @@ We fully believe in supporting and updating our products and Feature Hunt is no 
 - Advanced Search Filters
 
 
-## ⚙️ Contributions to the Project
+## ⚙️ Contributions
 
 Please refer to the [Contributing.md](https://github.com/NidhayPancholi/feature-hunt/blob/development/CONTRIBUTING.md) if you want to contrbute to the Feature Hunt source code. Follow all the guidelines mentioned and raise a pull request for the developers to review before the code goes to the main source code.
 
