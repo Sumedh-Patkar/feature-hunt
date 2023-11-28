@@ -38,12 +38,11 @@ def add_company():
 
         res = companydb.add_company(company_input)
 
-        return jsonify({'name', res['name']}, 201)
+        return jsonify({'company_name', res['name']}), 201
 
 @app.route("/getcompanies", methods=['GET'])
 def get_companies():
     res = companydb.get_companies()
-    print("Printint result")
     json_res = json_util.dumps(res)
     return json_res
 
