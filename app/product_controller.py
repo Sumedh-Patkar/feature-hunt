@@ -6,13 +6,16 @@ from app import app
 from products import Product
 from users import Users
 from company import Company
+from popularity import Popularity
 from bson import json_util
 import json
+from pprint import pprint
 import pdb
 
 companydb=Company()
 userdb=Users()
 productdb = Product()
+popularitydb = Popularity()
 
 @app.route("/addproduct", methods=['POST'])
 def add_product():
@@ -44,7 +47,7 @@ def add_product():
 
         res=productdb.add_product(product_input)
         companydb.add_product_to_company(company_id,res['ProductID'])
-        
+
         return jsonify({'message': res['message']}), 201
 
 @app.route("/getproducts", methods=['GET'])
@@ -77,24 +80,63 @@ def add_view(product_id):
     json_res = json_util.dumps(res)
     return json_res
 
-@app.route("/addVote/<product_id>", methods=['GET'])
-def add_vote(product_id):
-    res=productdb.add_vote(product_id)
-    return redirect(url_for('product_feed'))
+@app.route("/like", methods=['POST'])
+def like_product():
+    """
+    Post request to send to the popularity database.
+    Increases the likes
+    """
+    if request.method == 'POST':
+        request_data = json_util.loads(request.data)
+        product_name = request_data["product_name"]
+        user_email = request_data["user_email"]
+        user_id = userdb.get_user_by_email()
+        res = popularitydb.like_product(product_name, user_id)
+        return jsonify(res), 201
 
+@app.route("/dislike", methods=['POST'])
+def dislike_product():
+    """
+    Post request to send to the popularity database.
+    Increases the dislikes
+    """
+    if request.method == 'POST':
+        request_data = json_util.loads(request.data)
+        product_name = request_data["product_name"]
+        user_email = request_data["user_email"]
+        user_id = userdb.get_user_by_email()
+        res = popularitydb.dislike_product(product_name, user_id)
+        return jsonify(res), 201
 
-@app.route("/removeVote/<product_id>", methods=['GET'])
-def remove_vote(product_id):
-    res=productdb.remove_vote(product_id)
-    return redirect(url_for('product_feed'))
-
+@app.route("/unlike", methods=['POST'])
+def unlike_product():
+    """
+    Post request to send to the popularity database.
+    Increases the likes
+    """
+    if request.method == 'POST':
+        request_data = json_util.loads(request.data)
+        product_name = request_data["product_name"]
+        user_email = request_data["user_email"]
+        user_id = userdb.get_user_by_email()
+        res = popularitydb.unlike_product(product_name, user_id)
+        return jsonify(res), 201
 
 @app.route('/feed', methods=['GET'])
 def product_feed():
     # if 'email' not in session:
     #    return redirect(url_for('/'))
-    
+
     products=productdb.get_products()
+    pprint(products)
+    for product in products:
+        # request_data = json_util.loads(request.data)
+        # user_email = request_data['user_email']
+        # user_id = userdb.get_user_by_email()
+        # Remove this hardcoding below and uncomment the above part
+        user_id = '6563a4c18c7bf61beb6fcf7a'
+        popularity = popularitydb.get_product_popularity(product['name'], user_id)
+        product['popularity'] = popularity
     return jsonify({'products': products}), 200
 
 @app.route('/viewproduct/<product_id>', methods=['GET'])
