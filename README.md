@@ -15,6 +15,11 @@
 [![CodeQL](https://github.com/NidhayPancholi/feature-hunt/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/CSC510-Group-25/feature-hunt/actions/workflows/codeql-analysis.yml)
 ![Pylint](https://img.shields.io/badge/Pylint-Passing-brightgreen.svg)
 
+## 📋 Table of contents
+
+- [Introduction](## 🎯 Introduction)
+
+
 ## 🎯 Introduction
 
 Being able to receive and track feedback from customers is a valuable tool when it comes to product development. 
@@ -22,6 +27,7 @@ Being able to receive and track feedback from customers is a valuable tool when 
 Feature Hunt allows one to effortlessly submit, endorse, and participate in discussions surrounding feature and change requests. The software also allows product administrators to efficiently categorize and prioritize submissions to strengthen their decision making process.
 
 Start leveraging Feature Hunt today to help you make informed decisions for your product.
+
 
 ## 🖥️ Technologies
 
