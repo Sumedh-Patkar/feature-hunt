@@ -18,7 +18,6 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -180,7 +179,6 @@ const HomePage = () => {
             // Add any other headers as needed
           },
           body: JSON.stringify({
-            name,
             email,
             password,
           }),

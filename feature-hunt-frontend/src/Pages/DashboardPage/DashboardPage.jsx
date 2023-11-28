@@ -12,17 +12,28 @@ export const DashboardPage = () => {
   }
 
   useEffect(() => {
-    try {
-      const response = fetch("http://127.0.0.1:5000/feed", {
-        method: "GET",
-      });
-      const responseData = response.json();
-      console.log(responseData);
-      setProducts(responseData.products);
-    } catch (error) {
-      console.error("Error during fetch:", error.message);
+    async function fetchData() {
+      try {
+        const response = await fetch("http://127.0.0.1:5000/feed", {
+          method: "GET",
+        });
+        if (!response.ok) {
+          // Handle server error
+          const errorData = await response.json();
+          console.error("Server responded with error status:", response.status);
+          console.error("Error data:", errorData);
+          return;
+        }
+
+        const responseData = await response.json();
+        console.log(responseData);
+        setProducts(responseData.products);
+      } catch (error) {
+        console.error("Error during fetch:", error.message);
+      }
     }
-  });
+    fetchData();
+  }, []);
 
   return (
     <>
@@ -40,7 +51,7 @@ export const DashboardPage = () => {
         <SimpleGrid columns={[2, null, 4]} spacing="20px">
           {products.map((product) => (
             <FeedCard
-              id={product.id}
+              id={product._id}
               name={product.name}
               description={product.description}
               image={product.image}
