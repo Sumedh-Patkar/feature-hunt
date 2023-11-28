@@ -19,7 +19,7 @@
 
 - [🎯 Introduction](https://github.com/Sumedh-Patkar/feature-hunt/tree/main#-introduction)
 - [🖥️ Technologies](https://github.com/Sumedh-Patkar/feature-hunt/tree/main#%EF%B8%8F-technologies)
-- [📎 Usage Instructions]()
+- [📎 Usage Instructions](https://github.com/Sumedh-Patkar/feature-hunt#-usage-instructions)
 	- [Landing Page](https://github.com/Sumedh-Patkar/feature-hunt#landing-page)
 		- [Signing Up](https://github.com/Sumedh-Patkar/feature-hunt#signing-up)
 		- [Logging In](https://github.com/Sumedh-Patkar/feature-hunt#logging-in)
@@ -27,7 +27,8 @@
 		- [Product Details](https://github.com/Sumedh-Patkar/feature-hunt#product-details)
 	- [Company and Product Creation](https://github.com/Sumedh-Patkar/feature-hunt#product-details)
 		- [Product Creation](https://github.com/Sumedh-Patkar/feature-hunt#product-creation)
-- [🆕 Changelog]()
+- [🆕 Changelog](https://github.com/Sumedh-Patkar/feature-hunt#-changelog)
+- [🔮 Future Scope]()
 - [👤 Contributors](https://github.com/Sumedh-Patkar/feature-hunt/tree/main#-contributors)
 
 
@@ -123,15 +124,31 @@ With the creation of your company, you can click the "Create Product" button at 
 
 ## 🆕 Changelog
 
-### Version 5.1
+### Version 5.2
 #### 11/27/2023
 
 - Migrated frontend to React
 - Rebuilt the UI from the ground up
-- Added support for Docker
 - Added support for user uploadable images
+
+### Version 5.1
+#### 11/24/2023
+
+- Added support for Docker
 - Fixed major critical breaking bugs and issues
 - Fixed voting functionality
+
+
+## 🔮 Future Scope
+
+We fully believe in supporting and updating our products and Feature Hunt is no different. Below are the planned features that we intend to add to Feature Hunt to enhance functionality and usability.
+
+- Dark Mode
+- Social Account Authorization
+- Product Owner Dashboard
+- User Suggestion Statuses
+- Private Products / Restricted Access
+- Advanced Search Filters
 
 
 ## 👤 Contributors
@@ -251,45 +268,3 @@ https://user-images.githubusercontent.com/26930183/135515516-d84f3a28-6d8c-49de-
 https://user-images.githubusercontent.com/42051115/140450152-61fcce18-c307-41bc-bfa4-92afe4fc1c40.mp4
 
 https://user-images.githubusercontent.com/78971563/140450270-8782b2f8-3634-4bdc-86d6-4e4bbcf19a4a.mp4
-
-The **Home** Page after Login - It has a list of different products for which you can provide feature requests
-<img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="docs/component-screenshots/Screenshot 2023-10-19 at 23.02.25.png">  
-
-The **Product** Page - It has a list of feature requests added by users
-<img width="1148" alt="Screen Shot 2021-09-19 at 5 25 04 PM" src="https://user-images.githubusercontent.com/11090612/133944169-5529ea32-40c8-4786-b198-6e5c1eecd64f.png">  
-
-The **Comment** Section - Each product page has a comment section (Powered by [utteranc.es](https://utteranc.es))
-<img width="830" alt="Screen Shot 2021-09-19 at 5 25 15 PM" src="https://user-images.githubusercontent.com/11090612/133943532-1a834e0e-2ea5-477f-a09f-122b05f7de7a.png">
-
-### Newest Features:
-You can now create an account and mange the products you are a part of! This includes - 
-
-**SignUp Page** - First, if you are a new user, you can create an account to customize your dashboard with projects you are involved in.
-<img src="https://github.com/Ashnayak/feature-hunt/blob/d2e421c58edddf0c3ab9ce9076f8f91f6fb80171/docs/screenshots/WhatsApp%20Image%202021-11-29%20at%2012.12.21%20PM%20(2).jpeg" width="1200"/>
-
-**Login Page** - If yopu are a recurring user, then you can login to your dashboard via this portal.
-<img src="docs/component-screenshots/Screenshot 2023-10-19 at 23.00.15.png" width="1200" />
-
-**New Company Form** - You can instantly add new products to be reviewed by the community. 
-<img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="docs/component-screenshots/Screenshot 2023-10-19 at 23.01.35.png"> 
-
-**New Product Form** - You can instantly add new products to be reviewed by the community. 
-<img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="docs/component-screenshots/Screenshot 2023-10-19 at 23.02.07.png"> 
-
-**Seach Bar** -  You can now search for your project
-<img src="https://github.com/Ashnayak/feature-hunt/blob/d2e421c58edddf0c3ab9ce9076f8f91f6fb80171/docs/screenshots/WhatsApp%20Image%202021-11-29%20at%2012.12.20%20PM%20(1).jpeg" width="1200" />
-
-**Tag Management** - You can now give feature feedback though tags. Want to say that you are working on a feature? Add a `IN DEVELOPMENT` tag!
-<img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="https://user-images.githubusercontent.com/78971563/140238752-a6ebe8ab-942f-462e-94b6-5d3d4064115e.png"> 
-
-**Features with Description!** - You can now create an "elevator pitch" for your features to help others vote for your feature (How cool!)
-<img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="docs/component-screenshots/Screenshot 2023-10-19 at 23.00.39.png"> 
-
-**Product Page!** - You can now create an "elevator pitch" for your product to help others vote for your feature (How cool!)
-<img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="docs/component-screenshots/Screenshot 2023-10-19 at 23.00.58.png"> 
-
-**Company Page!** - You can now create an Company page and post your products and it's features to help others vote for your feature (How cool!)
-<img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="docs/component-screenshots/Screenshot 2023-10-19 at 23.01.18.png"> 
-
-**Receive autogenerated email notifications!** - Contributors can now receive an email that ranks features based on popularity! Additionally, we provide an attachment listing out all the features suggested for the particular project.
-<img width="1200" alt="Screen Shot 2021-09-19 at 5 24 43 PM" src="https://github.com/Ashnayak/feature-hunt/blob/3db2e61e4ad75a26f1b12da84e824e7dd22c1d76/docs/Phase3_docs/screenshots/WhatsApp%20Image%202021-12-04%20at%2011.20.25%20PM.jpeg"> 
