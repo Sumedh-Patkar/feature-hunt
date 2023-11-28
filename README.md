@@ -8,11 +8,9 @@
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/Sumedh-Patkar/feature-hunt?color=red)](https://github.com/Sumedh-Patkar/feature-hunt/issues?q=is%3Aissue+is%3Aclosed)
 [![GitHub license](https://img.shields.io/github/license/Sumedh-Patkar/feature-hunt)](https://github.com/Sumedh-Patkar/feature-hunt/blob/main/LICENSE)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-
 ![Python](https://img.shields.io/badge/Python-3.9-blue.svg)
 [![Docker](https://img.shields.io/badge/Containerized-Docker-blue)](https://docs.docker.com/compose/)
 ![Pylint](https://img.shields.io/badge/Pylint-Passing-brightgreen.svg)
-
 
 
 ## 📋 Table of contents
@@ -28,7 +26,7 @@
 	- [Company and Product Creation](https://github.com/Sumedh-Patkar/feature-hunt#product-details)
 		- [Product Creation](https://github.com/Sumedh-Patkar/feature-hunt#product-creation)
 - [🆕 Changelog](https://github.com/Sumedh-Patkar/feature-hunt#-changelog)
-- [🔮 Future Scope]()
+- [🔮 Future Scope](https://github.com/Sumedh-Patkar/feature-hunt#-future-scope)
 - [👤 Contributors](https://github.com/Sumedh-Patkar/feature-hunt/tree/main#-contributors)
 
 
@@ -241,18 +239,8 @@ You can now run and test the project locally and in deployments. More info about
 
 # WORK IN PROGRESS
 
-## 🔬 Showcase
-
-#### WIP
-
 ## ⚙️ Contributions to the Project
 Please refer to the [Contributing.md](https://github.com/NidhayPancholi/feature-hunt/blob/development/CONTRIBUTING.md) if you want to contrbute to the Feature Hunt source code. Follow all the guidelines mentioned and raise a pull request for the developers to review before the code goes to the main source code.
-
-## 🔮 Future Scope
-We believe in the ability to add new features in any project (including our own). 
-
-#### Check out our ideas for the future: [Future scope](https://github.com/CSC510-Group-25/feature-hunt/projects/3)
-
 
 ## ARCHIVE DELETE LATER
 
