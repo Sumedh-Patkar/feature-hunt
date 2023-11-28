@@ -1,3 +1,4 @@
+
 <p align="center">
 <img width="800" alt="Feature Hunt" src="https://user-images.githubusercontent.com/11090612/135201949-a1f1de9d-f80a-4adf-a7ac-886c77c4c226.png">
 </p>
@@ -193,16 +194,18 @@ We fully believe in supporting and updating our products and Feature Hunt is no 
 </table>
 
 
+## Rubric
 
 ## 🏁 Getting Started
 
-#### Before you get started, if you are using Windows, please visit our [wiki page on Windows development](https://github.com/CSC510-Group-25/feature-hunt/wiki/How-to-develop-with-Windows).
+### Dependency Setu
+
 
 ### First Time Setup
 
 #### 1. Git clone the Repository using 
 ```
-git clone https://github.com/NidhayPancholi/feature-hunt
+git clone https://github.com/Sumedh-Patkar/feature-hunt.git
 ```
 #### 2. Run the following Commands
 ```
@@ -234,6 +237,40 @@ This app has been deployed using Deta Space. Check it out [here!](https://featur
 You can now run and test the project locally and in deployments. More info about our deplyments and switching between production and devlopment can be found in our [Wiki](https://github.com/CSC510-Group-25/feature-hunt/wiki/Deployment:-Heroku-and-Netlify)
 
 
+## Rubric
+
+|Notes|evidence|
+|-----|---------|
+X|Video|2min video of new functionality, showing a significant delta from prior.|
+X|Workload is spread over the whole team|evidence in GH|
+X|Number of commits|in GH|
+X|Number of commits: by different people|in GH|
+X|Issues reports: there are **many**|
+X|Issues are being closed|evidence in GH|
+|DOI badge: exists|3|https://github.com/Sumedh-Patkar/feature-hunt/tree/main
+Below the banner. 10.5281/zenodo.5759268|
+X|Docs: doco generated, format not ugly |in GH|
+X|Docs: what: point descriptions of each class/function (in isolation) |
+x|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|doc page entries|
+X|Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing|
+X|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.|
+X|Use of version control tools|
+x|Use of style checkers |config files in GH showing your config|
+X|Use of code formatters. |config files in GH showing your this formatter's  config|
+X|Use of syntax checkers. |config files iin  GH showing this checker's config  |
+x|Use of code coverage |config files in GH|
+x|Other automated analysis tools|config files in GH|
+X|Test cases exist|dozens of tests and those test cases are more than 30% of the code base|
+X|Test cases are routinely executed|E.g. travis-com.com or github actions or something|
+X|The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up|
+X|Issues are discussed before they are closed|even if you discuss in slack, need a sumamry statement here|
+X|Chat channel: exists|Link or screenshots|
+X|Test cases: a large proportion of the issues related to handling failing cases.|If a test case fails, open an issue and fix it|
+X|Evidence that the whole team is using the same tools: everyone can get to all tools and files|
+X|Evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)|
+X|Evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)|
+X|Evidence that the members of the team are working across multiple places in the code base|
+X|Short release cycles | (hard to see in short projects) project members are committing often enough so that everyone can get your work|
 
 
 
