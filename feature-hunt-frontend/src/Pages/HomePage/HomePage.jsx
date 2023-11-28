@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import {
   Modal,
   ModalOverlay,
@@ -18,23 +18,15 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
-import {
-  AxiosProvider,
-  Request,
-  Get,
-  Delete,
-  Head,
-  Post,
-  Put,
-  Patch,
-  withAxios,
-} from "react-axios";
+import axios from "axios";
 
 const HomePage = () => {
   const navigate = useNavigate();
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const nameRef = useRef("");
+  const emailRef = useRef("");
+  const passwordRef = useRef("");
+  const emailRefLogin = useRef("");
+  const passwordRefLogin = useRef("");
 
   const {
     isOpen: isLoginOpen,
@@ -64,24 +56,19 @@ const HomePage = () => {
           <ModalHeader>Login</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <FormControl mb={4} id="username" isRequired>
-              <FormLabel>Username</FormLabel>
-              <Input type="username" />
-            </FormControl>
             <FormControl mb={4} id="email" isRequired>
               <FormLabel>Email address</FormLabel>
-              <Input type="email" />
+              <Input ref={emailRefLogin} type="email" />
               <FormHelperText>(We'll never share your email)</FormHelperText>
             </FormControl>
-
             <FormControl id="password" isRequired>
               <FormLabel>Password</FormLabel>
-              <Input type="password" />
+              <Input ref={passwordRefLogin} type="password" />
             </FormControl>
           </ModalBody>
 
           <ModalFooter>
-            <Button colorScheme="green" mr={3} onClick={onLoginClose}>
+            <Button colorScheme="green" mr={3} onClick={handleLogin}>
               Login
             </Button>
             <Button onClick={onLoginClose} variant="ghost">
@@ -108,20 +95,20 @@ const HomePage = () => {
           <ModalBody>
             <FormControl mb={4} id="username" isRequired>
               <FormLabel>Username</FormLabel>
-              <Input type="username" />
+              <Input ref={nameRef} type="username" />
             </FormControl>
             <FormControl mb={4} id="email" isRequired>
               <FormLabel>Email address</FormLabel>
-              <Input type="email" />
+              <Input ref={emailRef} type="email" />
               <FormHelperText>(We'll never share your email)</FormHelperText>
             </FormControl>
             <FormControl id="password" isRequired>
               <FormLabel>Password</FormLabel>
-              <Input type="password" />
+              <Input ref={passwordRef} type="password" />
             </FormControl>
           </ModalBody>
           <ModalFooter>
-            <Button colorScheme="green" mr={3}>
+            <Button onClick={handleSignup} colorScheme="green" mr={3}>
               Signup
             </Button>
             <Button onClick={onCloseSignup} variant="ghost">
@@ -133,26 +120,95 @@ const HomePage = () => {
     );
   };
 
-  //   const handleSignup = async () => {
-  //     try {
-  //       const response = await axios.post("http://localhost:5000/signup", {
-  //         name,
-  //         email,
-  //         password,
-  //       });
+  const handleSignup = async () => {
+    try {
+      const name = nameRef.current.value;
+      const email = emailRef.current.value;
+      const password = passwordRef.current.value;
+      try {
+        const response = await fetch("http://127.0.0.1:5000/signup", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            // Add any other headers as needed
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            password,
+          }),
+        });
 
-  //       // Handle the response as needed
-  //       console.log(response.data);
-  //       localStorage.setItem("name", response.data.name);
-  //       localStorage.setItem("email", response.data.email);
-  //       onCloseSignupse();
-  //       navigate("/dashboard");
-  //       // Redirect or perform other actions based on the response
-  //     } catch (error) {
-  //       // Handle errors, e.g., display an error message to the user
-  //       console.error("Signup error:", error);
-  //     }
-  //   };
+        if (!response.ok) {
+          // Handle server error
+          const errorData = await response.json();
+          console.error("Server responded with error status:", response.status);
+          console.error("Error data:", errorData);
+          return;
+        }
+
+        // Do something with the response
+        const responseData = await response.json();
+        console.log("Signup successful:", responseData);
+        // Handle the response as needed
+        console.log(response.data);
+        localStorage.setItem("name", name);
+        localStorage.setItem("email", email);
+        onCloseSignup();
+        navigate("/feed");
+      } catch (error) {
+        console.error("Error during fetch:", error.message);
+      }
+
+      // Redirect or perform other actions based on the response
+    } catch (error) {
+      // Handle errors, e.g., display an error message to the user
+      console.error("Signup error:", error);
+    }
+  };
+
+  const handleLogin = async () => {
+    try {
+      console.log(emailRefLogin);
+      const email = emailRefLogin.current.value;
+      const password = passwordRefLogin.current.value;
+      try {
+        const response = await fetch("http://127.0.0.1:5000/login", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            // Add any other headers as needed
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            password,
+          }),
+        });
+        if (!response.ok) {
+          // Handle server error
+          const errorData = await response.json();
+          console.error("Server responded with error status:", response.status);
+          console.error("Error data:", errorData);
+          return;
+        }
+        // Do something with the response
+        const responseData = await response.json();
+        console.log("Login successful:", responseData);
+        // Handle the response as needed
+        console.log(response.data);
+        localStorage.setItem("email", email);
+        onLoginClose();
+        navigate("/feed");
+      } catch (error) {
+        console.error("Error during fetch:", error.message);
+      }
+      // Redirect or perform other actions based on the response
+    } catch (error) {
+      // Handle errors, e.g., display an error message to the user
+      console.error("Login error:", error);
+    }
+  };
 
   return (
     <>

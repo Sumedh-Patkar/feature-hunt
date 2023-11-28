@@ -18,10 +18,10 @@ import {
 import { useNavigate } from "react-router-dom";
 import { AiOutlineLike, AiOutlineDislike } from "react-icons/ai";
 
-export const FeedCard = () => {
+export const FeedCard = ({ id, name, description, image }) => {
   const navigate = useNavigate();
   const handleNavigate = () => {
-    navigate("/product/1");
+    navigate(`/product/${id}`);
   };
   return (
     <Card
@@ -31,17 +31,17 @@ export const FeedCard = () => {
       maxW="sm"
     >
       <CardBody>
-        <Image
-          src="https://mspoweruser.com/wp-content/uploads/2023/04/meta-instagram-icon-set-editorial-metaverse-concept-free-vector.jpg"
-          alt="Green double couch with wooden legs"
-          borderRadius="lg"
-        />
+        <Center>
+          <Image
+            src={image}
+            maxH={100}
+            alt="Green double couch with wooden legs"
+            borderRadius="lg"
+          />
+        </Center>
         <Stack mt="6" spacing="3">
-          <Heading size="md">Instagram</Heading>
-          <Text>
-            Instagram is an American photo and video sharing social networking
-            service owned by Meta Platforms.
-          </Text>
+          <Heading size="md">{name}</Heading>
+          <Text>{description}</Text>
         </Stack>
       </CardBody>
       <CardFooter>
