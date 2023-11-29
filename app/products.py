@@ -28,7 +28,7 @@ class Product:
     
     def add_product(self,product_input):
         x=self.db.insert_one(product_input)
-        return {'ProductID': str(x.inserted_id), 'message': 'Product added successfully'}
+        return {'ProductID': str(x.inserted_id), 'message': 'Product {} added successfully'.format(product_input['name'])}
     
     def delete_product(self,product_name):
         db_response = self.db.delete_one({'name': product_name})
@@ -73,6 +73,6 @@ class Product:
             response = {'ok': True, 'message': 'record updated'}
         else:
             response = {'ok': False, 'message': 'no record found'}
-        return jsonify(response), 200
+        return response
     
     

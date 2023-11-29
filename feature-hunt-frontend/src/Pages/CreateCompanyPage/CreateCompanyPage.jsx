@@ -21,9 +21,48 @@ export const CreateCompanyPage = () => {
   const [description, setDescription] = useState("");
   const [keywords, setKeywords] = useState("");
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     // Handle form submission logic here
-    console.log("Company created:", { name, description, keywords });
+    try {
+      console.log("Creating Company:");
+      console.log(name);
+      console.log(description);
+      console.log(keywords);
+      try {
+        const response = await fetch("http://127.0.0.1:5000/addcompany", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            // Add any other headers as needed
+          },
+          body: JSON.stringify({
+            name,
+            description,
+            keywords,
+          }),
+        });
+        if (!response.ok) {
+          // Handle server error
+          const errorData = await response.json();
+          console.error("Server responded with error status:", response.status);
+          console.error("Error data:", errorData);
+          return;
+        }
+        // Do something with the response
+        const responseData = await response.json();
+        console.log("Creation successful:", responseData);
+        // Handle the response as needed
+        console.log(response.data);
+        // onLoginClose();
+        navigate("/feed");
+      } catch (error) {
+        console.error("Error during fetch:", error.message);
+      }
+      // Redirect or perform other actions based on the response
+    } catch (error) {
+      // Handle errors, e.g., display an error message to the user
+      console.error("Creation error:", error);
+    }
   };
 
   const backgroundColor = useColorModeValue("green.50", "green.800");

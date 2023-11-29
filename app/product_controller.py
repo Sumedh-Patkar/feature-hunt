@@ -21,19 +21,33 @@ def add_product():
     the product form and send it to the database to be stored
     """
     if request.method == 'POST':
-        product_name = request.form.get("name")
-        product_description = request.form.get("description")
-        tags = request.form.get("tags").split(',')
-        company_id=request.form.get("company")
-        get_company=companydb.get_company(company_id)
-        product_input = {'name': product_name, 'description': product_description,
-                            'tags': tags, 'features': [],'votes':0,'views':0,'created_by':session['userid'],'features':[],'company_id':company_id,'company_name':get_company['name']}
+        print("\n\nDebugging Add product")
+        request_data = json_util.loads(request.data)
+        product_name = request_data["name"]
+        product_description = request_data["description"]
+        tags = request_data["tags"].split(',')
+        image_link = request_data["image_link"]
+        company_name = request_data["company"]
 
+        get_company=companydb.get_company_by_name(company_name)
+        company_id = str(get_company['_id'])
+
+        product_input = {
+            'name': product_name,
+            'description': product_description,
+            'tags': tags,
+            'features': [],
+            'votes':0,
+            'views':0,
+            'image_link': image_link,
+            'company_id' : company_id,
+            'company_name' : company_name
+        }
 
         res=productdb.add_product(product_input)
         companydb.add_product_to_company(company_id,res['ProductID'])
         
-        return jsonify({'product_name', res['name']}), 201
+        return jsonify({'message': res['message']}), 201
 
 @app.route("/getproducts", methods=['GET'])
 def get_products():
@@ -94,16 +108,18 @@ def view_product(product_id):
     product = productdb.get_product(product_id)
     return json.loads(json.dumps({'product':product}))
 
-@app.route("/suggestfeature/<product_id>", methods=['GET','POST'])
+@app.route("/suggestfeature/<product_id>", methods=['POST'])
 def suggest_feature(product_id):
     #if 'userid' not in session:
      #   return redirect(url_for('login'))
     if request.method == 'POST':
-        feature_name = request.form.get("name")
-        feature_description = request.form.get("description")
-        feature_input = {'name': feature_name, 'description': feature_description,
-                            'votes':0}
-        res=productdb.add_feature(product_id,feature_input)
-        return redirect(url_for('view_product',product_id=product_id))
-    else:
-        return render_template("featureform.html",product_id=product_id)
+        request_data = json_util.loads(request.data)
+        feature_name = request_data["name"]
+        feature_description = request_data["description"]
+        feature_input = {
+            'name': feature_name,
+            'description': feature_description,
+            'votes':0
+        }
+        res = productdb.add_feature(product_id,feature_input)
+        return jsonify({'message': res['message']}), 201
