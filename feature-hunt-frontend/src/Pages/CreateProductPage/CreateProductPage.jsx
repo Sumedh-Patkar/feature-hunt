@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Box,
   Heading,
@@ -11,20 +11,107 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import Navbar from "../../components/Navbar/NavBar";
+import { Link, useNavigate } from "react-router-dom";
 
 export const CreateProductPage = () => {
+  const navigate = useNavigate();
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [tags, setTags] = useState("");
+  const [companyNames, setCompanyNames] = useState([]);
   const [company, setCompany] = useState("");
+  const [imageLink, setImageLink] = useState("");
 
-  const handleSubmit = () => {
+  useEffect(() => {
+    const getCompanyNames = async () => {
+      const names = await fetchCompanyNames();
+      setCompanyNames(names);
+    };
+
+    getCompanyNames();
+  }, []); // The empty dependency array ensures the effect runs only once when the component mounts
+
+  const handleSubmit = async () => {
     // Handle form submission logic here
-    console.log("Product created:", { name, description, tags, company });
+    // Handle form submission logic here
+    try {
+      console.log("Creating product:");
+      console.log(name);
+      console.log(description);
+      console.log(tags);
+      console.log(company);
+      try {
+        const response = await fetch("http://127.0.0.1:5000/addproduct", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            // Add any other headers as needed
+          },
+          body: JSON.stringify({
+            name,
+            description,
+            tags,
+            image_link: imageLink,
+            company,
+          }),
+        });
+        if (!response.ok) {
+          // Handle server error
+          const errorData = await response.json();
+          console.error("Server responded with error status:", response.status);
+          console.error("Error data:", errorData);
+          return;
+        }
+        // Do something with the response
+        const responseData = await response.json();
+        console.log("Creation successful:", responseData);
+        console.log("Product created:", { name, description, tags, company });
+        // Handle the response as needed
+        console.log(response.data);
+        // onLoginClose();
+        navigate("/feed");
+      } catch (error) {
+        console.error("Error during fetch:", error.message);
+      }
+      // Redirect or perform other actions based on the response
+    } catch (error) {
+      // Handle errors, e.g., display an error message to the user
+      console.error("Creation error:", error);
+    }
   };
 
   const backgroundColor = useColorModeValue("green.50", "green.800");
   const buttonColorScheme = "green";
+
+  const fetchCompanyNames = async () => {
+    try {
+      const response = await fetch("http://127.0.0.1:5000/getcompanies", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          // Add any other headers as needed
+        },
+      });
+      if (!response.ok) {
+        // Handle server error
+        const errorData = await response.json();
+        console.error("Server responded with error status:", response.status);
+        console.error("Error data:", errorData);
+        return;
+      }
+      // Do something with the response
+      const responseData = await response.json();
+      console.log("Got Companies list successfully:");
+      console.log(responseData);
+      let companiesList = responseData.map((i) => {
+        return i["name"];
+      });
+
+      return companiesList;
+    } catch (error) {
+      console.error("Error during fetch:", error.message);
+    }
+  };
 
   return (
     <>
@@ -52,6 +139,15 @@ export const CreateProductPage = () => {
           />
         </FormControl>
         <FormControl mb={4}>
+          <FormLabel>Image Link</FormLabel>
+          <Input
+            type="text"
+            value={imageLink}
+            onChange={(e) => setImageLink(e.target.value)}
+            placeholder="Enter product image link"
+          />
+        </FormControl>
+        <FormControl mb={4}>
           <FormLabel>Description</FormLabel>
           <Textarea
             value={description}
@@ -75,10 +171,11 @@ export const CreateProductPage = () => {
             onChange={(e) => setCompany(e.target.value)}
             placeholder="Select company"
           >
-            {/* Option values can be dynamically populated based on your data */}
-            <option value="company1">Company 1</option>
-            <option value="company2">Company 2</option>
-            <option value="company3">Company 3</option>
+            {companyNames.map((companyName) => (
+              <option key={companyName} value={companyName}>
+                {companyName}
+              </option>
+            ))}
           </Select>
         </FormControl>
         <Button colorScheme={buttonColorScheme} onClick={handleSubmit}>

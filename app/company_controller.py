@@ -22,9 +22,11 @@ def add_company():
     by using the company data and description entered by the user
     """
     if request.method == 'POST':
-        company_name = request.form.get("name")
-        company_description = request.form.get("description")
-        tags = request.form.get("tags").split(',')
+        request_data = json_util.loads(request.data)
+        print(request_data)
+        company_name = request_data["name"]
+        company_description = request_data["description"]
+        tags = request_data["keywords"].split(',')
 
         company_input = {
             'name': company_name,
@@ -37,8 +39,10 @@ def add_company():
         }
 
         res = companydb.add_company(company_input)
+        print("\n\nPrinting results")
+        print(res)
 
-        return jsonify({'company_name', res['name']}), 201
+        return jsonify({'message': res['message']}), 201
 
 @app.route("/getcompanies", methods=['GET'])
 def get_companies():

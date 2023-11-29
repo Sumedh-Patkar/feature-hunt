@@ -54,7 +54,10 @@ export const DashboardPage = () => {
               id={product._id}
               name={product.name}
               description={product.description}
-              image={product.image}
+              image={product.image_link}
+              likes_count={product.likes_count}
+              dislikes_count={product.dislikes_count}
+              is_like={product.is_like}
             />
           ))}
         </SimpleGrid>
