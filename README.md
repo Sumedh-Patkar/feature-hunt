@@ -121,6 +121,47 @@ With the creation of your company, you can click the "Create Product" button at 
 <img src="docs/instructions/7_product_create.png" width="1200"/>
 
 
+## 🏁 Getting Started
+
+### Dependency Setup
+
+
+### First Time Setup
+
+#### 1. Git clone the Repository using 
+```
+git clone https://github.com/Sumedh-Patkar/feature-hunt.git
+```
+#### 2. Run the following Commands
+```
+cd feature-hunt
+cd app
+```
+#### 3. `pip install -r backend/requirements.txt`
+
+Installs the requirements for the Flask API
+
+#### 4. `python app.py`
+
+Runs the Flask app in the development mode.\
+Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### Connecting with a Database
+
+> We use Mongo Cloud Atlas for our project as we find it very convenient. You may choose to use a local mongodb instance or run a docker container
+
+#### Check out our [tutorial](https://github.com/CSC510-Group-25/feature-hunt/wiki/Getting-Started-with-Database-Development:-Connection-and-Setup) to get started with creating and connecting to a database.
+
+### Deployment
+
+This app has been deployed using Deta Space. Check it out [here!](https://featurehunt-1-v6614040.deta.app/feed)
+
+You can now run and test the project locally and in deployments. More info about our deplyments and switching between production and devlopment can be found in our [Wiki](https://github.com/CSC510-Group-25/feature-hunt/wiki/Deployment:-Heroku-and-Netlify)
+
+
 ## 🆕 Changelog
 
 ### Version 5.2
@@ -148,6 +189,11 @@ We fully believe in supporting and updating our products and Feature Hunt is no 
 - User Suggestion Statuses
 - Private Products / Restricted Access
 - Advanced Search Filters
+
+
+## ⚙️ Contributions to the Project
+
+Please refer to the [Contributing.md](https://github.com/NidhayPancholi/feature-hunt/blob/development/CONTRIBUTING.md) if you want to contrbute to the Feature Hunt source code. Follow all the guidelines mentioned and raise a pull request for the developers to review before the code goes to the main source code.
 
 
 ## 👤 Contributors
@@ -227,50 +273,3 @@ X|Test cases: a large proportion of the issues related to handling failing cases
 |Evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)|3|All members can run the program|
 |Evidence that the members of the team are working across multiple places in the code base|3|feature-hunt/commits/main, feature-hunt/commits/project3, and feature-hunt/commits/vite-react-port have commits over frontend, backend, and documentation|
 X|Short release cycles | (hard to see in short projects) project members are committing often enough so that everyone can get your work|
-
-
-## ARCHIVE DELETE LATER
-
-## 🏁 Getting Started
-
-### Dependency Setup
-
-
-### First Time Setup
-
-#### 1. Git clone the Repository using 
-```
-git clone https://github.com/Sumedh-Patkar/feature-hunt.git
-```
-#### 2. Run the following Commands
-```
-cd feature-hunt
-cd app
-```
-#### 3. `pip install -r backend/requirements.txt`
-
-Installs the requirements for the Flask API
-
-#### 4. `python app.py`
-
-Runs the Flask app in the development mode.\
-Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### Connecting with a Database
-
-> We use Mongo Cloud Atlas for our project as we find it very convenient. You may choose to use a local mongodb instance or run a docker container
-
-#### Check out our [tutorial](https://github.com/CSC510-Group-25/feature-hunt/wiki/Getting-Started-with-Database-Development:-Connection-and-Setup) to get started with creating and connecting to a database.
-
-### Deployment
-
-This app has been deployed using Deta Space. Check it out [here!](https://featurehunt-1-v6614040.deta.app/feed)
-
-You can now run and test the project locally and in deployments. More info about our deplyments and switching between production and devlopment can be found in our [Wiki](https://github.com/CSC510-Group-25/feature-hunt/wiki/Deployment:-Heroku-and-Netlify)
-
-## ⚙️ Contributions to the Project
-
-Please refer to the [Contributing.md](https://github.com/NidhayPancholi/feature-hunt/blob/development/CONTRIBUTING.md) if you want to contrbute to the Feature Hunt source code. Follow all the guidelines mentioned and raise a pull request for the developers to review before the code goes to the main source code.
